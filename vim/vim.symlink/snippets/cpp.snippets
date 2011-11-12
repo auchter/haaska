@@ -1,0 +1,43 @@
+
+snippet class
+	class ${1:`Filename('$1', 'name')`}
+	{
+	public:
+		$1();
+		virtual ~$1();
+
+		${2}
+
+	private:
+		$1 &operator=(const $1 &);
+		$1(const $1 &);
+	};
+
+snippet child
+	class ${1:`Filename('$1', 'name')`} : public ${2:/* parent */}
+	{
+	public:
+		typedef $2 tParent;
+
+		$1();
+		virtual ~$1();
+
+	private:
+		$1 &operator=(const $1 &);
+		$1(const $1 &);
+	};
+
+snippet ctrimp
+	${1:/* class name */}::$1(${2:/* args */})
+	{
+
+	}
+snippet date
+	`system("date +%Y-%m-%d")`
+snippet todo
+	// TODO [mma `system("date +%Y-%m-%d")`]: 
+snippet method
+	${1:`Filename('$1', 'name')`}::${2:/* method */}(${3:/* args */})
+	{
+		${4:/* body */}
+	}

@@ -1,0 +1,19 @@
+These tests require the runVimTests and VimTap plugins to be installed. The
+are available from:
+
+    http://www.vim.org/scripts/script.php?script_id=2565 and
+    http://www.vim.org/scripts/script.php?script_id=2213
+
+The tests should all run with the -0 (pure) and -1 (default) options.
+Successful runs using the -2 (load user .vimrc/plugins) option is dependent
+upon the settings the user has in their user files.
+
+To run the tests, execute the runVimTests.sh command on the test directory.
+For example:
+
+    ~/.vim/bin/runVimTests.sh -0 .
+
+You can also optinally specify a specific set of tests to run by replacing the
+directory name with one of the test files:
+
+    ~/.vim/bin/runVimTests.sh -0 test001.vim

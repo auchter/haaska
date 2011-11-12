@@ -1,0 +1,165 @@
+set nocompatible
+
+syntax off
+call pathogen#runtime_append_all_bundles() 
+syntax on
+
+filetype on
+filetype indent on
+filetype plugin on
+
+colorscheme molokai
+
+set modeline
+set history=1000                  " remember my previous commands
+set showcmd                       " show the current command on the last line
+set nu                            " line numbers are nice
+set showmatch                     " show matching brackets and such
+set incsearch                     " search as i type
+set nohlsearch                    " don't highlight searches unless i say so
+set ignorecase
+set smartcase                     " ignore case unless i type something uppercase
+set autoindent                    " indent for me
+set smartindent                   " don't be stupid
+set backspace=indent,eol,start    " always allow backspacing
+set expandtab                     " use spaces instead of <tab>
+set tabstop=3                     " make <tab> look like 3 spaces
+set softtabstop=3                 " backspace over tabs like they're spaces
+set shiftwidth=3                  " insert 3 spaces for <tab>
+set textwidth=80                  " long lines are annoying
+set formatoptions=t               " wrap text to 80 chars
+set formatoptions+=croqw          " wrap comments sanely
+set formatoptions+=n              " format numbered lists automatically
+set virtualedit=block             " allow virtual editing in block mode
+set shortmess=atI                 " abbreviate, truncate, and no intro
+set exrc                          " use per-directory conf
+set ls=2                          " always show the status line
+set ruler                         " show me where i am
+set scrolljump=10
+set scrolloff=3
+set grepprg=grep\ -nH\ $*
+set nowrap
+set backupdir=$HOME/.vim/backup
+set guioptions=
+"set columns=100
+set vb t_vb=
+set completeopt=longest,menuone
+au GUIEnter * set vb t_vb=       " no really, i mean it
+
+set tags+=tags
+set tags+=$HOME/.vim/tags/cpp
+set tags+=/usr/src/linux/tags
+
+if v:version >= 730
+   set undofile                  " persistent undo rocks
+   set undodir=$HOME/.vim/undo
+endif
+
+set wildmenu
+set wildignore =*.o,*.so,*.dll,*.a,*.vi,*.exe,*.cd
+set wildignore+=*.ko
+set wildignore+=*.sln,*.vcproj,*.vspscc,*.dsw,*.dsp
+set wildignore+=*.png,*.pdf,*.bmp,*.jpg,*.jpeg,*.gif
+
+let OmniCpp_MayCompleteDot = 1
+let OmniCpp_MayCompleteArrow = 1
+let OmniCpp_MayCompleteScope = 1
+let OmniCpp_SelectFirstItem = 2
+let OmniCpp_NamespaceSearch = 2
+let OmniCpp_ShowPrototypeInAbbr = 1
+let OmniCpp_LocalSearchDecl = 1
+
+let NERDTreeWinPos = 'right'
+
+let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
+let g:SuperTabMidWordCompletion = 0                " don't complete within a word
+let g:SuperTabLeadingSpaceCompletion = 0
+
+"let g:miniBufExplMaxSize = 40
+"let g:miniBufExplMinSize = 40
+"let g:miniBufExplSplitToEdge = 0
+"let g:miniBufExplorerMoreThanOne= 0 " 100
+let g:miniBufExplorerMoreThanOne= 100 " 100
+"let g:miniBufExplVSplit = 0
+
+com! CD cd %:p:h                                   " change wd to the dir of the buffer
+com! Evimrc :sp $MYVIMRC
+
+nmap <leader>h :set hlsearch! hlsearch?<CR>
+nmap <leader>s :new<CR>:set buftype=nofile<CR>
+nmap <leader>t :TlistToggle<CR>
+nmap <leader>n :NERDTreeToggle<CR>
+nmap <leader>m :MiniBufExplorer<CR>
+nmap <leader>nc :NERDTree %:p:h<CR>
+nmap <leader>dt :%s/\s\+$//<CR>
+nmap <leader>sb :set scrollbind<CR>
+nmap <leader>f vipgq
+
+nmap <leader>ff :FufFile<CR>
+nmap <leader>fb :FufBuffer<CR>
+nmap <leader>ft :FufTag<CR>
+nmap <leader>fm :FufMruFile<CR>
+
+nmap <leader>pd :PDiff<CR>
+nmap <leader>pe :PEdit<CR>
+nmap <leader>pr :PRevert<CR>
+
+vmap r "_dP
+map <F8> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q . <CR>
+cmap w!! w !sudo tee % >/dev/null
+
+map vp :exec "w !vpaste ft=".&ft<CR>
+vmap vp <ESC>:exec "'<,'>w !vpaste ft=".&ft<CR>~
+
+nmap <C-h> <C-w><C-h>
+nmap <C-j> <C-w><C-j>
+nmap <C-k> <C-w><C-k>
+nmap <C-l> <C-w><C-l>
+nmap <C-_> <C-w>_
+nmap <C-q> :bd<CR>
+nmap     <C-w>|
+
+nmap <Left> :bp<CR>
+nmap <Right> :bn<CR>
+
+" since people love them some camelcase
+map <silent> w <Plug>CamelCaseMotion_w
+map <silent> b <Plug>CamelCaseMotion_b
+map <silent> e <Plug>CamelCaseMotion_e
+sunmap w
+sunmap b
+sunmap e
+
+runtime plugin/supertab.vim
+call omni#cpp#complete#Init()
+
+au! BufWritePost ~/.vimrc source ~/.vimrc
+
+au BufRead,BufNewFile *.rc set filetype=rc
+au BufRead,BufNewFile mkfile set filetype=mk
+au BufNewFile,BufEnter package setlocal tw=900
+au VimEnter * if filereadable("mkfile") | set makeprg=mk | endif
+au BufNewFile,BufRead,BufEnter Makefile,makefile,*.mak setlocal sw=8 ts=8 sts=8 noexpandtab
+au BufNewFile,BufEnter vimperator-* setlocal spell
+au BufNewFile,BufEnter mutt-* set tw=72
+
+augroup LaTeX
+   au BufNewFile,BufRead,BufEnter *.tex setlocal spell
+   au BufNewFile,BufRead,BufEnter *.tex map <F3> :w !detex \| wc -w<CR>
+   au BufNewFile,BufRead,BufEnter *.tex let g:Tex_DefaultTargetFormat = 'pdf'
+   au BufNewFile,BufRead,BufEnter *.tex let g:Tex_CompileRule_pdf = 'pdflatex $*'
+augroup END
+
+augroup kernel
+   au BufNewFile,BufRead,BufEnter */linux/**,*/linux-2.6*/** setlocal ts=8 sw=8 sts=8 noexpandtab
+   au BufNewFile,BufRead,BufEnter */linux/**,*/linux-2.6*/** syntax keyword cOperator likely unlikely
+augroup END
+
+if has("win32")
+   let g:Tlist_Inc_Winwidth = 0
+   set guifont=Consolas:h8:cANSI
+   map <F8> :!start ctags -R --c++-kinds=+p --fields=+iaS --extra=+q . <CR>
+else
+   set guifont=Inconsolata\ 8
+endif
+

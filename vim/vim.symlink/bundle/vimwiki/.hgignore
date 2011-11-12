@@ -1,0 +1,10 @@
+\.pyc$
+\.gz$
+\.zip$
+\.vba$
+^sandbox/wiki$
+^sandbox/html$
+^src/doc/tags$
+^tests/wiki$
+^tests/expected$
+^tests/actual$

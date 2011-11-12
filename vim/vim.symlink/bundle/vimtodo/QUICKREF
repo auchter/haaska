@@ -1,0 +1,42 @@
+Vimtodo quick reference
+=======================
+
+Todo entry components
+=====================
+
+    TODO         - status
+    2009-09-01   - creation date
+    @computer    - context
+    +learnvim    - project
+    {2010-01-01} - due date
+    tid12345     - external task manager ticket reference
+
+Commands
+========
+
+<LocalLeader> means the vim leader command, by default it is backslash ('\')
+
+    <LocalLeader>cn - New TODO entry
+    <LocalLeader>cs - Cycle task status
+    <LocalLeader>cv - Choose task status
+
+    <LocalLeader>cb - Add a checkbox
+    <Leaver>cc - Toggle checkbox
+
+    <LocalLeader>ct - Load a task link
+    <LocalLeader>cl - Load a http link
+
+    <LocalLeader>ca - Archive all done tasks
+
+    <LocalLeader>cd - Show tasks due today (ex command: :Today)
+    <LocalLeader>cf - Show tasks due tomorrow (ex command: :Tomorrow)
+    <LocalLeader>cw - Show tasks due within 7 days (ex command: :Week)
+    <LocalLeader>cx - Show overdue tasks (ex command: :Overdue)
+
+    :Filter    - Search for tasks matching regex
+
+Abbreviations (insert mode)
+===========================
+
+    cn - New TODO entry (TODO and today's date)
+    ds - Today's date. Can be used as {ds} for a deadline

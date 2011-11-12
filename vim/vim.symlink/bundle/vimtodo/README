@@ -1,0 +1,19 @@
+Installation instructions
+-------------------------
+
+Option 1 - Untar to your ~/.vim directory
+
+Option 2 - Using pathogen (www.vim.org/scripts/script.php?script_id=2332):
+
+    Untar/clone to ~/.vim/bundle/vimtodo/
+
+Once installed, use :help vimtodo for more documentation, or see the
+doc/todo.txt file.
+
+Development/Support
+-------------------
+
+Report issues at http://github.com/mivok/vimtodo/issues
+
+The latest revision of the source code is available from:
+http://github.com/mivok/vimtodo

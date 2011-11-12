@@ -1,0 +1,399 @@
+*todo.txt*  Vim todo list plugin
+
+Vim todo list plugin                                            *vimtodo*
+
+Plugin for managing hierarchical to do lists in vim.
+
+==============================================================================
+ABOUT                                                   *vimtodo-about*
+
+Vimtodo originally started out as a set of syntax highlights for the todo.txt
+(http://www.todotxt.com/) format in vim with a few added extras such as
+subtasks. However, it quickly grew into a fully fledged task management
+system, taking several ideas from Emacs' org-mode (http://www.orgmode.org/).
+
+==============================================================================
+INSTALLATION                                            *vimtodo-installation*
+
+Untar the archive to ~/.vim. If you wish, untar to a temporary directory, and
+copy the contents of the autoload/, doc/, ftplugin/ and syntax/ directories to
+the respective directories in your ~/.vim directory.
+
+Alternatively, if you have pathogen installed, untar the entire archive to
+~/.vim/bundle/vimtodo/.
+
+==============================================================================
+BASIC TODO ENTRIES                                      *vimtodo-basics*
+
+To start with, open up a new file, and add the following line to the
+beginning: >
+    # vim:ft=todo
+
+This line tells vim that the file is a vimtodo file. See |modeline| for more
+information. Now write the file, quit and reopen it. Alternatively, you can
+just type the following to set the filetype without reopening the file: >
+    :set ft=todo
+
+To do entries are simply lines in the file that follow a specific format. Add
+the following line into the file: >
+    TODO 2009-09-01 @computer +learnvim Read vim tutorial
+
+This is a todo entry. You can also add a new entry, with the 'cn' alias. In
+insert mode, type 'cn' and a new todo entry along with the current date will
+be added. You can also use <LocalLeader>cn in normal mode to add a new entry.
+
+The todo entry is made up of several parts:
+
+    TODO - the task status, this is something like TODO, DONE, WAITING
+    2009-09-01 - the task creation date
+    @computer - the context of the task, in this case, something to do at the
+                computer
+    +learnvim - the project the task is associated with
+
+Giving multiple tasks a context or project tag allows you to filter out just
+the tasks you are interested in using the filter function (described later).
+
+For now, press escape to go back to normal mode, make sure the cursor is on
+the same line at the todo entry you just added, and press <LocalLeader>cs (\cs
+by default). The task status will change to 'DONE' and the line will be greyed
+out. Here, several things have happened:
+
+    - The task status changed from TODO to DONE
+    - The entire task changes color to show that the task is complete
+    - A CLOSED: line has been added underneath showing the date and time that
+      the task was closed.
+    - A logbook entry has been added (but is currently hidden), logging the
+      time and date of the task state change.
+
+A CLOSED: entry is added whenever a task is closed, and will be removed
+if a task is re-opened.
+
+Logbook entries however, log the date and time every time you change the state
+of a task, and look like this: >
+
+    :LOGBOOK:
+        TODO: 2009-09-30 18:19:51
+        CANCELLED: 2009-09-30 18:19:50
+        DONE: 2009-09-30 18:12:58
+
+Currently the todo entry is folded, so move the cursor to the fold line (just
+below the todo entry) and press zO to open all the folds. Then move the cursor
+back to the todo line and press <LocalLeader>cs to change the task status a
+few times to see the behavior of the closed/logbook lines.
+
+If desired, the display of closed/logbook lines can be turned off in your
+.vimrc. See the configuration section for more details.
+
+You can add more information to a task using normal text editing commands.
+Anything that is indented is considered to be information that is part of a
+todo entry. For example, the closed and logbook lines are indented and
+considered part of the todo entry.
+
+A due date for a task can be added. Add the following to the end of the
+original todo entry you added earlier: {2009-09-30}. This will be highlighted
+just like the task date. If you wish to add the current date, type in ds. For
+example {ds} will set a deadline of today.
+
+If you have tasks with due dates, you can use several commands to view tasks
+that are due soon:
+
+    <LocalLeader>cd - Show tasks due today
+    <LocalLeader>cf - Show tasks due tomorrow
+    <LocalLeader>cw - Show tasks due within 7 days
+    <LocalLeader>cx - Show overdue tasks (tasks that were due sometime in the past
+                 year)
+
+Each of these opens up another buffer listing the matching entries. Pressing
+enter on one of the items in the list will take you to the corresponding
+entry. Try this - change the deadline for your task to today, and type
+<LocalLeader>cd.
+
+You can filter on other criteria too, such as context or project using the
+:Filter ex command. It takes a regular expression and will show matching
+tasks. For example: >
+
+    :Filter @home
+
+which would bring up all tasks with a context of @home.
+
+==============================================================================
+TASK STATES         *vimtodo-state* *vimtodo-taskstate* *vimtodo-taskstates*
+
+The first word of a task in all caps shows the tasks state. Normally it is is
+something like TODO or DONE, but the available states can be configured as
+needed.
+
+Task states can be changed in one of two ways: The <LocalLeader>cs normal mode
+command, and the <LocalLeader>cv normal mode command.
+
+<LocalLeader>cs will cycle through the task states (by default, TODO, DONE,
+CANCELLED) See |vimtodo-statprogression| for more information on this.
+
+<LocalLeader>cv will bring up a prompt asking you to pick which state you want to
+switch to. Press the letter associated with the state to immediately change
+the task to that state.
+
+Some task states are considered "done" states. In these states, the entire
+task is highlighted in the same color (as if it was a comment) and a CLOSED
+tag is added to the task to show the date and time the task was closed.
+
+In addition to the closed task, whenever a tasks state is changed, the state
+change is appended to the task in a LOGBOOK section (or "drawer"). This is an
+indented part of the task with one line for each state change.
+
+The closed/logbook behavior can be configured in your .vimrc using the
+'g:todo_log_done' and 'g:todo_log_drawer' settings. Alternatively, you can set
+this behavior on a per file basis using the LOGDONE and LOGDRAWER properties.
+See |vimtodo-config| for more information on these settings.
+
+STATE PROGRESSION *vimtodo-stateprogression*
+
+When using <LocalLeader>cs to change between task states, the state will cycle
+between succesive states in the progression, and back to the beginning if the
+final state is reached. The progression can be configured, but the default
+states are:
+
+TODO -> DONE -> CANCELLED
+WAITING -> CLOSED
+
+If you wish to change to a state that is on a different progression (e.g. from
+TODO to WAITING), then you can use the <LocalLeader>cv command to jump direct
+to that state.
+
+==============================================================================
+ARCHIVING                               *vimtodo-archive* *vimtodo-archiving*
+
+VimTODO can move all completed tasks to another file to reduce clutter. The
+<LocalLeader>ca command is used for this. Any task that has been closed will
+be moved to the done file, which by default is 'done.txt' in the same
+directory as the todo file.
+
+The name of the done file can be changed using the g:todo_done_file .vimrc
+setting or on a per-file basis using the DONEFILE property.
+
+==============================================================================
+CHECKBOXES                                              *vimtodo-checkboxes*
+
+In addition to tasks with a given state, Vimtodo can manage checkboxes. Any
+line in a file can contain a checkbox. It doesn't have to be a task heading,
+and in fact it probably isn't a good idea to mix task entries (with a state)
+and checkboxes.
+
+To create a checkbox, simply type [ ] in insert mode. Alternatively, you can
+use <LocalLeader>cn in normal mode to add a checkbox to the beginning of a
+line.  Note that if you do this on the header line for a task, it will be
+inserted before the task state (e.g. TODO) and the task will lose any special
+meaning.
+
+To toggle a checkbox, use the <LocalLeader>cc command. By default, a checkbox
+will be checked with an X, and another use of <LocalLeader>cc will uncheck the
+box.  However, like task states, there are a number of states a checkbox can
+cycle through: >
+
+    [ ] -> [X]
+    [+] -> [-] -> [.]
+    [Y] -> [N] -> [?]
+
+To use one of these other progressions, simply start with the relevant state
+when creating your checkbox. For example, type [Y] in insert mode to create a
+Y/N/? check box.
+
+Again, like task states, checkbox state progression can be configured. The
+g:todo_checkbox_states variable and the CHECKBOXSTATES property controls this
+behavior.
+
+==============================================================================
+TASK LINKS                              *vimtodo-tasklinks* *vimtodo-links*
+
+Vimtodo can be configured to reference an external task management system. By
+adding tidXXXX to your task, you can use <LocalLeader>ct to open up a web page
+showing the external task.
+
+For example:
+
+You have an external task management system where all tickets are available on
+the web at the following URL: http://tasks.example.com/tickets/tid=12345 (for
+ticket #12345)
+
+Set up the g:todo_taskurl variable in your .vimrc to be the same as the above
+url, substituting '%s' for the ticket number. In addition, you need to set the
+g:todo_browser variable to be a command to load a web page in your browser. In
+the example below, gnome-open is used to open the default browser (If you are
+using Linux/Gnome): >
+
+      let g:todo_taskurl="http://tasks.example.com/tickets/tid=%s"
+      let g:todo_browser="gnome-open"
+
+You wish to reference this ticket in a TODO entry, so you add tid12345
+to the ticket. At this point, <LocalLeader>ct will open up your web browser
+and take you to the referenced ticket.
+
+Vimtodo can also open any URL in a web browser if the g:todo_browser variable
+is configured. To do this, use <LocalLeader>cl and any http/https link on the
+current line will be opened in the web browser.
+
+==============================================================================
+FOLDING
+
+Any extra data added to an entry (be it the logbook/closed tags, or notes on a
+task) is indented from the first line, and is folded away when the file is
+first opened using vim's folding features. Folding is based on the indentation
+of the text.
+
+All of vim's normal folding commands can be used to manipulate what is
+hidden/shown. For a good overview on this, see |fold-commands|. However, the
+basic commands used to open/close folds are |zo| and |zc| (both normal mode
+commands).
+
+==============================================================================
+CONFIGURATION                       *vimtodo-config* *vimtodo-configuration*
+
+Much of vimtodo's behavior can be changed if desired. There are two options
+for configuration: variables in .vimrc and properties.
+
+PROPERTIES                                              *vimtodo-properties*
+
+Properties are simply per-file configuration options that you add to the
+beginning of a todo file. They are all contained in a :SETTINGS: drawer,
+usually near the top of the file, and each setting begins with a + sign:
+For example: >
+
+    :SETTINGS:
+        +DONEFILE: custom_done_file.txt
+        +LOGDONE: 0
+
+CONFIGURATION OPTIONS                                   *vimtodo-configoptions*
+
+g:todo_checkbox_states              (property: +CHECKBOXSTATES)
+
+    Sets the list of checkbox state progressions.
+
+    If set in the vimrc file, this is a list of valid checkbox progressions,
+    each progression of which is itself a list. To set multiple checkbox
+    progressions using properties, just use multiple +CHECKBOXSTATES lines.
+
+    Examples (vimrc first, then properties example below): >
+
+    let g:todo_checkbox_states = [
+        \["A", "B", "C"],
+        \["1", "2", "3"]]
+
+    :SETTINGS:
+        +CHECKBOXSTATES: A B C
+        +CHECKBOXSTATES: 1 2 3
+
+g:todo_done_file                    (property: +DONEFILE)
+
+    Set the name of the file to archive done tasks into. (Default: done.txt)
+
+g:todo_log_done                     (property: +LOGDONE)
+
+    Enable/disable logging of the time a task is done with the CLOSED: tag.
+    Set to 1 to enable logging, 0 to disable.  (Default: 1)
+
+g:todo_log_into_drawer              (property: +LOGDRAWER)
+
+    Set the name of the drawer to log state changes into. If blank, then don't
+    log state changes into a drawer. (Default: LOGBOOK)
+
+g:todo_states                       (property: +STATES)
+
+    Set a custom list of valid task states.
+
+    If set in the vimrc file, this is a list of valid state progressions, each
+    progression of which is itself a list. To set multiple state progressions
+    using properties, just use multiple +STATES lines.
+
+    If '|' is included in a given state progression, it separates normal
+    states from "done" states. If '|' is not present, then all states in that
+    progression are normal states. To have a progression made entirely of done
+    states, put '|' as the first entry in the list.
+
+    Each state should be in all caps (e.g. TODO). An optional shortcut key
+    (for use with <LocalLeader>cv) can be added in parentheses after the state
+    (e.g. "TODO(t)").
+
+    To set the colors for each state, see the g:todo_state_colors option.
+
+    Examples (vimrc first, then properties example below): >
+
+    let g:todo_states=[['TODO(t)', '|', 'DONE(d)', 'CANCELLED(c)'],
+        \['WAITING(w)', 'HOLD(h)', 'INPROGRESS(i)', 'SOMEDAY(s)', 'CLOSED(l)']]
+
+    :SETTINGS:
+        +STATES: TODO(t) | DONE(d) CANCELLED(c)
+        +STATES: WAITING(w) HOLD(g) INPROGRESS(i) SOMEDAY(s) CLOSED(l)
+
+g:todo_state_colors                 (property: +STATECOLORS)
+
+    Set the highlight colors for each state.
+
+    This is a map from state names to colors. Any color name recognized by vim
+    can be used here. Standard colors such as 'Red', 'Blue', 'Green', 'Grey'
+    are all recognized.
+
+    When using the +STATECOLORS property, use a colon to separate the state
+    name from the color, separate each state/color pair with a comma, and use
+    multiple property lines if required.
+
+    Examples (vimrc first, then properties example below): >
+
+    let g:todo_state_colors= {
+        \'DONE': 'Green',
+        \'CLOSED': 'Grey',
+        \'CANCELLED': 'Red',
+        \'TODO': 'Blue',
+        \'WAITING': 'Yellow',
+        \'HOLD': 'Grey',
+        \'INPROGRESS': 'Cyan',
+        \'SOMEDAY': 'Grey'
+        \}
+
+    :SETTINGS:
+        +STATECOLORS: DONE:Green, CLOSED:Grey, CANCELLED:Red, TODO:Blue
+        +STATECOLORS: WAITING:Yellow, HOLD:Grey, INPROGRESS:Cyan
+        +STATECOLORS: SOMEDAY:Grey
+
+g:todo_taskurl                      (property: +TASKURL)
+
+    Sets the url for referencing external task manager tickets using tidXXXX
+    format in an entry.
+
+    Any occurence of %s in the URL will be replaced with the id of the ticket
+    when <LocalLeader>ct is used.
+
+    Default: blank (<LocalLeader>ct does nothing)
+
+g:todo_browser                      (property: +BROWSER)
+
+    Sets the command to use when loading a url or external ticket. The command
+    is executed with a single parameter - the URL to load in the browser.
+
+    If you are running GNOME, then 'gnome-open' is a good choice, as it will
+    load your default browser. Likewise, Mac users can use 'open' for this. If
+    you want a specific browser to open, you can specify that instead.
+
+    Default: blank (any commands that require this will have no effect)
+
+==============================================================================
+TROUBLESHOOTING                                     *vimtodo-troubleshooting*
+
+When I load a todo file (or set ft=todo), the syntax coloring shows up, but
+none of the commands seem to work.
+
+    Make sure you have filetype plugins enabled in your vim config. This can
+    be done by adding 'filetype plugin on' to your .vimrc file. See
+    |:filetype-plugin-on| for more details.
+
+==============================================================================
+REPORTING BUGS AND FEATURE REQUESTS                             *vimtodo-bugs*
+
+Vimtodo uses github for bug tracking. Go to
+http://github.com/mivok/vimtodo/issues to report any issues.
+
+The latest version of the script is always available on github:
+
+http://github.com/mivok/vimtodo
+
+==============================================================================
+  vim:ft=help:tw=78
