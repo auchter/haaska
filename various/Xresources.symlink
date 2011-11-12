@@ -1,0 +1,26 @@
+! Theme from https://gist.github.com/845878
+URxvt*background: #101010
+URxvt*foreground: #d0d0d0
+URxvt*cursorColor: #d0d0d0
+URxvt*color0: #101010
+URxvt*color1: #960050
+URxvt*color2: #66aa11
+URxvt*color3: #c47f2c
+URxvt*color4: #30309b
+URxvt*color5: #7e40a5
+URxvt*color6: #3579a8
+URxvt*color7: #9999aa
+URxvt*color8: #303030
+URxvt*color9: #ff0090
+URxvt*color10: #80ff00
+URxvt*color11: #ffba68
+URxvt*color12: #5f5fee
+URxvt*color13: #bb88dd
+URxvt*color14: #4eb4fa
+URxvt*color15: #d0d0d0
+URxvt*scrollBar: false
+
+xpdf*antialias: yes
+xpdf*foreground: black
+xpdf*background: white
+
