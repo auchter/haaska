@@ -1,0 +1,9 @@
+export ZSH=$HOME/.dotfiles
+
+for config_file ($ZSH/**/*.zsh) source $config_file
+
+autoload -U compinit
+compinit
+
+#for config_file ($ZSH/**/completion.sh) source $config_file
+

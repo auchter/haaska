@@ -1,0 +1,5 @@
+alias sd="screen -d -x"
+alias vi="vim"
+alias rs="source ~/.zshrc"
+alias mv="mv -n"
+alias ..="cd .."
