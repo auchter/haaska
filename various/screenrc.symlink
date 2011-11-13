@@ -1,0 +1,8 @@
+startup_message off
+term screen-256color
+setenv LC_CTYPE en_US.UTF-8
+defscrollback 5000
+vbell off
+hardstatus alwayslastline "%{=}%-w%{+b w}%n %t%{-b w}%+w %=%c"
+defutf8 on
+
