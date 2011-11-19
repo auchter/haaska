@@ -130,6 +130,13 @@ sunmap w
 sunmap b
 sunmap e
 
+nmap <leader>a: :Tabularize /:\zs<CR>
+vmap <leader>a: :Tabularize /:\zs<CR>
+nmap <leader>a= :Tabularize /=<CR>
+vmap <leader>a= :Tabularize /=<CR>
+nmap <leader>a<space> :Tabularize /[*&]*[a-zA-Z0-9_]\+;<CR>
+vmap <leader>a<space> :Tabularize /[*&]*[a-zA-Z0-9_]\+;<CR>
+
 runtime plugin/supertab.vim
 call omni#cpp#complete#Init()
 
