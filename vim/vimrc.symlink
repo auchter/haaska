@@ -40,6 +40,7 @@ set scrolloff=3
 set grepprg=grep\ -nH\ $*
 set nowrap
 set backupdir=$HOME/.vim/backup
+set clipboard=autoselect,unnamed,exclude:cons\|linux
 set guioptions=
 "set columns=100
 set vb t_vb=
