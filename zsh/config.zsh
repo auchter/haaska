@@ -17,4 +17,5 @@ bindkey '^P' reverse-menu-complete
 bindkey '^N' expand-or-complete
 
 export EDITOR="vim"
+export BROWSER="firefox"
 export PATH=$PATH:$ZSH/bin
