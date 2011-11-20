@@ -166,6 +166,8 @@ augroup kernel
    au BufNewFile,BufRead,BufEnter */linux/**,*/linux-2.6*/** syntax keyword cOperator likely unlikely
 augroup END
 
+match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
+
 if has("win32")
    let g:Tlist_Inc_Winwidth = 0
    set guifont=Consolas:h8:cANSI
