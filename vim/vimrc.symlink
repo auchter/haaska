@@ -49,6 +49,7 @@ au GUIEnter * set vb t_vb=       " no really, i mean it
 
 set tags+=tags
 set tags+=$HOME/.vim/tags/cpp
+set tags+=$HOME/.vim/tags/stl
 set tags+=/usr/src/linux/tags
 
 if v:version >= 730
