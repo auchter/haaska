@@ -1,0 +1,33 @@
+set from         = "Michael Auchter"
+set realname     = "Michael Auchter"
+set alias_file   = ~/.mutt/alias
+set header_cache = ~/.mutt/header-cache
+set folder       = "$HOME/mail/"
+set spoolfile    = "=misc"
+set postponed    = "=drafts"
+set sendmail     = "/usr/bin/msmtp"
+set mbox_type    = Maildir
+set sort         = threads
+set sort_aux     = reverse-last-date-received
+set index_format = "%4C %Z %{%d %b %H:%M}   %-20.20L   %s"
+set quit
+set fast_reply
+set include
+set forward_quote
+
+auto_view text/html
+alternative_order text/plain text/enriched text/html
+
+source ~/.mutt/mutt-colors-solarized-dark-16.muttrc
+
+bind index j next-entry
+bind index k previous-entry
+bind index J next-thread
+bind index K previous-thread
+bind index \CF next-page
+bind index \CB previous-page
+
+bind pager j next-line
+bind pager k previous-line
+
+mailboxes =misc =reviews =work =cars =invites =builds =drafts =other =perforce
