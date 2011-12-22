@@ -105,6 +105,7 @@ nmap <leader>fm :FufMruFile<CR>
 nmap <leader>pd :PDiff<CR>
 nmap <leader>pe :PEdit<CR>
 nmap <leader>pr :PRevert<CR>
+nmap <space> <c-w><c-w>
 
 vmap r "_dP
 map <F8> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q . <CR>
@@ -121,8 +122,8 @@ nmap <C-_> <C-w>_
 nmap <C-q> :bd<CR>
 nmap     <C-w>|
 
-nmap <Left> :bp<CR>
-nmap <Right> :bn<CR>
+nmap <silent><Left> :bp<CR>
+nmap <silent><Right> :bn<CR>
 
 " since people love them some camelcase
 map <silent> w <Plug>CamelCaseMotion_w
