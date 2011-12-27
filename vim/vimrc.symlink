@@ -22,10 +22,6 @@ set smartcase                     " ignore case unless i type something uppercas
 set autoindent                    " indent for me
 set smartindent                   " don't be stupid
 set backspace=indent,eol,start    " always allow backspacing
-set expandtab                     " use spaces instead of <tab>
-set tabstop=3                     " make <tab> look like 3 spaces
-set softtabstop=3                 " backspace over tabs like they're spaces
-set shiftwidth=3                  " insert 3 spaces for <tab>
 set textwidth=80                  " long lines are annoying
 set formatoptions=t               " wrap text to 80 chars
 set formatoptions+=croqw          " wrap comments sanely
@@ -176,4 +172,17 @@ if has("win32")
 else
    set guifont=Inconsolata\ 8
 endif
+
+" Idea from http://vim.wikia.com/wiki/Toggle_between_tabs_and_spaces
+set ts=3 sw=3 sts=3 expandtab " people who pay me like this style...
+function! TabToggle()
+   if &expandtab
+      set sw=8 ts=8 sts=8 noexpandtab
+      echo "kernel style"
+   else
+      set sw=3 ts=3 sts=3 expandtab
+      echo "work style"
+   endif
+endfunction
+nmap <silent><F2> mZ:execute TabToggle()<CR>`Z
 
