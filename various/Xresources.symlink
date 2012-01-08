@@ -24,3 +24,6 @@ xpdf*background:  white
 *color14:  #93a1a1
 *color7:   #eee8d5
 *color15:  #fdf6e3
+
+urxvt*perl-lib: /home/mauchter/.dotfiles/plan9/
+urxvt*perl-ext: -matcher,plumb
