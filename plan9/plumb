@@ -1,0 +1,103 @@
+#! perl
+# From: http://sqweek.net/urxvt/plumb
+use Cwd;
+
+my $wdir = getcwd;
+my @sweep_start;
+my @oldsel;
+
+sub linearpos {
+	my ($self, $row, $col) = @_;
+
+	return $row*$self->ncol + $col;
+}
+	
+sub mkselection {
+	my ($self, $time, $row1, $col1, $row2, $col2) = @_;
+
+	if (linearpos($self, $row1, $col1) <= linearpos($self, $row2, $col2)) {
+		$self->selection_beg($row1, $col1);
+		$self->selection_end($row2, $col2);
+	} else {
+		$self->selection_beg($row2, $col2);
+		$self->selection_end($row1, $col1);
+	}
+	$self->selection_make($time);
+}
+
+sub on_osc_seq {
+	my ($self, $op, $args) = @_;
+
+	if ($op == 0 or $op == 2) {
+		if ($args =~ /^[\/~]/) {
+			$wdir = $args;
+			$wdir =~ s/\/-[^\/]*//;
+			$wdir =~ s/^~/$ENV{HOME}/;
+		}
+	}
+
+	()
+}
+
+sub on_motion_notify {
+	my ($self, $event) = @_;
+
+	if ($event->{state} & urxvt::Button3Mask) {
+		if (!@oldsel) {
+			@oldsel = ($self->selection_beg, $self->selection_end);
+		}
+		mkselection($self, $event->{time}, @sweep_start, $event->{row}, $event->{col});
+		return 1;
+	}
+
+	()
+}
+
+sub on_button_press {
+	my ($self, $event) = @_;
+
+	if ($event->{button} == 3) {
+		@sweep_start = ($event->{row}, $event->{col});
+		@oldsel = ();
+		return 1;
+	}
+
+	()
+}
+
+sub on_button_release {
+	my ($self, $event) = @_;
+
+	if ($event->{button} == 3) {
+		my $data;
+		my $begin = linearpos($self, $self->selection_beg);
+		my $end = linearpos($self, $self->selection_end);
+		my $pointer = linearpos($self, $event->{"row"}, $event->{"col"});
+		my @clickpos = ();
+		if ($begin == $end or $pointer < $begin or $pointer > $end) {
+			# no selection or clicked outside selection
+			my $line = $self->special_decode($self->line($event->{"row"})->t);
+			# split line around the cursor
+			my $pref = substr($line, 0, $event->{"col"});
+			my $post = substr($line, $event->{"col"});
+			@clickpos = ("-a", "click=".length($pref));
+			$pref =~ s/.*\s//;
+			$post =~ s/\s.*//;
+			$data = $pref.$post;
+		} else {
+			$data = $self->selection;
+		}
+
+		$self->exec_async("plumb", @clickpos, "-w", $wdir, $data);
+
+		if (@oldsel && linearpos($self, $oldsel[0], $oldsel[1]) != linearpos($self, $oldsel[2], $oldsel[3])) {
+			$self->selection_beg($oldsel[0], $oldsel[1]);
+			$self->selection_end($oldsel[2], $oldsel[3]);
+			$self->selection_make($event->{time});
+		}
+		return 1;
+	}
+
+	()
+}
+
