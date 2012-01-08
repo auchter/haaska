@@ -6,11 +6,14 @@ if [[ -d $PLAN9 ]]; then
    export PATH=$PATH:$PLAN9/bin
 
    [[ ! -d $NAMESPACE ]] && mkdir $NAMESPACE
+fi
 
+# Some installations don't include plumber...
+if [[ -e $PLAN9/bin/plumber ]]; then
    9p read plumb/rules >/dev/null 2>/dev/null
    [[ $? -ne 0 ]] && plumber 2>/dev/null
 
    # first rule wins, so make sure files are named in proper order
    cat $ZSH/plan9/*.plumbing $PLAN9/plumb/initial.plumbing | 9p write plumb/rules >/dev/null
-
 fi
+
