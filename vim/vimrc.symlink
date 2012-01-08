@@ -138,6 +138,9 @@ vmap <leader>ad :Tabularize /[*&]*[a-zA-Z0-9_]\+;<CR>
 nmap <leader>a<space> :Tabularize / \+\zs/l1<CR>
 vmap <leader>a<space> :Tabularize / \+\zs/l1<CR>
 
+nnoremap <silent> <Leader>f :CommandT<CR>
+nnoremap <silent> <Leader>b :CommandTBuffer<CR>
+
 runtime plugin/supertab.vim
 call omni#cpp#complete#Init()
 
