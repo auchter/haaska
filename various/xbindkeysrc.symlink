@@ -1,0 +1,10 @@
+
+"amixer set Master 1%+; amixer set PCM 1%+":
+   XF86AudioRaiseVolume
+
+"amixer set Master 1%-; amixer set PCM 1%-":
+   XF86AudioLowerVolume
+
+"amixer set Master toggle":
+   XF86AudioMute
+
