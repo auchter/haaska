@@ -93,11 +93,6 @@ nmap <leader>dt :%s/\s\+$//<CR>
 nmap <leader>sb :set scrollbind<CR>
 nmap <leader>f vipgq
 
-nmap <leader>ff :FufFile<CR>
-nmap <leader>fb :FufBuffer<CR>
-nmap <leader>ft :FufTag<CR>
-nmap <leader>fm :FufMruFile<CR>
-
 nmap <leader>pd :PDiff<CR>
 nmap <leader>pe :PEdit<CR>
 nmap <leader>pr :PRevert<CR>
