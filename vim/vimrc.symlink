@@ -41,6 +41,7 @@ set guioptions=
 "set columns=100
 set vb t_vb=
 set completeopt=longest,menuone
+set wildmode=list:longest
 au GUIEnter * set vb t_vb=       " no really, i mean it
 
 set tags+=tags
@@ -135,6 +136,10 @@ vmap <leader>a<space> :Tabularize / \+\zs/l1<CR>
 
 nnoremap <silent> <Leader>f :CommandT<CR>
 nnoremap <silent> <Leader>b :CommandTBuffer<CR>
+
+" center search results
+nnoremap n nzz
+nnoremap N Nzz
 
 runtime plugin/supertab.vim
 call omni#cpp#complete#Init()
