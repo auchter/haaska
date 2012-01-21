@@ -56,7 +56,7 @@ endif
 
 set wildmenu
 set wildignore =*.o,*.so,*.dll,*.a,*.vi,*.exe,*.cd
-set wildignore+=*.ko
+set wildignore+=*.ko,tags
 set wildignore+=*.sln,*.vcproj,*.vspscc,*.dsw,*.dsp
 set wildignore+=*.png,*.pdf,*.bmp,*.jpg,*.jpeg,*.gif
 
