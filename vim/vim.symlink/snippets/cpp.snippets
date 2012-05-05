@@ -41,3 +41,10 @@ snippet method
 	{
 		${4:/* body */}
 	}
+
+snippet sc<
+	static_cast<${1:T}>(${2:name});
+snippet rc<
+	reinterpret_cast<${1:T}>(${2:name});
+snippet cc<
+	const_cast<${1:T}>(${2:name});
