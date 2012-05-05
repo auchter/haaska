@@ -86,7 +86,7 @@ com! Evimrc :sp $MYVIMRC
 
 nmap <leader>h :set hlsearch! hlsearch?<CR>
 nmap <leader>s :new<CR>:set buftype=nofile<CR>
-nmap <leader>t :TlistToggle<CR>
+nmap <leader>t :TagbarToggle<CR>
 nmap <leader>n :NERDTreeToggle<CR>
 nmap <leader>m :MiniBufExplorer<CR>
 nmap <leader>nc :NERDTree %:p:h<CR>
@@ -169,7 +169,6 @@ augroup END
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 
 if has("win32")
-   let g:Tlist_Inc_Winwidth = 0
    set guifont=Consolas:h8:cANSI
    map <F8> :!start ctags -R --c++-kinds=+p --fields=+iaS --extra=+q . <CR>
 else
