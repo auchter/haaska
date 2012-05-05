@@ -141,6 +141,8 @@ nnoremap <silent> <Leader>b :CommandTBuffer<CR>
 nnoremap n nzz
 nnoremap N Nzz
 
+nnoremap <silent> <C-]> <C-]><CR>
+
 runtime plugin/supertab.vim
 call omni#cpp#complete#Init()
 
