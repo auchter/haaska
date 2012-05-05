@@ -8,3 +8,8 @@
 "amixer set Master toggle":
    XF86AudioMute
 
+"sudo /usr/sbin/s2ram -f":
+   XF86Sleep
+
+"slock":
+   XF86ScreenSaver
