@@ -1,0 +1,5 @@
+xbindkeys
+xmodmap ~/.xmodmaprc
+xset -b # STOP THE BLOODY BEEPING
+xrdb .Xresources
+exec i3
