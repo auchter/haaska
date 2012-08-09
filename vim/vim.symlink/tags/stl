@@ -1058,6 +1058,31 @@ stable_sort	stl/stl_algo.h	/^    stable_sort(_RandomAccessIterator __first, _Ran
 stable_sort	stl/stl_algo.h	/^    stable_sort(_RandomAccessIterator __first, _RandomAccessIterator __last,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last, _Compare __comp)
 stack	stl/stl_stack.h	/^      stack(const _Sequence& __c = _Sequence())$/;"	f	class:std::stack	access:public	signature:(const _Sequence& __c = _Sequence())
 stack	stl/stl_stack.h	/^    class stack$/;"	c	namespace:std
+std	stl/stl_algo.h	 /^namespace std {$/;"   n
+std	stl/stl_algobase.h	     /^namespace std {$/;"	n
+std	stl/stl_bvector.h	      /^namespace std {$/;"	n
+std	stl/stl_construct.h	    /^namespace std {$/;"	n
+std	stl/stl_deque.h	/^namespace std {$/;"	n
+std	stl/stl_function.h	     /^namespace std {$/;"	n
+std	stl/stl_heap.h	 /^namespace std {$/;"	n
+std	stl/stl_iterator.h	     /^namespace std {$/;"	n
+std	stl/stl_iterator_base_funcs.h	  /^namespace std {$/;"	n
+std	stl/stl_iterator_base_types.h	  /^namespace std {$/;"	n
+std	stl/stl_list.h	 /^namespace std {$/;"	n
+std	stl/stl_map.h	  /^namespace std {$/;"	n
+std	stl/stl_multimap.h	     /^namespace std {$/;"	n
+std	stl/stl_multiset.h	     /^namespace std {$/;"	n
+std	stl/stl_numeric.h	      /^namespace std {$/;"	n
+std	stl/stl_pair.h	 /^namespace std {$/;"	n
+std	stl/stl_queue.h	/^namespace std {$/;"	n
+std	stl/stl_raw_storage_iter.h	     /^namespace std {$/;"	n
+std	stl/stl_relops.h	       /^namespace std {$/;"	n
+std	stl/stl_set.h	  /^namespace std {$/;"	n
+std	stl/stl_stack.h	/^namespace std {$/;"	n
+std	stl/stl_tempbuf.h	      /^namespace std {$/;"	n
+std	stl/stl_tree.h	 /^namespace std {$/;"	n
+std	stl/stl_uninitialized.h	/^namespace std {$/;"	n
+std	stl/stl_vector.h	       /^namespace std {$/;"	n
 std::accumulate	stl/stl_numeric.h	/^    accumulate(_InputIterator __first, _InputIterator __last, _Tp __init)$/;"	f	namespace:std	signature:(_InputIterator __first, _InputIterator __last, _Tp __init)
 std::accumulate	stl/stl_numeric.h	/^    accumulate(_InputIterator __first, _InputIterator __last, _Tp __init,$/;"	f	namespace:std	signature:(_InputIterator __first, _InputIterator __last, _Tp __init, _BinaryOperation __binary_op)
 std::adjacent_difference	stl/stl_numeric.h	/^    adjacent_difference(_InputIterator __first, _InputIterator __last,$/;"	f	namespace:std	signature:(_InputIterator __first, _InputIterator __last, _OutputIterator __result, _BinaryOperation __binary_op)
