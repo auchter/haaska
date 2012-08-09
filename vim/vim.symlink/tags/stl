@@ -1058,640 +1058,6 @@ stable_sort	stl/stl_algo.h	/^    stable_sort(_RandomAccessIterator __first, _Ran
 stable_sort	stl/stl_algo.h	/^    stable_sort(_RandomAccessIterator __first, _RandomAccessIterator __last,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last, _Compare __comp)
 stack	stl/stl_stack.h	/^      stack(const _Sequence& __c = _Sequence())$/;"	f	class:std::stack	access:public	signature:(const _Sequence& __c = _Sequence())
 stack	stl/stl_stack.h	/^    class stack$/;"	c	namespace:std
-std	stl/stl_algo.h	/^namespace std {$/;"	n
-std	stl/stl_algobase.h	/^namespace std {$/;"	n
-std	stl/stl_bvector.h	/^namespace std {$/;"	n
-std	stl/stl_construct.h	/^namespace std {$/;"	n
-std	stl/stl_deque.h	/^namespace std {$/;"	n
-std	stl/stl_function.h	/^namespace std {$/;"	n
-std	stl/stl_heap.h	/^namespace std {$/;"	n
-std	stl/stl_iterator.h	/^namespace std {$/;"	n
-std	stl/stl_iterator_base_funcs.h	/^namespace std {$/;"	n
-std	stl/stl_iterator_base_types.h	/^namespace std {$/;"	n
-std	stl/stl_list.h	/^namespace std {$/;"	n
-std	stl/stl_map.h	/^namespace std {$/;"	n
-std	stl/stl_multimap.h	/^namespace std {$/;"	n
-std	stl/stl_multiset.h	/^namespace std {$/;"	n
-std	stl/stl_numeric.h	/^namespace std {$/;"	n
-std	stl/stl_pair.h	/^namespace std {$/;"	n
-std	stl/stl_queue.h	/^namespace std {$/;"	n
-std	stl/stl_raw_storage_iter.h	/^namespace std {$/;"	n
-std	stl/stl_relops.h	/^namespace std {$/;"	n
-std	stl/stl_set.h	/^namespace std {$/;"	n
-std	stl/stl_stack.h	/^namespace std {$/;"	n
-std	stl/stl_tempbuf.h	/^namespace std {$/;"	n
-std	stl/stl_tree.h	/^namespace std {$/;"	n
-std	stl/stl_uninitialized.h	/^namespace std {$/;"	n
-std	stl/stl_vector.h	/^namespace std {$/;"	n
-std::_Bit_const_iterator	stl/stl_bvector.h	/^  struct _Bit_const_iterator : public _Bit_iterator_base$/;"	s	namespace:std	inherits:_Bit_iterator_base
-std::_Bit_const_iterator::_Bit_const_iterator	stl/stl_bvector.h	/^    _Bit_const_iterator() : _Bit_iterator_base(0, 0) { }$/;"	f	struct:std::_Bit_const_iterator	access:public	signature:()
-std::_Bit_const_iterator::_Bit_const_iterator	stl/stl_bvector.h	/^    _Bit_const_iterator(_Bit_type * __x, unsigned int __y)$/;"	f	struct:std::_Bit_const_iterator	access:public	signature:(_Bit_type * __x, unsigned int __y)
-std::_Bit_const_iterator::_Bit_const_iterator	stl/stl_bvector.h	/^    _Bit_const_iterator(const _Bit_iterator& __x)$/;"	f	struct:std::_Bit_const_iterator	access:public	signature:(const _Bit_iterator& __x)
-std::_Bit_const_iterator::const_iterator	stl/stl_bvector.h	/^    typedef _Bit_const_iterator  const_iterator;$/;"	t	struct:std::_Bit_const_iterator	access:public
-std::_Bit_const_iterator::const_reference	stl/stl_bvector.h	/^    typedef bool                 const_reference;$/;"	t	struct:std::_Bit_const_iterator	access:public
-std::_Bit_const_iterator::operator *	stl/stl_bvector.h	/^    operator*() const$/;"	f	struct:std::_Bit_const_iterator	access:public	signature:() const
-std::_Bit_const_iterator::operator +	stl/stl_bvector.h	/^    operator+(difference_type __i) const$/;"	f	struct:std::_Bit_const_iterator	access:public	signature:(difference_type __i) const
-std::_Bit_const_iterator::operator ++	stl/stl_bvector.h	/^    operator++()$/;"	f	struct:std::_Bit_const_iterator	access:public	signature:()
-std::_Bit_const_iterator::operator ++	stl/stl_bvector.h	/^    operator++(int)$/;"	f	struct:std::_Bit_const_iterator	access:public	signature:(int)
-std::_Bit_const_iterator::operator +=	stl/stl_bvector.h	/^    operator+=(difference_type __i)$/;"	f	struct:std::_Bit_const_iterator	access:public	signature:(difference_type __i)
-std::_Bit_const_iterator::operator -	stl/stl_bvector.h	/^    operator-(difference_type __i) const$/;"	f	struct:std::_Bit_const_iterator	access:public	signature:(difference_type __i) const
-std::_Bit_const_iterator::operator --	stl/stl_bvector.h	/^    operator--()$/;"	f	struct:std::_Bit_const_iterator	access:public	signature:()
-std::_Bit_const_iterator::operator --	stl/stl_bvector.h	/^    operator--(int)$/;"	f	struct:std::_Bit_const_iterator	access:public	signature:(int)
-std::_Bit_const_iterator::operator -=	stl/stl_bvector.h	/^    operator-=(difference_type __i)$/;"	f	struct:std::_Bit_const_iterator	access:public	signature:(difference_type __i)
-std::_Bit_const_iterator::operator []	stl/stl_bvector.h	/^    operator[](difference_type __i) const$/;"	f	struct:std::_Bit_const_iterator	access:public	signature:(difference_type __i) const
-std::_Bit_const_iterator::pointer	stl/stl_bvector.h	/^    typedef const bool*          pointer;$/;"	t	struct:std::_Bit_const_iterator	access:public
-std::_Bit_const_iterator::reference	stl/stl_bvector.h	/^    typedef bool                 reference;$/;"	t	struct:std::_Bit_const_iterator	access:public
-std::_Bit_iterator	stl/stl_bvector.h	/^  struct _Bit_iterator : public _Bit_iterator_base$/;"	s	namespace:std	inherits:_Bit_iterator_base
-std::_Bit_iterator::_Bit_iterator	stl/stl_bvector.h	/^    _Bit_iterator() : _Bit_iterator_base(0, 0) { }$/;"	f	struct:std::_Bit_iterator	access:public	signature:()
-std::_Bit_iterator::_Bit_iterator	stl/stl_bvector.h	/^    _Bit_iterator(_Bit_type * __x, unsigned int __y)$/;"	f	struct:std::_Bit_iterator	access:public	signature:(_Bit_type * __x, unsigned int __y)
-std::_Bit_iterator::iterator	stl/stl_bvector.h	/^    typedef _Bit_iterator   iterator;$/;"	t	struct:std::_Bit_iterator	access:public
-std::_Bit_iterator::operator *	stl/stl_bvector.h	/^    operator*() const$/;"	f	struct:std::_Bit_iterator	access:public	signature:() const
-std::_Bit_iterator::operator +	stl/stl_bvector.h	/^    operator+(difference_type __i) const$/;"	f	struct:std::_Bit_iterator	access:public	signature:(difference_type __i) const
-std::_Bit_iterator::operator ++	stl/stl_bvector.h	/^    operator++()$/;"	f	struct:std::_Bit_iterator	access:public	signature:()
-std::_Bit_iterator::operator ++	stl/stl_bvector.h	/^    operator++(int)$/;"	f	struct:std::_Bit_iterator	access:public	signature:(int)
-std::_Bit_iterator::operator +=	stl/stl_bvector.h	/^    operator+=(difference_type __i)$/;"	f	struct:std::_Bit_iterator	access:public	signature:(difference_type __i)
-std::_Bit_iterator::operator -	stl/stl_bvector.h	/^    operator-(difference_type __i) const$/;"	f	struct:std::_Bit_iterator	access:public	signature:(difference_type __i) const
-std::_Bit_iterator::operator --	stl/stl_bvector.h	/^    operator--()$/;"	f	struct:std::_Bit_iterator	access:public	signature:()
-std::_Bit_iterator::operator --	stl/stl_bvector.h	/^    operator--(int)$/;"	f	struct:std::_Bit_iterator	access:public	signature:(int)
-std::_Bit_iterator::operator -=	stl/stl_bvector.h	/^    operator-=(difference_type __i)$/;"	f	struct:std::_Bit_iterator	access:public	signature:(difference_type __i)
-std::_Bit_iterator::operator []	stl/stl_bvector.h	/^    operator[](difference_type __i) const$/;"	f	struct:std::_Bit_iterator	access:public	signature:(difference_type __i) const
-std::_Bit_iterator::pointer	stl/stl_bvector.h	/^    typedef _Bit_reference* pointer;$/;"	t	struct:std::_Bit_iterator	access:public
-std::_Bit_iterator::reference	stl/stl_bvector.h	/^    typedef _Bit_reference  reference;$/;"	t	struct:std::_Bit_iterator	access:public
-std::_Bit_iterator_base	stl/stl_bvector.h	/^  struct _Bit_iterator_base$/;"	s	namespace:std	inherits:std::iterator
-std::_Bit_iterator_base::_Bit_iterator_base	stl/stl_bvector.h	/^    _Bit_iterator_base(_Bit_type * __x, unsigned int __y)$/;"	f	struct:std::_Bit_iterator_base	access:public	signature:(_Bit_type * __x, unsigned int __y)
-std::_Bit_iterator_base::_M_bump_down	stl/stl_bvector.h	/^    _M_bump_down()$/;"	f	struct:std::_Bit_iterator_base	access:public	signature:()
-std::_Bit_iterator_base::_M_bump_up	stl/stl_bvector.h	/^    _M_bump_up()$/;"	f	struct:std::_Bit_iterator_base	access:public	signature:()
-std::_Bit_iterator_base::_M_incr	stl/stl_bvector.h	/^    _M_incr(ptrdiff_t __i)$/;"	f	struct:std::_Bit_iterator_base	access:public	signature:(ptrdiff_t __i)
-std::_Bit_iterator_base::_M_offset	stl/stl_bvector.h	/^    unsigned int _M_offset;$/;"	m	struct:std::_Bit_iterator_base	access:public
-std::_Bit_iterator_base::_M_p	stl/stl_bvector.h	/^    _Bit_type * _M_p;$/;"	m	struct:std::_Bit_iterator_base	access:public
-std::_Bit_iterator_base::operator !=	stl/stl_bvector.h	/^    operator!=(const _Bit_iterator_base& __i) const$/;"	f	struct:std::_Bit_iterator_base	access:public	signature:(const _Bit_iterator_base& __i) const
-std::_Bit_iterator_base::operator <	stl/stl_bvector.h	/^    operator<(const _Bit_iterator_base& __i) const$/;"	f	struct:std::_Bit_iterator_base	access:public	signature:(const _Bit_iterator_base& __i) const
-std::_Bit_iterator_base::operator <=	stl/stl_bvector.h	/^    operator<=(const _Bit_iterator_base& __i) const$/;"	f	struct:std::_Bit_iterator_base	access:public	signature:(const _Bit_iterator_base& __i) const
-std::_Bit_iterator_base::operator ==	stl/stl_bvector.h	/^    operator==(const _Bit_iterator_base& __i) const$/;"	f	struct:std::_Bit_iterator_base	access:public	signature:(const _Bit_iterator_base& __i) const
-std::_Bit_iterator_base::operator >	stl/stl_bvector.h	/^    operator>(const _Bit_iterator_base& __i) const$/;"	f	struct:std::_Bit_iterator_base	access:public	signature:(const _Bit_iterator_base& __i) const
-std::_Bit_iterator_base::operator >=	stl/stl_bvector.h	/^    operator>=(const _Bit_iterator_base& __i) const$/;"	f	struct:std::_Bit_iterator_base	access:public	signature:(const _Bit_iterator_base& __i) const
-std::_Bit_reference	stl/stl_bvector.h	/^  struct _Bit_reference$/;"	s	namespace:std
-std::_Bit_reference::_Bit_reference	stl/stl_bvector.h	/^    _Bit_reference() : _M_p(0), _M_mask(0) { }$/;"	f	struct:std::_Bit_reference	access:public	signature:()
-std::_Bit_reference::_Bit_reference	stl/stl_bvector.h	/^    _Bit_reference(_Bit_type * __x, _Bit_type __y)$/;"	f	struct:std::_Bit_reference	access:public	signature:(_Bit_type * __x, _Bit_type __y)
-std::_Bit_reference::_M_mask	stl/stl_bvector.h	/^    _Bit_type _M_mask;$/;"	m	struct:std::_Bit_reference	access:public
-std::_Bit_reference::_M_p	stl/stl_bvector.h	/^    _Bit_type * _M_p;$/;"	m	struct:std::_Bit_reference	access:public
-std::_Bit_reference::flip	stl/stl_bvector.h	/^    flip()$/;"	f	struct:std::_Bit_reference	access:public	signature:()
-std::_Bit_reference::operator <	stl/stl_bvector.h	/^    operator<(const _Bit_reference& __x) const$/;"	f	struct:std::_Bit_reference	access:public	signature:(const _Bit_reference& __x) const
-std::_Bit_reference::operator =	stl/stl_bvector.h	/^    operator=(bool __x)$/;"	f	struct:std::_Bit_reference	access:public	signature:(bool __x)
-std::_Bit_reference::operator =	stl/stl_bvector.h	/^    operator=(const _Bit_reference& __x)$/;"	f	struct:std::_Bit_reference	access:public	signature:(const _Bit_reference& __x)
-std::_Bit_reference::operator ==	stl/stl_bvector.h	/^    operator==(const _Bit_reference& __x) const$/;"	f	struct:std::_Bit_reference	access:public	signature:(const _Bit_reference& __x) const
-std::_Bit_reference::operator bool	stl/stl_bvector.h	/^    operator bool() const$/;"	f	struct:std::_Bit_reference	access:public	signature:() const
-std::_Bit_type	stl/stl_bvector.h	/^  typedef unsigned long _Bit_type;$/;"	t	namespace:std
-std::_Bvector_base	stl/stl_bvector.h	/^    struct _Bvector_base$/;"	s	namespace:std
-std::_Bvector_base::_Bit_alloc_type	stl/stl_bvector.h	/^        _Bit_alloc_type;$/;"	t	struct:std::_Bvector_base	access:public
-std::_Bvector_base::_Bvector_base	stl/stl_bvector.h	/^      _Bvector_base(const allocator_type& __a) : _M_impl(__a) { }$/;"	f	struct:std::_Bvector_base	access:public	signature:(const allocator_type& __a)
-std::_Bvector_base::_Bvector_impl	stl/stl_bvector.h	/^      struct _Bvector_impl$/;"	s	struct:std::_Bvector_base	inherits:_Bit_alloc_type	access:public
-std::_Bvector_base::_Bvector_impl::_Bvector_impl	stl/stl_bvector.h	/^	_Bvector_impl(const _Bit_alloc_type& __a)$/;"	f	struct:std::_Bvector_base::_Bvector_impl	access:public	signature:(const _Bit_alloc_type& __a)
-std::_Bvector_base::_Bvector_impl::_M_end_of_storage	stl/stl_bvector.h	/^	_Bit_type* 	_M_end_of_storage;$/;"	m	struct:std::_Bvector_base::_Bvector_impl	access:public
-std::_Bvector_base::_Bvector_impl::_M_finish	stl/stl_bvector.h	/^	_Bit_iterator 	_M_finish;$/;"	m	struct:std::_Bvector_base::_Bvector_impl	access:public
-std::_Bvector_base::_Bvector_impl::_M_start	stl/stl_bvector.h	/^	_Bit_iterator 	_M_start;$/;"	m	struct:std::_Bvector_base::_Bvector_impl	access:public
-std::_Bvector_base::_M_allocate	stl/stl_bvector.h	/^      _M_allocate(size_t __n)$/;"	f	struct:std::_Bvector_base	access:protected	signature:(size_t __n)
-std::_Bvector_base::_M_deallocate	stl/stl_bvector.h	/^      _M_deallocate()$/;"	f	struct:std::_Bvector_base	access:protected	signature:()
-std::_Bvector_base::_M_get_Bit_allocator	stl/stl_bvector.h	/^      _M_get_Bit_allocator() const$/;"	f	struct:std::_Bvector_base	access:public	signature:() const
-std::_Bvector_base::_M_get_Bit_allocator	stl/stl_bvector.h	/^      _M_get_Bit_allocator()$/;"	f	struct:std::_Bvector_base	access:public	signature:()
-std::_Bvector_base::_M_impl	stl/stl_bvector.h	/^      _Bvector_impl _M_impl;$/;"	m	struct:std::_Bvector_base	access:protected
-std::_Bvector_base::allocator_type	stl/stl_bvector.h	/^      typedef _Alloc allocator_type;$/;"	t	struct:std::_Bvector_base	access:public
-std::_Bvector_base::get_allocator	stl/stl_bvector.h	/^      get_allocator() const$/;"	f	struct:std::_Bvector_base	access:public	signature:() const
-std::_Bvector_base::~_Bvector_base	stl/stl_bvector.h	/^      ~_Bvector_base()$/;"	f	struct:std::_Bvector_base	access:public	signature:()
-std::_Construct	stl/stl_construct.h	/^    _Construct(_T1* __p)$/;"	f	namespace:std	signature:(_T1* __p)
-std::_Construct	stl/stl_construct.h	/^    _Construct(_T1* __p, const _T2& __value)$/;"	f	namespace:std	signature:(_T1* __p, const _T2& __value)
-std::_Deque_base	stl/stl_deque.h	/^    class _Deque_base$/;"	c	namespace:std
-std::_Deque_base::_Deque_base	stl/stl_deque.h	/^      _Deque_base(const allocator_type& __a)$/;"	f	class:std::_Deque_base	access:public	signature:(const allocator_type& __a)
-std::_Deque_base::_Deque_base	stl/stl_deque.h	/^      _Deque_base(const allocator_type& __a, size_t __num_elements)$/;"	f	class:std::_Deque_base	access:public	signature:(const allocator_type& __a, size_t __num_elements)
-std::_Deque_base::_Deque_impl	stl/stl_deque.h	/^      struct _Deque_impl$/;"	s	class:std::_Deque_base	inherits:_Tp_alloc_type	access:protected
-std::_Deque_base::_Deque_impl::_Deque_impl	stl/stl_deque.h	/^	_Deque_impl(const _Tp_alloc_type& __a)$/;"	f	struct:std::_Deque_base::_Deque_impl	access:public	signature:(const _Tp_alloc_type& __a)
-std::_Deque_base::_Deque_impl::_M_finish	stl/stl_deque.h	/^	iterator _M_finish;$/;"	m	struct:std::_Deque_base::_Deque_impl	access:public
-std::_Deque_base::_Deque_impl::_M_map	stl/stl_deque.h	/^	_Tp** _M_map;$/;"	m	struct:std::_Deque_base::_Deque_impl	access:public
-std::_Deque_base::_Deque_impl::_M_map_size	stl/stl_deque.h	/^	size_t _M_map_size;$/;"	m	struct:std::_Deque_base::_Deque_impl	access:public
-std::_Deque_base::_Deque_impl::_M_start	stl/stl_deque.h	/^	iterator _M_start;$/;"	m	struct:std::_Deque_base::_Deque_impl	access:public
-std::_Deque_base::_M_allocate_map	stl/stl_deque.h	/^      _M_allocate_map(size_t __n)$/;"	f	class:std::_Deque_base	access:protected	signature:(size_t __n)
-std::_Deque_base::_M_allocate_node	stl/stl_deque.h	/^      _M_allocate_node()$/;"	f	class:std::_Deque_base	access:protected	signature:()
-std::_Deque_base::_M_create_nodes	stl/stl_deque.h	/^      void _M_create_nodes(_Tp** __nstart, _Tp** __nfinish);$/;"	p	class:std::_Deque_base	access:protected	signature:(_Tp** __nstart, _Tp** __nfinish)
-std::_Deque_base::_M_create_nodes	stl/stl_deque.h	/^    _M_create_nodes(_Tp** __nstart, _Tp** __nfinish)$/;"	f	class:std::_Deque_base	signature:(_Tp** __nstart, _Tp** __nfinish)
-std::_Deque_base::_M_deallocate_map	stl/stl_deque.h	/^      _M_deallocate_map(_Tp** __p, size_t __n)$/;"	f	class:std::_Deque_base	access:protected	signature:(_Tp** __p, size_t __n)
-std::_Deque_base::_M_deallocate_node	stl/stl_deque.h	/^      _M_deallocate_node(_Tp* __p)$/;"	f	class:std::_Deque_base	access:protected	signature:(_Tp* __p)
-std::_Deque_base::_M_destroy_nodes	stl/stl_deque.h	/^      void _M_destroy_nodes(_Tp** __nstart, _Tp** __nfinish);$/;"	p	class:std::_Deque_base	access:protected	signature:(_Tp** __nstart, _Tp** __nfinish)
-std::_Deque_base::_M_destroy_nodes	stl/stl_deque.h	/^    _M_destroy_nodes(_Tp** __nstart, _Tp** __nfinish)$/;"	f	class:std::_Deque_base	signature:(_Tp** __nstart, _Tp** __nfinish)
-std::_Deque_base::_M_get_Tp_allocator	stl/stl_deque.h	/^      _M_get_Tp_allocator() const$/;"	f	class:std::_Deque_base	access:protected	signature:() const
-std::_Deque_base::_M_get_Tp_allocator	stl/stl_deque.h	/^      _M_get_Tp_allocator()$/;"	f	class:std::_Deque_base	access:protected	signature:()
-std::_Deque_base::_M_get_map_allocator	stl/stl_deque.h	/^      _M_get_map_allocator() const$/;"	f	class:std::_Deque_base	access:protected	signature:() const
-std::_Deque_base::_M_impl	stl/stl_deque.h	/^      _Deque_impl _M_impl;$/;"	m	class:std::_Deque_base	access:protected
-std::_Deque_base::_M_initialize_map	stl/stl_deque.h	/^      void _M_initialize_map(size_t);$/;"	p	class:std::_Deque_base	access:protected	signature:(size_t)
-std::_Deque_base::_M_initialize_map	stl/stl_deque.h	/^    _M_initialize_map(size_t __num_elements)$/;"	f	class:std::_Deque_base	signature:(size_t __num_elements)
-std::_Deque_base::_Map_alloc_type	stl/stl_deque.h	/^      typedef typename _Alloc::template rebind<_Tp*>::other _Map_alloc_type;$/;"	t	class:std::_Deque_base	access:protected
-std::_Deque_base::_S_initial_map_size	stl/stl_deque.h	/^      enum { _S_initial_map_size = 8 };$/;"	e	enum:std::_Deque_base::__anon1
-std::_Deque_base::_Tp_alloc_type	stl/stl_deque.h	/^      typedef typename _Alloc::template rebind<_Tp>::other  _Tp_alloc_type;$/;"	t	class:std::_Deque_base	access:protected
-std::_Deque_base::allocator_type	stl/stl_deque.h	/^      typedef _Alloc                  allocator_type;$/;"	t	class:std::_Deque_base	access:public
-std::_Deque_base::const_iterator	stl/stl_deque.h	/^      typedef _Deque_iterator<_Tp, const _Tp&, const _Tp*> const_iterator;$/;"	t	class:std::_Deque_base	access:public
-std::_Deque_base::get_allocator	stl/stl_deque.h	/^      get_allocator() const$/;"	f	class:std::_Deque_base	access:public	signature:() const
-std::_Deque_base::iterator	stl/stl_deque.h	/^      typedef _Deque_iterator<_Tp, _Tp&, _Tp*>             iterator;$/;"	t	class:std::_Deque_base	access:public
-std::_Deque_base::~_Deque_base	stl/stl_deque.h	/^      ~_Deque_base();$/;"	p	class:std::_Deque_base	access:public	signature:()
-std::_Deque_base::~_Deque_base	stl/stl_deque.h	/^    ~_Deque_base()$/;"	f	class:std::_Deque_base	signature:()
-std::_Deque_iterator	stl/stl_deque.h	/^    struct _Deque_iterator$/;"	s	namespace:std
-std::_Deque_iterator::_Deque_iterator	stl/stl_deque.h	/^      _Deque_iterator() : _M_cur(0), _M_first(0), _M_last(0), _M_node(0) {}$/;"	f	struct:std::_Deque_iterator	access:public	signature:()
-std::_Deque_iterator::_Deque_iterator	stl/stl_deque.h	/^      _Deque_iterator(_Tp* __x, _Map_pointer __y)$/;"	f	struct:std::_Deque_iterator	access:public	signature:(_Tp* __x, _Map_pointer __y)
-std::_Deque_iterator::_Deque_iterator	stl/stl_deque.h	/^      _Deque_iterator(const iterator& __x)$/;"	f	struct:std::_Deque_iterator	access:public	signature:(const iterator& __x)
-std::_Deque_iterator::_M_cur	stl/stl_deque.h	/^      _Tp* _M_cur;$/;"	m	struct:std::_Deque_iterator	access:public
-std::_Deque_iterator::_M_first	stl/stl_deque.h	/^      _Tp* _M_first;$/;"	m	struct:std::_Deque_iterator	access:public
-std::_Deque_iterator::_M_last	stl/stl_deque.h	/^      _Tp* _M_last;$/;"	m	struct:std::_Deque_iterator	access:public
-std::_Deque_iterator::_M_node	stl/stl_deque.h	/^      _Map_pointer _M_node;$/;"	m	struct:std::_Deque_iterator	access:public
-std::_Deque_iterator::_M_set_node	stl/stl_deque.h	/^      _M_set_node(_Map_pointer __new_node)$/;"	f	struct:std::_Deque_iterator	access:public	signature:(_Map_pointer __new_node)
-std::_Deque_iterator::_Map_pointer	stl/stl_deque.h	/^      typedef _Tp**                           _Map_pointer;$/;"	t	struct:std::_Deque_iterator	access:public
-std::_Deque_iterator::_S_buffer_size	stl/stl_deque.h	/^      static size_t _S_buffer_size()$/;"	f	struct:std::_Deque_iterator	access:public	signature:()
-std::_Deque_iterator::_Self	stl/stl_deque.h	/^      typedef _Deque_iterator                 _Self;$/;"	t	struct:std::_Deque_iterator	access:public
-std::_Deque_iterator::const_iterator	stl/stl_deque.h	/^      typedef _Deque_iterator<_Tp, const _Tp&, const _Tp*> const_iterator;$/;"	t	struct:std::_Deque_iterator	access:public
-std::_Deque_iterator::difference_type	stl/stl_deque.h	/^      typedef ptrdiff_t                       difference_type;$/;"	t	struct:std::_Deque_iterator	access:public
-std::_Deque_iterator::iterator	stl/stl_deque.h	/^      typedef _Deque_iterator<_Tp, _Tp&, _Tp*>             iterator;$/;"	t	struct:std::_Deque_iterator	access:public
-std::_Deque_iterator::iterator_category	stl/stl_deque.h	/^      typedef std::random_access_iterator_tag iterator_category;$/;"	t	struct:std::_Deque_iterator	access:public
-std::_Deque_iterator::operator *	stl/stl_deque.h	/^      operator*() const$/;"	f	struct:std::_Deque_iterator	access:public	signature:() const
-std::_Deque_iterator::operator +	stl/stl_deque.h	/^      operator+(difference_type __n) const$/;"	f	struct:std::_Deque_iterator	access:public	signature:(difference_type __n) const
-std::_Deque_iterator::operator ++	stl/stl_deque.h	/^      operator++()$/;"	f	struct:std::_Deque_iterator	access:public	signature:()
-std::_Deque_iterator::operator ++	stl/stl_deque.h	/^      operator++(int)$/;"	f	struct:std::_Deque_iterator	access:public	signature:(int)
-std::_Deque_iterator::operator +=	stl/stl_deque.h	/^      operator+=(difference_type __n)$/;"	f	struct:std::_Deque_iterator	access:public	signature:(difference_type __n)
-std::_Deque_iterator::operator -	stl/stl_deque.h	/^      operator-(difference_type __n) const$/;"	f	struct:std::_Deque_iterator	access:public	signature:(difference_type __n) const
-std::_Deque_iterator::operator --	stl/stl_deque.h	/^      operator--()$/;"	f	struct:std::_Deque_iterator	access:public	signature:()
-std::_Deque_iterator::operator --	stl/stl_deque.h	/^      operator--(int)$/;"	f	struct:std::_Deque_iterator	access:public	signature:(int)
-std::_Deque_iterator::operator -=	stl/stl_deque.h	/^      operator-=(difference_type __n)$/;"	f	struct:std::_Deque_iterator	access:public	signature:(difference_type __n)
-std::_Deque_iterator::operator ->	stl/stl_deque.h	/^      operator->() const$/;"	f	struct:std::_Deque_iterator	access:public	signature:() const
-std::_Deque_iterator::operator []	stl/stl_deque.h	/^      operator[](difference_type __n) const$/;"	f	struct:std::_Deque_iterator	access:public	signature:(difference_type __n) const
-std::_Deque_iterator::pointer	stl/stl_deque.h	/^      typedef _Ptr                            pointer;$/;"	t	struct:std::_Deque_iterator	access:public
-std::_Deque_iterator::reference	stl/stl_deque.h	/^      typedef _Ref                            reference;$/;"	t	struct:std::_Deque_iterator	access:public
-std::_Deque_iterator::size_type	stl/stl_deque.h	/^      typedef size_t                          size_type;$/;"	t	struct:std::_Deque_iterator	access:public
-std::_Deque_iterator::value_type	stl/stl_deque.h	/^      typedef _Tp                             value_type;$/;"	t	struct:std::_Deque_iterator	access:public
-std::_Destroy	stl/stl_construct.h	/^    _Destroy(_ForwardIterator __first, _ForwardIterator __last)$/;"	f	namespace:std	signature:(_ForwardIterator __first, _ForwardIterator __last)
-std::_Destroy	stl/stl_construct.h	/^    _Destroy(_ForwardIterator __first, _ForwardIterator __last,$/;"	f	namespace:std	signature:(_ForwardIterator __first, _ForwardIterator __last, _Allocator __alloc)
-std::_Destroy	stl/stl_construct.h	/^    _Destroy(_ForwardIterator __first, _ForwardIterator __last,$/;"	f	namespace:std	signature:(_ForwardIterator __first, _ForwardIterator __last, allocator<_Tp>)
-std::_Destroy	stl/stl_construct.h	/^    _Destroy(_Tp* __pointer)$/;"	f	namespace:std	signature:(_Tp* __pointer)
-std::_Identity	stl/stl_function.h	/^    struct _Identity : public unary_function<_Tp,_Tp>$/;"	s	namespace:std	inherits:unary_function
-std::_Identity::operator ()	stl/stl_function.h	/^      operator()(_Tp& __x) const$/;"	f	struct:std::_Identity	access:public	signature:(_Tp& __x) const
-std::_Identity::operator ()	stl/stl_function.h	/^      operator()(const _Tp& __x) const$/;"	f	struct:std::_Identity	access:public	signature:(const _Tp& __x) const
-std::_List_base	stl/stl_list.h	/^    class _List_base$/;"	c	namespace:std
-std::_List_base::_List_base	stl/stl_list.h	/^      _List_base(const allocator_type& __a)$/;"	f	class:std::_List_base	access:public	signature:(const allocator_type& __a)
-std::_List_base::_List_impl	stl/stl_list.h	/^      struct _List_impl $/;"	s	class:std::_List_base	inherits:_Node_alloc_type	access:protected
-std::_List_base::_List_impl::_List_impl	stl/stl_list.h	/^	_List_impl(const _Node_alloc_type& __a)$/;"	f	struct:std::_List_base::_List_impl	access:public	signature:(const _Node_alloc_type& __a)
-std::_List_base::_List_impl::_M_node	stl/stl_list.h	/^	_List_node_base _M_node;$/;"	m	struct:std::_List_base::_List_impl	access:public
-std::_List_base::_M_clear	stl/stl_list.h	/^      _M_clear();$/;"	p	class:std::_List_base	access:public	signature:()
-std::_List_base::_M_get_Node_allocator	stl/stl_list.h	/^      _M_get_Node_allocator() const$/;"	f	class:std::_List_base	access:public	signature:() const
-std::_List_base::_M_get_Node_allocator	stl/stl_list.h	/^      _M_get_Node_allocator()$/;"	f	class:std::_List_base	access:public	signature:()
-std::_List_base::_M_get_Tp_allocator	stl/stl_list.h	/^      _M_get_Tp_allocator() const$/;"	f	class:std::_List_base	access:public	signature:() const
-std::_List_base::_M_get_node	stl/stl_list.h	/^      _M_get_node()$/;"	f	class:std::_List_base	access:protected	signature:()
-std::_List_base::_M_impl	stl/stl_list.h	/^      _List_impl _M_impl;$/;"	m	class:std::_List_base	access:protected
-std::_List_base::_M_init	stl/stl_list.h	/^      _M_init()$/;"	f	class:std::_List_base	access:public	signature:()
-std::_List_base::_M_put_node	stl/stl_list.h	/^      _M_put_node(_List_node<_Tp>* __p)$/;"	f	class:std::_List_base	access:protected	signature:(_List_node<_Tp>* __p)
-std::_List_base::_Node_alloc_type	stl/stl_list.h	/^        _Node_alloc_type;$/;"	t	class:std::_List_base	access:protected
-std::_List_base::_Tp_alloc_type	stl/stl_list.h	/^      typedef typename _Alloc::template rebind<_Tp>::other _Tp_alloc_type;$/;"	t	class:std::_List_base	access:protected
-std::_List_base::allocator_type	stl/stl_list.h	/^      typedef _Alloc allocator_type;$/;"	t	class:std::_List_base	access:public
-std::_List_base::get_allocator	stl/stl_list.h	/^      get_allocator() const$/;"	f	class:std::_List_base	access:public	signature:() const
-std::_List_base::~_List_base	stl/stl_list.h	/^      ~_List_base()$/;"	f	class:std::_List_base	access:public	signature:()
-std::_List_const_iterator	stl/stl_list.h	/^    struct _List_const_iterator$/;"	s	namespace:std
-std::_List_const_iterator::_List_const_iterator	stl/stl_list.h	/^      _List_const_iterator()$/;"	f	struct:std::_List_const_iterator	access:public	signature:()
-std::_List_const_iterator::_List_const_iterator	stl/stl_list.h	/^      _List_const_iterator(const _List_node_base* __x)$/;"	f	struct:std::_List_const_iterator	access:public	signature:(const _List_node_base* __x)
-std::_List_const_iterator::_List_const_iterator	stl/stl_list.h	/^      _List_const_iterator(const iterator& __x)$/;"	f	struct:std::_List_const_iterator	access:public	signature:(const iterator& __x)
-std::_List_const_iterator::_M_node	stl/stl_list.h	/^      const _List_node_base* _M_node;$/;"	m	struct:std::_List_const_iterator	access:public
-std::_List_const_iterator::_Node	stl/stl_list.h	/^      typedef const _List_node<_Tp>              _Node;$/;"	t	struct:std::_List_const_iterator	access:public
-std::_List_const_iterator::_Self	stl/stl_list.h	/^      typedef _List_const_iterator<_Tp>          _Self;$/;"	t	struct:std::_List_const_iterator	access:public
-std::_List_const_iterator::difference_type	stl/stl_list.h	/^      typedef ptrdiff_t                          difference_type;$/;"	t	struct:std::_List_const_iterator	access:public
-std::_List_const_iterator::iterator	stl/stl_list.h	/^      typedef _List_iterator<_Tp>                iterator;$/;"	t	struct:std::_List_const_iterator	access:public
-std::_List_const_iterator::iterator_category	stl/stl_list.h	/^      typedef std::bidirectional_iterator_tag    iterator_category;$/;"	t	struct:std::_List_const_iterator	access:public
-std::_List_const_iterator::operator !=	stl/stl_list.h	/^      operator!=(const _Self& __x) const$/;"	f	struct:std::_List_const_iterator	access:public	signature:(const _Self& __x) const
-std::_List_const_iterator::operator *	stl/stl_list.h	/^      operator*() const$/;"	f	struct:std::_List_const_iterator	access:public	signature:() const
-std::_List_const_iterator::operator ++	stl/stl_list.h	/^      operator++()$/;"	f	struct:std::_List_const_iterator	access:public	signature:()
-std::_List_const_iterator::operator ++	stl/stl_list.h	/^      operator++(int)$/;"	f	struct:std::_List_const_iterator	access:public	signature:(int)
-std::_List_const_iterator::operator --	stl/stl_list.h	/^      operator--()$/;"	f	struct:std::_List_const_iterator	access:public	signature:()
-std::_List_const_iterator::operator --	stl/stl_list.h	/^      operator--(int)$/;"	f	struct:std::_List_const_iterator	access:public	signature:(int)
-std::_List_const_iterator::operator ->	stl/stl_list.h	/^      operator->() const$/;"	f	struct:std::_List_const_iterator	access:public	signature:() const
-std::_List_const_iterator::operator ==	stl/stl_list.h	/^      operator==(const _Self& __x) const$/;"	f	struct:std::_List_const_iterator	access:public	signature:(const _Self& __x) const
-std::_List_const_iterator::pointer	stl/stl_list.h	/^      typedef const _Tp*                         pointer;$/;"	t	struct:std::_List_const_iterator	access:public
-std::_List_const_iterator::reference	stl/stl_list.h	/^      typedef const _Tp&                         reference;$/;"	t	struct:std::_List_const_iterator	access:public
-std::_List_const_iterator::value_type	stl/stl_list.h	/^      typedef _Tp                                value_type;$/;"	t	struct:std::_List_const_iterator	access:public
-std::_List_iterator	stl/stl_list.h	/^    struct _List_iterator$/;"	s	namespace:std
-std::_List_iterator::_List_iterator	stl/stl_list.h	/^      _List_iterator()$/;"	f	struct:std::_List_iterator	access:public	signature:()
-std::_List_iterator::_List_iterator	stl/stl_list.h	/^      _List_iterator(_List_node_base* __x)$/;"	f	struct:std::_List_iterator	access:public	signature:(_List_node_base* __x)
-std::_List_iterator::_M_node	stl/stl_list.h	/^      _List_node_base* _M_node;$/;"	m	struct:std::_List_iterator	access:public
-std::_List_iterator::_Node	stl/stl_list.h	/^      typedef _List_node<_Tp>                    _Node;$/;"	t	struct:std::_List_iterator	access:public
-std::_List_iterator::_Self	stl/stl_list.h	/^      typedef _List_iterator<_Tp>                _Self;$/;"	t	struct:std::_List_iterator	access:public
-std::_List_iterator::difference_type	stl/stl_list.h	/^      typedef ptrdiff_t                          difference_type;$/;"	t	struct:std::_List_iterator	access:public
-std::_List_iterator::iterator_category	stl/stl_list.h	/^      typedef std::bidirectional_iterator_tag    iterator_category;$/;"	t	struct:std::_List_iterator	access:public
-std::_List_iterator::operator !=	stl/stl_list.h	/^      operator!=(const _Self& __x) const$/;"	f	struct:std::_List_iterator	access:public	signature:(const _Self& __x) const
-std::_List_iterator::operator *	stl/stl_list.h	/^      operator*() const$/;"	f	struct:std::_List_iterator	access:public	signature:() const
-std::_List_iterator::operator ++	stl/stl_list.h	/^      operator++()$/;"	f	struct:std::_List_iterator	access:public	signature:()
-std::_List_iterator::operator ++	stl/stl_list.h	/^      operator++(int)$/;"	f	struct:std::_List_iterator	access:public	signature:(int)
-std::_List_iterator::operator --	stl/stl_list.h	/^      operator--()$/;"	f	struct:std::_List_iterator	access:public	signature:()
-std::_List_iterator::operator --	stl/stl_list.h	/^      operator--(int)$/;"	f	struct:std::_List_iterator	access:public	signature:(int)
-std::_List_iterator::operator ->	stl/stl_list.h	/^      operator->() const$/;"	f	struct:std::_List_iterator	access:public	signature:() const
-std::_List_iterator::operator ==	stl/stl_list.h	/^      operator==(const _Self& __x) const$/;"	f	struct:std::_List_iterator	access:public	signature:(const _Self& __x) const
-std::_List_iterator::pointer	stl/stl_list.h	/^      typedef _Tp*                               pointer;$/;"	t	struct:std::_List_iterator	access:public
-std::_List_iterator::reference	stl/stl_list.h	/^      typedef _Tp&                               reference;$/;"	t	struct:std::_List_iterator	access:public
-std::_List_iterator::value_type	stl/stl_list.h	/^      typedef _Tp                                value_type;$/;"	t	struct:std::_List_iterator	access:public
-std::_List_node	stl/stl_list.h	/^    struct _List_node : public _List_node_base$/;"	s	namespace:std	inherits:_List_node_base
-std::_List_node::_M_data	stl/stl_list.h	/^      _Tp _M_data;                \/\/\/< User's data.$/;"	m	struct:std::_List_node	access:public
-std::_List_node_base	stl/stl_list.h	/^  struct _List_node_base$/;"	s	namespace:std
-std::_List_node_base::_M_next	stl/stl_list.h	/^    _List_node_base* _M_next;   \/\/\/< Self-explanatory$/;"	m	struct:std::_List_node_base	access:public
-std::_List_node_base::_M_prev	stl/stl_list.h	/^    _List_node_base* _M_prev;   \/\/\/< Self-explanatory$/;"	m	struct:std::_List_node_base	access:public
-std::_List_node_base::hook	stl/stl_list.h	/^    hook(_List_node_base * const __position);$/;"	p	struct:std::_List_node_base	access:public	signature:(_List_node_base * const __position)
-std::_List_node_base::reverse	stl/stl_list.h	/^    reverse();$/;"	p	struct:std::_List_node_base	access:public	signature:()
-std::_List_node_base::swap	stl/stl_list.h	/^    swap(_List_node_base& __x, _List_node_base& __y);$/;"	p	struct:std::_List_node_base	access:public	signature:(_List_node_base& __x, _List_node_base& __y)
-std::_List_node_base::transfer	stl/stl_list.h	/^    transfer(_List_node_base * const __first,$/;"	p	struct:std::_List_node_base	access:public	signature:(_List_node_base * const __first, _List_node_base * const __last)
-std::_List_node_base::unhook	stl/stl_list.h	/^    unhook();$/;"	p	struct:std::_List_node_base	access:public	signature:()
-std::_Rb_tree	stl/stl_tree.h	/^    class _Rb_tree$/;"	c	namespace:std
-std::_Rb_tree::_Base_ptr	stl/stl_tree.h	/^      typedef _Rb_tree_node_base* _Base_ptr;$/;"	t	class:std::_Rb_tree	access:protected
-std::_Rb_tree::_Const_Base_ptr	stl/stl_tree.h	/^      typedef const _Rb_tree_node_base* _Const_Base_ptr;$/;"	t	class:std::_Rb_tree	access:protected
-std::_Rb_tree::_Const_Link_type	stl/stl_tree.h	/^      typedef const _Rb_tree_node* _Const_Link_type;$/;"	t	class:std::_Rb_tree	access:public
-std::_Rb_tree::_Link_type	stl/stl_tree.h	/^      typedef _Rb_tree_node* _Link_type;$/;"	t	class:std::_Rb_tree	access:public
-std::_Rb_tree::_M_begin	stl/stl_tree.h	/^      _M_begin() const$/;"	f	class:std::_Rb_tree	access:protected	signature:() const
-std::_Rb_tree::_M_begin	stl/stl_tree.h	/^      _M_begin()$/;"	f	class:std::_Rb_tree	access:protected	signature:()
-std::_Rb_tree::_M_clone_node	stl/stl_tree.h	/^      _M_clone_node(_Const_Link_type __x)$/;"	f	class:std::_Rb_tree	access:protected	signature:(_Const_Link_type __x)
-std::_Rb_tree::_M_copy	stl/stl_tree.h	/^      _M_copy(_Const_Link_type __x, _Link_type __p);$/;"	p	class:std::_Rb_tree	access:private	signature:(_Const_Link_type __x, _Link_type __p)
-std::_Rb_tree::_M_copy	stl/stl_tree.h	/^    _M_copy(_Const_Link_type __x, _Link_type __p)$/;"	f	class:std::_Rb_tree	signature:(_Const_Link_type __x, _Link_type __p)
-std::_Rb_tree::_M_create_node	stl/stl_tree.h	/^      _M_create_node(const value_type& __x)$/;"	f	class:std::_Rb_tree	access:protected	signature:(const value_type& __x)
-std::_Rb_tree::_M_destroy_node	stl/stl_tree.h	/^      _M_destroy_node(_Link_type __p)$/;"	f	class:std::_Rb_tree	access:protected	signature:(_Link_type __p)
-std::_Rb_tree::_M_end	stl/stl_tree.h	/^      _M_end() const$/;"	f	class:std::_Rb_tree	access:protected	signature:() const
-std::_Rb_tree::_M_end	stl/stl_tree.h	/^      _M_end()$/;"	f	class:std::_Rb_tree	access:protected	signature:()
-std::_Rb_tree::_M_erase	stl/stl_tree.h	/^      _M_erase(_Link_type __x);$/;"	p	class:std::_Rb_tree	access:private	signature:(_Link_type __x)
-std::_Rb_tree::_M_erase	stl/stl_tree.h	/^    _M_erase(_Link_type __x)$/;"	f	class:std::_Rb_tree	signature:(_Link_type __x)
-std::_Rb_tree::_M_get_Node_allocator	stl/stl_tree.h	/^      _M_get_Node_allocator() const$/;"	f	class:std::_Rb_tree	access:public	signature:() const
-std::_Rb_tree::_M_get_Node_allocator	stl/stl_tree.h	/^      _M_get_Node_allocator()$/;"	f	class:std::_Rb_tree	access:public	signature:()
-std::_Rb_tree::_M_get_node	stl/stl_tree.h	/^      _M_get_node()$/;"	f	class:std::_Rb_tree	access:protected	signature:()
-std::_Rb_tree::_M_impl	stl/stl_tree.h	/^      _Rb_tree_impl<_Compare> _M_impl;$/;"	m	class:std::_Rb_tree	access:protected
-std::_Rb_tree::_M_insert	stl/stl_tree.h	/^      _M_insert(_Base_ptr __x, _Base_ptr __y, const value_type& __v);$/;"	p	class:std::_Rb_tree	access:private	signature:(_Base_ptr __x, _Base_ptr __y, const value_type& __v)
-std::_Rb_tree::_M_insert	stl/stl_tree.h	/^      _M_insert(_Const_Base_ptr __x, _Const_Base_ptr __y,$/;"	p	class:std::_Rb_tree	access:private	signature:(_Const_Base_ptr __x, _Const_Base_ptr __y, const value_type& __v)
-std::_Rb_tree::_M_insert	stl/stl_tree.h	/^    _M_insert(_Base_ptr __x, _Base_ptr __p, const _Val& __v)$/;"	f	class:std::_Rb_tree	signature:(_Base_ptr __x, _Base_ptr __p, const _Val& __v)
-std::_Rb_tree::_M_insert	stl/stl_tree.h	/^    _M_insert(_Const_Base_ptr __x, _Const_Base_ptr __p, const _Val& __v)$/;"	f	class:std::_Rb_tree	signature:(_Const_Base_ptr __x, _Const_Base_ptr __p, const _Val& __v)
-std::_Rb_tree::_M_insert_equal	stl/stl_tree.h	/^        _M_insert_equal(_InputIterator __first, _InputIterator __last);$/;"	p	class:std::_Rb_tree	access:public	signature:(_InputIterator __first, _InputIterator __last)
-std::_Rb_tree::_M_insert_equal	stl/stl_tree.h	/^      _M_insert_equal(_II __first, _II __last)$/;"	f	class:std::_Rb_tree	signature:(_II __first, _II __last)
-std::_Rb_tree::_M_insert_equal	stl/stl_tree.h	/^      _M_insert_equal(const value_type& __x);$/;"	p	class:std::_Rb_tree	access:public	signature:(const value_type& __x)
-std::_Rb_tree::_M_insert_equal	stl/stl_tree.h	/^      _M_insert_equal(const_iterator __position, const value_type& __x);$/;"	p	class:std::_Rb_tree	access:public	signature:(const_iterator __position, const value_type& __x)
-std::_Rb_tree::_M_insert_equal	stl/stl_tree.h	/^      _M_insert_equal(iterator __position, const value_type& __x);$/;"	p	class:std::_Rb_tree	access:public	signature:(iterator __position, const value_type& __x)
-std::_Rb_tree::_M_insert_equal	stl/stl_tree.h	/^    _M_insert_equal(const _Val& __v)$/;"	f	class:std::_Rb_tree	signature:(const _Val& __v)
-std::_Rb_tree::_M_insert_equal	stl/stl_tree.h	/^    _M_insert_equal(const_iterator __position, const _Val& __v)$/;"	f	class:std::_Rb_tree	signature:(const_iterator __position, const _Val& __v)
-std::_Rb_tree::_M_insert_equal	stl/stl_tree.h	/^    _M_insert_equal(iterator __position, const _Val& __v)$/;"	f	class:std::_Rb_tree	signature:(iterator __position, const _Val& __v)
-std::_Rb_tree::_M_insert_equal_lower	stl/stl_tree.h	/^      _M_insert_equal_lower(const value_type& __x);$/;"	p	class:std::_Rb_tree	access:public	signature:(const value_type& __x)
-std::_Rb_tree::_M_insert_equal_lower	stl/stl_tree.h	/^    _M_insert_equal_lower(const _Val& __v)$/;"	f	class:std::_Rb_tree	signature:(const _Val& __v)
-std::_Rb_tree::_M_insert_lower	stl/stl_tree.h	/^      _M_insert_lower(_Base_ptr __x, _Base_ptr __y, const value_type& __v);$/;"	p	class:std::_Rb_tree	access:private	signature:(_Base_ptr __x, _Base_ptr __y, const value_type& __v)
-std::_Rb_tree::_M_insert_lower	stl/stl_tree.h	/^    _M_insert_lower(_Base_ptr __x, _Base_ptr __p, const _Val& __v)$/;"	f	class:std::_Rb_tree	signature:(_Base_ptr __x, _Base_ptr __p, const _Val& __v)
-std::_Rb_tree::_M_insert_unique	stl/stl_tree.h	/^        _M_insert_unique(_InputIterator __first, _InputIterator __last);$/;"	p	class:std::_Rb_tree	access:public	signature:(_InputIterator __first, _InputIterator __last)
-std::_Rb_tree::_M_insert_unique	stl/stl_tree.h	/^      _M_insert_unique(_II __first, _II __last)$/;"	f	class:std::_Rb_tree	signature:(_II __first, _II __last)
-std::_Rb_tree::_M_insert_unique	stl/stl_tree.h	/^      _M_insert_unique(const value_type& __x);$/;"	p	class:std::_Rb_tree	access:public	signature:(const value_type& __x)
-std::_Rb_tree::_M_insert_unique	stl/stl_tree.h	/^      _M_insert_unique(const_iterator __position, const value_type& __x);$/;"	p	class:std::_Rb_tree	access:public	signature:(const_iterator __position, const value_type& __x)
-std::_Rb_tree::_M_insert_unique	stl/stl_tree.h	/^      _M_insert_unique(iterator __position, const value_type& __x);$/;"	p	class:std::_Rb_tree	access:public	signature:(iterator __position, const value_type& __x)
-std::_Rb_tree::_M_insert_unique	stl/stl_tree.h	/^    _M_insert_unique(const _Val& __v)$/;"	f	class:std::_Rb_tree	signature:(const _Val& __v)
-std::_Rb_tree::_M_insert_unique	stl/stl_tree.h	/^    _M_insert_unique(const_iterator __position, const _Val& __v)$/;"	f	class:std::_Rb_tree	signature:(const_iterator __position, const _Val& __v)
-std::_Rb_tree::_M_insert_unique	stl/stl_tree.h	/^    _M_insert_unique(iterator __position, const _Val& __v)$/;"	f	class:std::_Rb_tree	signature:(iterator __position, const _Val& __v)
-std::_Rb_tree::_M_leftmost	stl/stl_tree.h	/^      _M_leftmost() const$/;"	f	class:std::_Rb_tree	access:protected	signature:() const
-std::_Rb_tree::_M_leftmost	stl/stl_tree.h	/^      _M_leftmost()$/;"	f	class:std::_Rb_tree	access:protected	signature:()
-std::_Rb_tree::_M_put_node	stl/stl_tree.h	/^      _M_put_node(_Rb_tree_node* __p)$/;"	f	class:std::_Rb_tree	access:protected	signature:(_Rb_tree_node* __p)
-std::_Rb_tree::_M_rightmost	stl/stl_tree.h	/^      _M_rightmost() const$/;"	f	class:std::_Rb_tree	access:protected	signature:() const
-std::_Rb_tree::_M_rightmost	stl/stl_tree.h	/^      _M_rightmost()$/;"	f	class:std::_Rb_tree	access:protected	signature:()
-std::_Rb_tree::_M_root	stl/stl_tree.h	/^      _M_root() const$/;"	f	class:std::_Rb_tree	access:protected	signature:() const
-std::_Rb_tree::_M_root	stl/stl_tree.h	/^      _M_root()$/;"	f	class:std::_Rb_tree	access:protected	signature:()
-std::_Rb_tree::_Node_allocator	stl/stl_tree.h	/^              _Node_allocator;$/;"	t	class:std::_Rb_tree	access:private
-std::_Rb_tree::_Rb_tree	stl/stl_tree.h	/^      _Rb_tree()$/;"	f	class:std::_Rb_tree	access:public	signature:()
-std::_Rb_tree::_Rb_tree	stl/stl_tree.h	/^      _Rb_tree(const _Compare& __comp)$/;"	f	class:std::_Rb_tree	access:public	signature:(const _Compare& __comp)
-std::_Rb_tree::_Rb_tree	stl/stl_tree.h	/^      _Rb_tree(const _Compare& __comp, const allocator_type& __a)$/;"	f	class:std::_Rb_tree	access:public	signature:(const _Compare& __comp, const allocator_type& __a)
-std::_Rb_tree::_Rb_tree	stl/stl_tree.h	/^      _Rb_tree(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x)$/;"	f	class:std::_Rb_tree	access:public	signature:(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x)
-std::_Rb_tree::_Rb_tree_impl	stl/stl_tree.h	/^        struct _Rb_tree_impl : public _Node_allocator$/;"	s	class:std::_Rb_tree	inherits:_Node_allocator	access:protected
-std::_Rb_tree::_Rb_tree_impl	stl/stl_tree.h	/^        struct _Rb_tree_impl<_Key_compare, true> : public _Node_allocator $/;"	s	class:std::_Rb_tree	inherits:_Node_allocator	access:protected
-std::_Rb_tree::_Rb_tree_impl::_M_header	stl/stl_tree.h	/^	  _Rb_tree_node_base 	_M_header;$/;"	m	struct:std::_Rb_tree::_Rb_tree_impl	access:public
-std::_Rb_tree::_Rb_tree_impl::_M_key_compare	stl/stl_tree.h	/^	  _Key_compare		_M_key_compare;$/;"	m	struct:std::_Rb_tree::_Rb_tree_impl	access:public
-std::_Rb_tree::_Rb_tree_impl::_M_key_compare	stl/stl_tree.h	/^	  _Key_compare 		_M_key_compare;$/;"	m	struct:std::_Rb_tree::_Rb_tree_impl	access:public
-std::_Rb_tree::_Rb_tree_impl::_M_node_count	stl/stl_tree.h	/^	  size_type 		_M_node_count; \/\/ Keeps track of size of tree.$/;"	m	struct:std::_Rb_tree::_Rb_tree_impl	access:public
-std::_Rb_tree::_Rb_tree_impl::_Rb_tree_impl	stl/stl_tree.h	/^	  _Rb_tree_impl(const _Node_allocator& __a = _Node_allocator(),$/;"	f	struct:std::_Rb_tree::_Rb_tree_impl	access:public	signature:(const _Node_allocator& __a = _Node_allocator(), const _Key_compare& __comp = _Key_compare())
-std::_Rb_tree::_Rb_tree_node	stl/stl_tree.h	/^      typedef _Rb_tree_node<_Val> _Rb_tree_node;$/;"	t	class:std::_Rb_tree	access:protected
-std::_Rb_tree::_S_key	stl/stl_tree.h	/^      _S_key(_Const_Base_ptr __x)$/;"	f	class:std::_Rb_tree	access:protected	signature:(_Const_Base_ptr __x)
-std::_Rb_tree::_S_key	stl/stl_tree.h	/^      _S_key(_Const_Link_type __x)$/;"	f	class:std::_Rb_tree	access:protected	signature:(_Const_Link_type __x)
-std::_Rb_tree::_S_left	stl/stl_tree.h	/^      _S_left(_Base_ptr __x)$/;"	f	class:std::_Rb_tree	access:protected	signature:(_Base_ptr __x)
-std::_Rb_tree::_S_left	stl/stl_tree.h	/^      _S_left(_Const_Base_ptr __x)$/;"	f	class:std::_Rb_tree	access:protected	signature:(_Const_Base_ptr __x)
-std::_Rb_tree::_S_maximum	stl/stl_tree.h	/^      _S_maximum(_Base_ptr __x)$/;"	f	class:std::_Rb_tree	access:protected	signature:(_Base_ptr __x)
-std::_Rb_tree::_S_maximum	stl/stl_tree.h	/^      _S_maximum(_Const_Base_ptr __x)$/;"	f	class:std::_Rb_tree	access:protected	signature:(_Const_Base_ptr __x)
-std::_Rb_tree::_S_minimum	stl/stl_tree.h	/^      _S_minimum(_Base_ptr __x)$/;"	f	class:std::_Rb_tree	access:protected	signature:(_Base_ptr __x)
-std::_Rb_tree::_S_minimum	stl/stl_tree.h	/^      _S_minimum(_Const_Base_ptr __x)$/;"	f	class:std::_Rb_tree	access:protected	signature:(_Const_Base_ptr __x)
-std::_Rb_tree::_S_right	stl/stl_tree.h	/^      _S_right(_Base_ptr __x)$/;"	f	class:std::_Rb_tree	access:protected	signature:(_Base_ptr __x)
-std::_Rb_tree::_S_right	stl/stl_tree.h	/^      _S_right(_Const_Base_ptr __x)$/;"	f	class:std::_Rb_tree	access:protected	signature:(_Const_Base_ptr __x)
-std::_Rb_tree::_S_value	stl/stl_tree.h	/^      _S_value(_Const_Base_ptr __x)$/;"	f	class:std::_Rb_tree	access:protected	signature:(_Const_Base_ptr __x)
-std::_Rb_tree::_S_value	stl/stl_tree.h	/^      _S_value(_Const_Link_type __x)$/;"	f	class:std::_Rb_tree	access:protected	signature:(_Const_Link_type __x)
-std::_Rb_tree::__rb_verify	stl/stl_tree.h	/^      __rb_verify() const;$/;"	p	class:std::_Rb_tree	access:public	signature:() const
-std::_Rb_tree::__rb_verify	stl/stl_tree.h	/^    _Rb_tree<_Key,_Val,_KeyOfValue,_Compare,_Alloc>::__rb_verify() const$/;"	f	class:std::_Rb_tree	signature:() const
-std::_Rb_tree::allocator_type	stl/stl_tree.h	/^      typedef _Alloc allocator_type;$/;"	t	class:std::_Rb_tree	access:public
-std::_Rb_tree::begin	stl/stl_tree.h	/^      begin() const$/;"	f	class:std::_Rb_tree	access:public	signature:() const
-std::_Rb_tree::begin	stl/stl_tree.h	/^      begin()$/;"	f	class:std::_Rb_tree	access:public	signature:()
-std::_Rb_tree::clear	stl/stl_tree.h	/^      clear()$/;"	f	class:std::_Rb_tree	access:public	signature:()
-std::_Rb_tree::const_iterator	stl/stl_tree.h	/^      typedef _Rb_tree_const_iterator<value_type> const_iterator;$/;"	t	class:std::_Rb_tree	access:public
-std::_Rb_tree::const_pointer	stl/stl_tree.h	/^      typedef const value_type* const_pointer;$/;"	t	class:std::_Rb_tree	access:public
-std::_Rb_tree::const_reference	stl/stl_tree.h	/^      typedef const value_type& const_reference;$/;"	t	class:std::_Rb_tree	access:public
-std::_Rb_tree::const_reverse_iterator	stl/stl_tree.h	/^      typedef std::reverse_iterator<const_iterator> const_reverse_iterator;$/;"	t	class:std::_Rb_tree	access:public
-std::_Rb_tree::count	stl/stl_tree.h	/^      count(const key_type& __x) const;$/;"	p	class:std::_Rb_tree	access:public	signature:(const key_type& __x) const
-std::_Rb_tree::count	stl/stl_tree.h	/^    count(const _Key& __k) const$/;"	f	class:std::_Rb_tree	signature:(const _Key& __k) const
-std::_Rb_tree::difference_type	stl/stl_tree.h	/^      typedef ptrdiff_t difference_type;$/;"	t	class:std::_Rb_tree	access:public
-std::_Rb_tree::empty	stl/stl_tree.h	/^      empty() const$/;"	f	class:std::_Rb_tree	access:public	signature:() const
-std::_Rb_tree::end	stl/stl_tree.h	/^      end() const$/;"	f	class:std::_Rb_tree	access:public	signature:() const
-std::_Rb_tree::end	stl/stl_tree.h	/^      end()$/;"	f	class:std::_Rb_tree	access:public	signature:()
-std::_Rb_tree::equal_range	stl/stl_tree.h	/^      equal_range(const key_type& __x) const;$/;"	p	class:std::_Rb_tree	access:public	signature:(const key_type& __x) const
-std::_Rb_tree::equal_range	stl/stl_tree.h	/^      equal_range(const key_type& __x);$/;"	p	class:std::_Rb_tree	access:public	signature:(const key_type& __x)
-std::_Rb_tree::equal_range	stl/stl_tree.h	/^    equal_range(const _Key& __k) const$/;"	f	class:std::_Rb_tree	signature:(const _Key& __k) const
-std::_Rb_tree::equal_range	stl/stl_tree.h	/^    equal_range(const _Key& __k)$/;"	f	class:std::_Rb_tree	signature:(const _Key& __k)
-std::_Rb_tree::erase	stl/stl_tree.h	/^      erase(const key_type& __x);$/;"	p	class:std::_Rb_tree	access:public	signature:(const key_type& __x)
-std::_Rb_tree::erase	stl/stl_tree.h	/^      erase(const key_type* __first, const key_type* __last);$/;"	p	class:std::_Rb_tree	access:public	signature:(const key_type* __first, const key_type* __last)
-std::_Rb_tree::erase	stl/stl_tree.h	/^      erase(const_iterator __first, const_iterator __last);$/;"	p	class:std::_Rb_tree	access:public	signature:(const_iterator __first, const_iterator __last)
-std::_Rb_tree::erase	stl/stl_tree.h	/^      erase(const_iterator __position);$/;"	p	class:std::_Rb_tree	access:public	signature:(const_iterator __position)
-std::_Rb_tree::erase	stl/stl_tree.h	/^      erase(iterator __first, iterator __last);$/;"	p	class:std::_Rb_tree	access:public	signature:(iterator __first, iterator __last)
-std::_Rb_tree::erase	stl/stl_tree.h	/^      erase(iterator __position);$/;"	p	class:std::_Rb_tree	access:public	signature:(iterator __position)
-std::_Rb_tree::erase	stl/stl_tree.h	/^    erase(const _Key& __x)$/;"	f	class:std::_Rb_tree	signature:(const _Key& __x)
-std::_Rb_tree::erase	stl/stl_tree.h	/^    erase(const _Key* __first, const _Key* __last)$/;"	f	class:std::_Rb_tree	signature:(const _Key* __first, const _Key* __last)
-std::_Rb_tree::erase	stl/stl_tree.h	/^    erase(const_iterator __first, const_iterator __last)$/;"	f	class:std::_Rb_tree	signature:(const_iterator __first, const_iterator __last)
-std::_Rb_tree::erase	stl/stl_tree.h	/^    erase(const_iterator __position)$/;"	f	class:std::_Rb_tree	signature:(const_iterator __position)
-std::_Rb_tree::erase	stl/stl_tree.h	/^    erase(iterator __first, iterator __last)$/;"	f	class:std::_Rb_tree	signature:(iterator __first, iterator __last)
-std::_Rb_tree::erase	stl/stl_tree.h	/^    erase(iterator __position)$/;"	f	class:std::_Rb_tree	signature:(iterator __position)
-std::_Rb_tree::find	stl/stl_tree.h	/^      find(const key_type& __x) const;$/;"	p	class:std::_Rb_tree	access:public	signature:(const key_type& __x) const
-std::_Rb_tree::find	stl/stl_tree.h	/^      find(const key_type& __x);$/;"	p	class:std::_Rb_tree	access:public	signature:(const key_type& __x)
-std::_Rb_tree::find	stl/stl_tree.h	/^    find(const _Key& __k) const$/;"	f	class:std::_Rb_tree	signature:(const _Key& __k) const
-std::_Rb_tree::find	stl/stl_tree.h	/^    find(const _Key& __k)$/;"	f	class:std::_Rb_tree	signature:(const _Key& __k)
-std::_Rb_tree::get_allocator	stl/stl_tree.h	/^      get_allocator() const$/;"	f	class:std::_Rb_tree	access:public	signature:() const
-std::_Rb_tree::iterator	stl/stl_tree.h	/^      typedef _Rb_tree_iterator<value_type>       iterator;$/;"	t	class:std::_Rb_tree	access:public
-std::_Rb_tree::key_comp	stl/stl_tree.h	/^      key_comp() const$/;"	f	class:std::_Rb_tree	access:public	signature:() const
-std::_Rb_tree::key_type	stl/stl_tree.h	/^      typedef _Key key_type;$/;"	t	class:std::_Rb_tree	access:public
-std::_Rb_tree::lower_bound	stl/stl_tree.h	/^      lower_bound(const key_type& __x) const;$/;"	p	class:std::_Rb_tree	access:public	signature:(const key_type& __x) const
-std::_Rb_tree::lower_bound	stl/stl_tree.h	/^      lower_bound(const key_type& __x);$/;"	p	class:std::_Rb_tree	access:public	signature:(const key_type& __x)
-std::_Rb_tree::lower_bound	stl/stl_tree.h	/^    lower_bound(const _Key& __k) const$/;"	f	class:std::_Rb_tree	signature:(const _Key& __k) const
-std::_Rb_tree::lower_bound	stl/stl_tree.h	/^    lower_bound(const _Key& __k)$/;"	f	class:std::_Rb_tree	signature:(const _Key& __k)
-std::_Rb_tree::max_size	stl/stl_tree.h	/^      max_size() const$/;"	f	class:std::_Rb_tree	access:public	signature:() const
-std::_Rb_tree::operator =	stl/stl_tree.h	/^      operator=(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x);$/;"	p	class:std::_Rb_tree	access:public	signature:(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x)
-std::_Rb_tree::operator =	stl/stl_tree.h	/^    operator=(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x)$/;"	f	class:std::_Rb_tree	signature:(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x)
-std::_Rb_tree::pointer	stl/stl_tree.h	/^      typedef value_type* pointer;$/;"	t	class:std::_Rb_tree	access:public
-std::_Rb_tree::rbegin	stl/stl_tree.h	/^      rbegin() const$/;"	f	class:std::_Rb_tree	access:public	signature:() const
-std::_Rb_tree::rbegin	stl/stl_tree.h	/^      rbegin()$/;"	f	class:std::_Rb_tree	access:public	signature:()
-std::_Rb_tree::reference	stl/stl_tree.h	/^      typedef value_type& reference;$/;"	t	class:std::_Rb_tree	access:public
-std::_Rb_tree::rend	stl/stl_tree.h	/^      rend() const$/;"	f	class:std::_Rb_tree	access:public	signature:() const
-std::_Rb_tree::rend	stl/stl_tree.h	/^      rend()$/;"	f	class:std::_Rb_tree	access:public	signature:()
-std::_Rb_tree::reverse_iterator	stl/stl_tree.h	/^      typedef std::reverse_iterator<iterator>       reverse_iterator;$/;"	t	class:std::_Rb_tree	access:public
-std::_Rb_tree::size	stl/stl_tree.h	/^      size() const$/;"	f	class:std::_Rb_tree	access:public	signature:() const
-std::_Rb_tree::size_type	stl/stl_tree.h	/^      typedef size_t size_type;$/;"	t	class:std::_Rb_tree	access:public
-std::_Rb_tree::swap	stl/stl_tree.h	/^      swap(_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __t);$/;"	p	class:std::_Rb_tree	access:public	signature:(_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __t)
-std::_Rb_tree::swap	stl/stl_tree.h	/^    swap(_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __t)$/;"	f	class:std::_Rb_tree	signature:(_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __t)
-std::_Rb_tree::upper_bound	stl/stl_tree.h	/^      upper_bound(const key_type& __x) const;$/;"	p	class:std::_Rb_tree	access:public	signature:(const key_type& __x) const
-std::_Rb_tree::upper_bound	stl/stl_tree.h	/^      upper_bound(const key_type& __x);$/;"	p	class:std::_Rb_tree	access:public	signature:(const key_type& __x)
-std::_Rb_tree::upper_bound	stl/stl_tree.h	/^    upper_bound(const _Key& __k) const$/;"	f	class:std::_Rb_tree	signature:(const _Key& __k) const
-std::_Rb_tree::upper_bound	stl/stl_tree.h	/^    upper_bound(const _Key& __k)$/;"	f	class:std::_Rb_tree	signature:(const _Key& __k)
-std::_Rb_tree::value_type	stl/stl_tree.h	/^      typedef _Val value_type;$/;"	t	class:std::_Rb_tree	access:public
-std::_Rb_tree::~_Rb_tree	stl/stl_tree.h	/^      ~_Rb_tree()$/;"	f	class:std::_Rb_tree	access:public	signature:()
-std::_Rb_tree_black_count	stl/stl_tree.h	/^  _Rb_tree_black_count(const _Rb_tree_node_base* __node,$/;"	p	namespace:std	signature:(const _Rb_tree_node_base* __node, const _Rb_tree_node_base* __root)
-std::_Rb_tree_color	stl/stl_tree.h	/^  enum _Rb_tree_color { _S_red = false, _S_black = true };$/;"	g	namespace:std
-std::_Rb_tree_const_iterator	stl/stl_tree.h	/^    struct _Rb_tree_const_iterator$/;"	s	namespace:std
-std::_Rb_tree_const_iterator::_Base_ptr	stl/stl_tree.h	/^      typedef _Rb_tree_node_base::_Const_Base_ptr _Base_ptr;$/;"	t	struct:std::_Rb_tree_const_iterator	access:public
-std::_Rb_tree_const_iterator::_Link_type	stl/stl_tree.h	/^      typedef const _Rb_tree_node<_Tp>*           _Link_type;$/;"	t	struct:std::_Rb_tree_const_iterator	access:public
-std::_Rb_tree_const_iterator::_M_node	stl/stl_tree.h	/^      _Base_ptr _M_node;$/;"	m	struct:std::_Rb_tree_const_iterator	access:public
-std::_Rb_tree_const_iterator::_Rb_tree_const_iterator	stl/stl_tree.h	/^      _Rb_tree_const_iterator()$/;"	f	struct:std::_Rb_tree_const_iterator	access:public	signature:()
-std::_Rb_tree_const_iterator::_Rb_tree_const_iterator	stl/stl_tree.h	/^      _Rb_tree_const_iterator(_Link_type __x)$/;"	f	struct:std::_Rb_tree_const_iterator	access:public	signature:(_Link_type __x)
-std::_Rb_tree_const_iterator::_Rb_tree_const_iterator	stl/stl_tree.h	/^      _Rb_tree_const_iterator(const iterator& __it)$/;"	f	struct:std::_Rb_tree_const_iterator	access:public	signature:(const iterator& __it)
-std::_Rb_tree_const_iterator::_Self	stl/stl_tree.h	/^      typedef _Rb_tree_const_iterator<_Tp>        _Self;$/;"	t	struct:std::_Rb_tree_const_iterator	access:public
-std::_Rb_tree_const_iterator::difference_type	stl/stl_tree.h	/^      typedef ptrdiff_t                  difference_type;$/;"	t	struct:std::_Rb_tree_const_iterator	access:public
-std::_Rb_tree_const_iterator::iterator	stl/stl_tree.h	/^      typedef _Rb_tree_iterator<_Tp> iterator;$/;"	t	struct:std::_Rb_tree_const_iterator	access:public
-std::_Rb_tree_const_iterator::iterator_category	stl/stl_tree.h	/^      typedef bidirectional_iterator_tag iterator_category;$/;"	t	struct:std::_Rb_tree_const_iterator	access:public
-std::_Rb_tree_const_iterator::operator !=	stl/stl_tree.h	/^      operator!=(const _Self& __x) const$/;"	f	struct:std::_Rb_tree_const_iterator	access:public	signature:(const _Self& __x) const
-std::_Rb_tree_const_iterator::operator *	stl/stl_tree.h	/^      operator*() const$/;"	f	struct:std::_Rb_tree_const_iterator	access:public	signature:() const
-std::_Rb_tree_const_iterator::operator ++	stl/stl_tree.h	/^      operator++()$/;"	f	struct:std::_Rb_tree_const_iterator	access:public	signature:()
-std::_Rb_tree_const_iterator::operator ++	stl/stl_tree.h	/^      operator++(int)$/;"	f	struct:std::_Rb_tree_const_iterator	access:public	signature:(int)
-std::_Rb_tree_const_iterator::operator --	stl/stl_tree.h	/^      operator--()$/;"	f	struct:std::_Rb_tree_const_iterator	access:public	signature:()
-std::_Rb_tree_const_iterator::operator --	stl/stl_tree.h	/^      operator--(int)$/;"	f	struct:std::_Rb_tree_const_iterator	access:public	signature:(int)
-std::_Rb_tree_const_iterator::operator ->	stl/stl_tree.h	/^      operator->() const$/;"	f	struct:std::_Rb_tree_const_iterator	access:public	signature:() const
-std::_Rb_tree_const_iterator::operator ==	stl/stl_tree.h	/^      operator==(const _Self& __x) const$/;"	f	struct:std::_Rb_tree_const_iterator	access:public	signature:(const _Self& __x) const
-std::_Rb_tree_const_iterator::pointer	stl/stl_tree.h	/^      typedef const _Tp* pointer;$/;"	t	struct:std::_Rb_tree_const_iterator	access:public
-std::_Rb_tree_const_iterator::reference	stl/stl_tree.h	/^      typedef const _Tp& reference;$/;"	t	struct:std::_Rb_tree_const_iterator	access:public
-std::_Rb_tree_const_iterator::value_type	stl/stl_tree.h	/^      typedef _Tp        value_type;$/;"	t	struct:std::_Rb_tree_const_iterator	access:public
-std::_Rb_tree_decrement	stl/stl_tree.h	/^  _Rb_tree_decrement(_Rb_tree_node_base* __x);$/;"	p	namespace:std	signature:(_Rb_tree_node_base* __x)
-std::_Rb_tree_decrement	stl/stl_tree.h	/^  _Rb_tree_decrement(const _Rb_tree_node_base* __x);$/;"	p	namespace:std	signature:(const _Rb_tree_node_base* __x)
-std::_Rb_tree_increment	stl/stl_tree.h	/^  _Rb_tree_increment(_Rb_tree_node_base* __x);$/;"	p	namespace:std	signature:(_Rb_tree_node_base* __x)
-std::_Rb_tree_increment	stl/stl_tree.h	/^  _Rb_tree_increment(const _Rb_tree_node_base* __x);$/;"	p	namespace:std	signature:(const _Rb_tree_node_base* __x)
-std::_Rb_tree_insert_and_rebalance	stl/stl_tree.h	/^  _Rb_tree_insert_and_rebalance(const bool __insert_left,$/;"	p	namespace:std	signature:(const bool __insert_left, _Rb_tree_node_base* __x, _Rb_tree_node_base* __p, _Rb_tree_node_base& __header)
-std::_Rb_tree_iterator	stl/stl_tree.h	/^    struct _Rb_tree_iterator$/;"	s	namespace:std
-std::_Rb_tree_iterator::_Base_ptr	stl/stl_tree.h	/^      typedef _Rb_tree_node_base::_Base_ptr _Base_ptr;$/;"	t	struct:std::_Rb_tree_iterator	access:public
-std::_Rb_tree_iterator::_Link_type	stl/stl_tree.h	/^      typedef _Rb_tree_node<_Tp>*           _Link_type;$/;"	t	struct:std::_Rb_tree_iterator	access:public
-std::_Rb_tree_iterator::_M_node	stl/stl_tree.h	/^      _Base_ptr _M_node;$/;"	m	struct:std::_Rb_tree_iterator	access:public
-std::_Rb_tree_iterator::_Rb_tree_iterator	stl/stl_tree.h	/^      _Rb_tree_iterator()$/;"	f	struct:std::_Rb_tree_iterator	access:public	signature:()
-std::_Rb_tree_iterator::_Rb_tree_iterator	stl/stl_tree.h	/^      _Rb_tree_iterator(_Link_type __x)$/;"	f	struct:std::_Rb_tree_iterator	access:public	signature:(_Link_type __x)
-std::_Rb_tree_iterator::_Self	stl/stl_tree.h	/^      typedef _Rb_tree_iterator<_Tp>        _Self;$/;"	t	struct:std::_Rb_tree_iterator	access:public
-std::_Rb_tree_iterator::difference_type	stl/stl_tree.h	/^      typedef ptrdiff_t                  difference_type;$/;"	t	struct:std::_Rb_tree_iterator	access:public
-std::_Rb_tree_iterator::iterator_category	stl/stl_tree.h	/^      typedef bidirectional_iterator_tag iterator_category;$/;"	t	struct:std::_Rb_tree_iterator	access:public
-std::_Rb_tree_iterator::operator !=	stl/stl_tree.h	/^      operator!=(const _Self& __x) const$/;"	f	struct:std::_Rb_tree_iterator	access:public	signature:(const _Self& __x) const
-std::_Rb_tree_iterator::operator *	stl/stl_tree.h	/^      operator*() const$/;"	f	struct:std::_Rb_tree_iterator	access:public	signature:() const
-std::_Rb_tree_iterator::operator ++	stl/stl_tree.h	/^      operator++()$/;"	f	struct:std::_Rb_tree_iterator	access:public	signature:()
-std::_Rb_tree_iterator::operator ++	stl/stl_tree.h	/^      operator++(int)$/;"	f	struct:std::_Rb_tree_iterator	access:public	signature:(int)
-std::_Rb_tree_iterator::operator --	stl/stl_tree.h	/^      operator--()$/;"	f	struct:std::_Rb_tree_iterator	access:public	signature:()
-std::_Rb_tree_iterator::operator --	stl/stl_tree.h	/^      operator--(int)$/;"	f	struct:std::_Rb_tree_iterator	access:public	signature:(int)
-std::_Rb_tree_iterator::operator ->	stl/stl_tree.h	/^      operator->() const$/;"	f	struct:std::_Rb_tree_iterator	access:public	signature:() const
-std::_Rb_tree_iterator::operator ==	stl/stl_tree.h	/^      operator==(const _Self& __x) const$/;"	f	struct:std::_Rb_tree_iterator	access:public	signature:(const _Self& __x) const
-std::_Rb_tree_iterator::pointer	stl/stl_tree.h	/^      typedef _Tp* pointer;$/;"	t	struct:std::_Rb_tree_iterator	access:public
-std::_Rb_tree_iterator::reference	stl/stl_tree.h	/^      typedef _Tp& reference;$/;"	t	struct:std::_Rb_tree_iterator	access:public
-std::_Rb_tree_iterator::value_type	stl/stl_tree.h	/^      typedef _Tp  value_type;$/;"	t	struct:std::_Rb_tree_iterator	access:public
-std::_Rb_tree_node	stl/stl_tree.h	/^    struct _Rb_tree_node : public _Rb_tree_node_base$/;"	s	namespace:std	inherits:_Rb_tree_node_base
-std::_Rb_tree_node::_Link_type	stl/stl_tree.h	/^      typedef _Rb_tree_node<_Val>* _Link_type;$/;"	t	struct:std::_Rb_tree_node	access:public
-std::_Rb_tree_node::_M_value_field	stl/stl_tree.h	/^      _Val _M_value_field;$/;"	m	struct:std::_Rb_tree_node	access:public
-std::_Rb_tree_node_base	stl/stl_tree.h	/^  struct _Rb_tree_node_base$/;"	s	namespace:std
-std::_Rb_tree_node_base::_Base_ptr	stl/stl_tree.h	/^    typedef _Rb_tree_node_base* _Base_ptr;$/;"	t	struct:std::_Rb_tree_node_base	access:public
-std::_Rb_tree_node_base::_Const_Base_ptr	stl/stl_tree.h	/^    typedef const _Rb_tree_node_base* _Const_Base_ptr;$/;"	t	struct:std::_Rb_tree_node_base	access:public
-std::_Rb_tree_node_base::_M_color	stl/stl_tree.h	/^    _Rb_tree_color	_M_color;$/;"	m	struct:std::_Rb_tree_node_base	access:public
-std::_Rb_tree_node_base::_M_left	stl/stl_tree.h	/^    _Base_ptr		_M_left;$/;"	m	struct:std::_Rb_tree_node_base	access:public
-std::_Rb_tree_node_base::_M_parent	stl/stl_tree.h	/^    _Base_ptr		_M_parent;$/;"	m	struct:std::_Rb_tree_node_base	access:public
-std::_Rb_tree_node_base::_M_right	stl/stl_tree.h	/^    _Base_ptr		_M_right;$/;"	m	struct:std::_Rb_tree_node_base	access:public
-std::_Rb_tree_node_base::_S_maximum	stl/stl_tree.h	/^    _S_maximum(_Base_ptr __x)$/;"	f	struct:std::_Rb_tree_node_base	access:public	signature:(_Base_ptr __x)
-std::_Rb_tree_node_base::_S_maximum	stl/stl_tree.h	/^    _S_maximum(_Const_Base_ptr __x)$/;"	f	struct:std::_Rb_tree_node_base	access:public	signature:(_Const_Base_ptr __x)
-std::_Rb_tree_node_base::_S_minimum	stl/stl_tree.h	/^    _S_minimum(_Base_ptr __x)$/;"	f	struct:std::_Rb_tree_node_base	access:public	signature:(_Base_ptr __x)
-std::_Rb_tree_node_base::_S_minimum	stl/stl_tree.h	/^    _S_minimum(_Const_Base_ptr __x)$/;"	f	struct:std::_Rb_tree_node_base	access:public	signature:(_Const_Base_ptr __x)
-std::_Rb_tree_rebalance_for_erase	stl/stl_tree.h	/^  _Rb_tree_rebalance_for_erase(_Rb_tree_node_base* const __z,$/;"	p	namespace:std	signature:(_Rb_tree_node_base* const __z, _Rb_tree_node_base& __header)
-std::_Rb_tree_rotate_left	stl/stl_tree.h	/^  _Rb_tree_rotate_left(_Rb_tree_node_base* const __x,$/;"	p	namespace:std	signature:(_Rb_tree_node_base* const __x, _Rb_tree_node_base*& __root)
-std::_Rb_tree_rotate_right	stl/stl_tree.h	/^  _Rb_tree_rotate_right(_Rb_tree_node_base* const __x,$/;"	p	namespace:std	signature:(_Rb_tree_node_base* const __x, _Rb_tree_node_base*& __root)
-std::_Ret	stl/stl_function.h	/^    mem_fun(_Ret (_Tp::*__f)() const)$/;"	f	namespace:std	signature:(_Tp::*__f) const
-std::_Ret	stl/stl_function.h	/^    mem_fun(_Ret (_Tp::*__f)())$/;"	f	namespace:std	signature:(_Tp::*__f)
-std::_Ret	stl/stl_function.h	/^    mem_fun(_Ret (_Tp::*__f)(_Arg) const)$/;"	f	namespace:std	signature:(_Tp::*__f) const
-std::_Ret	stl/stl_function.h	/^    mem_fun(_Ret (_Tp::*__f)(_Arg))$/;"	f	namespace:std	signature:(_Tp::*__f)
-std::_Ret	stl/stl_function.h	/^    mem_fun_ref(_Ret (_Tp::*__f)() const)$/;"	f	namespace:std	signature:(_Tp::*__f) const
-std::_Ret	stl/stl_function.h	/^    mem_fun_ref(_Ret (_Tp::*__f)())$/;"	f	namespace:std	signature:(_Tp::*__f)
-std::_Ret	stl/stl_function.h	/^    mem_fun_ref(_Ret (_Tp::*__f)(_Arg) const)$/;"	f	namespace:std	signature:(_Tp::*__f) const
-std::_Ret	stl/stl_function.h	/^    mem_fun_ref(_Ret (_Tp::*__f)(_Arg))$/;"	f	namespace:std	signature:(_Tp::*__f)
-std::_S_black	stl/stl_tree.h	/^  enum _Rb_tree_color { _S_red = false, _S_black = true };$/;"	e	enum:std::_Rb_tree_color
-std::_S_chunk_size	stl/stl_algo.h	/^  enum { _S_chunk_size = 7 };$/;"	e	enum:std::__anon3
-std::_S_red	stl/stl_tree.h	/^  enum _Rb_tree_color { _S_red = false, _S_black = true };$/;"	e	enum:std::_Rb_tree_color
-std::_S_threshold	stl/stl_algo.h	/^  enum { _S_threshold = 16 };$/;"	e	enum:std::__anon2
-std::_S_word_bit	stl/stl_bvector.h	/^  enum { _S_word_bit = int(CHAR_BIT * sizeof(_Bit_type)) };$/;"	e	enum:std::__anon4
-std::_Select1st	stl/stl_function.h	/^    struct _Select1st : public unary_function<_Pair,$/;"	s	namespace:std	inherits:unary_function
-std::_Select1st::operator ()	stl/stl_function.h	/^      operator()(_Pair& __x) const$/;"	f	struct:std::_Select1st	access:public	signature:(_Pair& __x) const
-std::_Select1st::operator ()	stl/stl_function.h	/^      operator()(const _Pair& __x) const$/;"	f	struct:std::_Select1st	access:public	signature:(const _Pair& __x) const
-std::_Select2nd	stl/stl_function.h	/^    struct _Select2nd : public unary_function<_Pair,$/;"	s	namespace:std	inherits:unary_function
-std::_Select2nd::operator ()	stl/stl_function.h	/^      operator()(_Pair& __x) const$/;"	f	struct:std::_Select2nd	access:public	signature:(_Pair& __x) const
-std::_Select2nd::operator ()	stl/stl_function.h	/^      operator()(const _Pair& __x) const$/;"	f	struct:std::_Select2nd	access:public	signature:(const _Pair& __x) const
-std::_Temporary_buffer	stl/stl_tempbuf.h	/^    class _Temporary_buffer$/;"	c	namespace:std
-std::_Temporary_buffer::_M_buffer	stl/stl_tempbuf.h	/^      pointer    _M_buffer;$/;"	m	class:std::_Temporary_buffer	access:protected
-std::_Temporary_buffer::_M_initialize_buffer	stl/stl_tempbuf.h	/^      _M_initialize_buffer(const _Tp& __val, __false_type)$/;"	f	class:std::_Temporary_buffer	access:protected	signature:(const _Tp& __val, __false_type)
-std::_Temporary_buffer::_M_initialize_buffer	stl/stl_tempbuf.h	/^      _M_initialize_buffer(const _Tp&, __true_type) { }$/;"	f	class:std::_Temporary_buffer	access:protected	signature:(const _Tp&, __true_type)
-std::_Temporary_buffer::_M_len	stl/stl_tempbuf.h	/^      size_type  _M_len;$/;"	m	class:std::_Temporary_buffer	access:protected
-std::_Temporary_buffer::_M_original_len	stl/stl_tempbuf.h	/^      size_type  _M_original_len;$/;"	m	class:std::_Temporary_buffer	access:protected
-std::_Temporary_buffer::_Temporary_buffer	stl/stl_tempbuf.h	/^      _Temporary_buffer(_ForwardIterator __first, _ForwardIterator __last);$/;"	p	class:std::_Temporary_buffer	access:public	signature:(_ForwardIterator __first, _ForwardIterator __last)
-std::_Temporary_buffer::_Temporary_buffer	stl/stl_tempbuf.h	/^      _Temporary_buffer(const _Temporary_buffer&);$/;"	p	class:std::_Temporary_buffer	access:private	signature:(const _Temporary_buffer&)
-std::_Temporary_buffer::_Temporary_buffer	stl/stl_tempbuf.h	/^    _Temporary_buffer(_ForwardIterator __first, _ForwardIterator __last)$/;"	f	class:std::_Temporary_buffer	signature:(_ForwardIterator __first, _ForwardIterator __last)
-std::_Temporary_buffer::begin	stl/stl_tempbuf.h	/^      begin()$/;"	f	class:std::_Temporary_buffer	access:public	signature:()
-std::_Temporary_buffer::end	stl/stl_tempbuf.h	/^      end()$/;"	f	class:std::_Temporary_buffer	access:public	signature:()
-std::_Temporary_buffer::iterator	stl/stl_tempbuf.h	/^      typedef pointer     iterator;$/;"	t	class:std::_Temporary_buffer	access:public
-std::_Temporary_buffer::operator =	stl/stl_tempbuf.h	/^      operator=(const _Temporary_buffer&);$/;"	p	class:std::_Temporary_buffer	access:private	signature:(const _Temporary_buffer&)
-std::_Temporary_buffer::pointer	stl/stl_tempbuf.h	/^      typedef value_type* pointer;$/;"	t	class:std::_Temporary_buffer	access:public
-std::_Temporary_buffer::requested_size	stl/stl_tempbuf.h	/^      requested_size() const$/;"	f	class:std::_Temporary_buffer	access:public	signature:() const
-std::_Temporary_buffer::size	stl/stl_tempbuf.h	/^      size() const$/;"	f	class:std::_Temporary_buffer	access:public	signature:() const
-std::_Temporary_buffer::size_type	stl/stl_tempbuf.h	/^      typedef ptrdiff_t   size_type;$/;"	t	class:std::_Temporary_buffer	access:public
-std::_Temporary_buffer::value_type	stl/stl_tempbuf.h	/^      typedef _Tp         value_type;$/;"	t	class:std::_Temporary_buffer	access:public
-std::_Temporary_buffer::~_Temporary_buffer	stl/stl_tempbuf.h	/^      ~_Temporary_buffer()$/;"	f	class:std::_Temporary_buffer	access:public	signature:()
-std::_Vector_base	stl/stl_vector.h	/^    struct _Vector_base$/;"	s	namespace:std
-std::_Vector_base::_M_allocate	stl/stl_vector.h	/^      _M_allocate(size_t __n)$/;"	f	struct:std::_Vector_base	access:public	signature:(size_t __n)
-std::_Vector_base::_M_deallocate	stl/stl_vector.h	/^      _M_deallocate(_Tp* __p, size_t __n)$/;"	f	struct:std::_Vector_base	access:public	signature:(_Tp* __p, size_t __n)
-std::_Vector_base::_M_get_Tp_allocator	stl/stl_vector.h	/^      _M_get_Tp_allocator() const$/;"	f	struct:std::_Vector_base	access:public	signature:() const
-std::_Vector_base::_M_get_Tp_allocator	stl/stl_vector.h	/^      _M_get_Tp_allocator()$/;"	f	struct:std::_Vector_base	access:public	signature:()
-std::_Vector_base::_M_impl	stl/stl_vector.h	/^      _Vector_impl _M_impl;$/;"	m	struct:std::_Vector_base	access:public
-std::_Vector_base::_Tp_alloc_type	stl/stl_vector.h	/^      typedef typename _Alloc::template rebind<_Tp>::other _Tp_alloc_type;$/;"	t	struct:std::_Vector_base	access:public
-std::_Vector_base::_Vector_base	stl/stl_vector.h	/^      _Vector_base(const allocator_type& __a)$/;"	f	struct:std::_Vector_base	access:public	signature:(const allocator_type& __a)
-std::_Vector_base::_Vector_base	stl/stl_vector.h	/^      _Vector_base(size_t __n, const allocator_type& __a)$/;"	f	struct:std::_Vector_base	access:public	signature:(size_t __n, const allocator_type& __a)
-std::_Vector_base::_Vector_impl	stl/stl_vector.h	/^      struct _Vector_impl $/;"	s	struct:std::_Vector_base	inherits:_Tp_alloc_type	access:public
-std::_Vector_base::_Vector_impl::_M_end_of_storage	stl/stl_vector.h	/^	_Tp*           _M_end_of_storage;$/;"	m	struct:std::_Vector_base::_Vector_impl	access:public
-std::_Vector_base::_Vector_impl::_M_finish	stl/stl_vector.h	/^	_Tp*           _M_finish;$/;"	m	struct:std::_Vector_base::_Vector_impl	access:public
-std::_Vector_base::_Vector_impl::_M_start	stl/stl_vector.h	/^	_Tp*           _M_start;$/;"	m	struct:std::_Vector_base::_Vector_impl	access:public
-std::_Vector_base::_Vector_impl::_Vector_impl	stl/stl_vector.h	/^	_Vector_impl(_Tp_alloc_type const& __a)$/;"	f	struct:std::_Vector_base::_Vector_impl	access:public	signature:(_Tp_alloc_type const& __a)
-std::_Vector_base::allocator_type	stl/stl_vector.h	/^      typedef _Alloc allocator_type;$/;"	t	struct:std::_Vector_base	access:public
-std::_Vector_base::get_allocator	stl/stl_vector.h	/^      get_allocator() const$/;"	f	struct:std::_Vector_base	access:public	signature:() const
-std::_Vector_base::~_Vector_base	stl/stl_vector.h	/^      ~_Vector_base()$/;"	f	struct:std::_Vector_base	access:public	signature:()
-std::__adjust_heap	stl/stl_heap.h	/^    __adjust_heap(_RandomAccessIterator __first, _Distance __holeIndex,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _Distance __holeIndex, _Distance __len, _Tp __value)
-std::__adjust_heap	stl/stl_heap.h	/^    __adjust_heap(_RandomAccessIterator __first, _Distance __holeIndex,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _Distance __holeIndex, _Distance __len, _Tp __value, _Compare __comp)
-std::__advance	stl/stl_iterator_base_funcs.h	/^    __advance(_BidirectionalIterator& __i, _Distance __n,$/;"	f	namespace:std	signature:(_BidirectionalIterator& __i, _Distance __n, bidirectional_iterator_tag)
-std::__advance	stl/stl_iterator_base_funcs.h	/^    __advance(_InputIterator& __i, _Distance __n, input_iterator_tag)$/;"	f	namespace:std	signature:(_InputIterator& __i, _Distance __n, input_iterator_tag)
-std::__advance	stl/stl_iterator_base_funcs.h	/^    __advance(_RandomAccessIterator& __i, _Distance __n,$/;"	f	namespace:std	signature:(_RandomAccessIterator& __i, _Distance __n, random_access_iterator_tag)
-std::__chunk_insertion_sort	stl/stl_algo.h	/^    __chunk_insertion_sort(_RandomAccessIterator __first,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last, _Distance __chunk_size)
-std::__chunk_insertion_sort	stl/stl_algo.h	/^    __chunk_insertion_sort(_RandomAccessIterator __first,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last, _Distance __chunk_size, _Compare __comp)
-std::__copy	stl/stl_algobase.h	/^    struct __copy$/;"	s	namespace:std
-std::__copy	stl/stl_algobase.h	/^    struct __copy<_BoolType, random_access_iterator_tag>$/;"	s	namespace:std
-std::__copy	stl/stl_algobase.h	/^    struct __copy<true, random_access_iterator_tag>$/;"	s	namespace:std
-std::__copy::copy	stl/stl_algobase.h	/^        copy(_II __first, _II __last, _OI __result)$/;"	f	struct:std::__copy	access:public	signature:(_II __first, _II __last, _OI __result)
-std::__copy::copy	stl/stl_algobase.h	/^        copy(const _Tp* __first, const _Tp* __last, _Tp* __result)$/;"	f	struct:std::__copy	access:public	signature:(const _Tp* __first, const _Tp* __last, _Tp* __result)
-std::__copy_aux	stl/stl_algobase.h	/^    __copy_aux(_CharT*, _CharT*, ostreambuf_iterator<_CharT>);$/;"	p	namespace:std	signature:(_CharT*, _CharT*, ostreambuf_iterator<_CharT>)
-std::__copy_aux	stl/stl_algobase.h	/^    __copy_aux(_II __first, _II __last, _OI __result)$/;"	f	namespace:std	signature:(_II __first, _II __last, _OI __result)
-std::__copy_aux	stl/stl_algobase.h	/^    __copy_aux(const _CharT*, const _CharT*, ostreambuf_iterator<_CharT>);$/;"	p	namespace:std	signature:(const _CharT*, const _CharT*, ostreambuf_iterator<_CharT>)
-std::__copy_aux	stl/stl_algobase.h	/^    __copy_aux(istreambuf_iterator<_CharT>, istreambuf_iterator<_CharT>,$/;"	p	namespace:std	signature:(istreambuf_iterator<_CharT>, istreambuf_iterator<_CharT>, _CharT*)
-std::__copy_backward	stl/stl_algobase.h	/^    struct __copy_backward$/;"	s	namespace:std
-std::__copy_backward	stl/stl_algobase.h	/^    struct __copy_backward<_BoolType, random_access_iterator_tag>$/;"	s	namespace:std
-std::__copy_backward	stl/stl_algobase.h	/^    struct __copy_backward<true, random_access_iterator_tag>$/;"	s	namespace:std
-std::__copy_backward::__copy_b	stl/stl_algobase.h	/^        __copy_b(_BI1 __first, _BI1 __last, _BI2 __result)$/;"	f	struct:std::__copy_backward	access:public	signature:(_BI1 __first, _BI1 __last, _BI2 __result)
-std::__copy_backward::__copy_b	stl/stl_algobase.h	/^        __copy_b(const _Tp* __first, const _Tp* __last, _Tp* __result)$/;"	f	struct:std::__copy_backward	access:public	signature:(const _Tp* __first, const _Tp* __last, _Tp* __result)
-std::__copy_backward_aux	stl/stl_algobase.h	/^    __copy_backward_aux(_BI1 __first, _BI1 __last, _BI2 __result)$/;"	f	namespace:std	signature:(_BI1 __first, _BI1 __last, _BI2 __result)
-std::__copy_backward_normal	stl/stl_algobase.h	/^    struct __copy_backward_normal$/;"	s	namespace:std
-std::__copy_backward_normal	stl/stl_algobase.h	/^    struct __copy_backward_normal<false, true>$/;"	s	namespace:std
-std::__copy_backward_normal	stl/stl_algobase.h	/^    struct __copy_backward_normal<true, false>$/;"	s	namespace:std
-std::__copy_backward_normal	stl/stl_algobase.h	/^    struct __copy_backward_normal<true, true>$/;"	s	namespace:std
-std::__copy_backward_normal::__copy_b_n	stl/stl_algobase.h	/^        __copy_b_n(_BI1 __first, _BI1 __last, _BI2 __result)$/;"	f	struct:std::__copy_backward_normal	access:public	signature:(_BI1 __first, _BI1 __last, _BI2 __result)
-std::__copy_normal	stl/stl_algobase.h	/^    struct __copy_normal$/;"	s	namespace:std
-std::__copy_normal	stl/stl_algobase.h	/^    struct __copy_normal<false, true>$/;"	s	namespace:std
-std::__copy_normal	stl/stl_algobase.h	/^    struct __copy_normal<true, false>$/;"	s	namespace:std
-std::__copy_normal	stl/stl_algobase.h	/^    struct __copy_normal<true, true>$/;"	s	namespace:std
-std::__copy_normal::__copy_n	stl/stl_algobase.h	/^        __copy_n(_II __first, _II __last, _OI __result)$/;"	f	struct:std::__copy_normal	access:public	signature:(_II __first, _II __last, _OI __result)
-std::__deque_buf_size	stl/stl_deque.h	/^  __deque_buf_size(size_t __size)$/;"	f	namespace:std	signature:(size_t __size)
-std::__destroy_aux	stl/stl_construct.h	/^    __destroy_aux(_ForwardIterator __first, _ForwardIterator __last,$/;"	f	namespace:std	signature:(_ForwardIterator __first, _ForwardIterator __last, __false_type)
-std::__destroy_aux	stl/stl_construct.h	/^    __destroy_aux(_ForwardIterator, _ForwardIterator, __true_type)$/;"	f	namespace:std	signature:(_ForwardIterator, _ForwardIterator, __true_type)
-std::__distance	stl/stl_iterator_base_funcs.h	/^    __distance(_InputIterator __first, _InputIterator __last,$/;"	f	namespace:std	signature:(_InputIterator __first, _InputIterator __last, input_iterator_tag)
-std::__distance	stl/stl_iterator_base_funcs.h	/^    __distance(_RandomAccessIterator __first, _RandomAccessIterator __last,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last, random_access_iterator_tag)
-std::__fill	stl/stl_algobase.h	/^    struct __fill$/;"	s	namespace:std
-std::__fill	stl/stl_algobase.h	/^    struct __fill<true>$/;"	s	namespace:std
-std::__fill::fill	stl/stl_algobase.h	/^        fill(_ForwardIterator __first, _ForwardIterator __last,$/;"	f	struct:std::__fill	access:public	signature:(_ForwardIterator __first, _ForwardIterator __last, const _Tp& __value)
-std::__fill_bvector	stl/stl_bvector.h	/^  __fill_bvector(_Bit_iterator __first, _Bit_iterator __last, bool __x)$/;"	f	namespace:std	signature:(_Bit_iterator __first, _Bit_iterator __last, bool __x)
-std::__fill_n	stl/stl_algobase.h	/^    struct __fill_n$/;"	s	namespace:std
-std::__fill_n	stl/stl_algobase.h	/^    struct __fill_n<true>$/;"	s	namespace:std
-std::__fill_n::fill_n	stl/stl_algobase.h	/^        fill_n(_OutputIterator __first, _Size __n, const _Tp& __value)$/;"	f	struct:std::__fill_n	access:public	signature:(_OutputIterator __first, _Size __n, const _Tp& __value)
-std::__final_insertion_sort	stl/stl_algo.h	/^    __final_insertion_sort(_RandomAccessIterator __first,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last)
-std::__final_insertion_sort	stl/stl_algo.h	/^    __final_insertion_sort(_RandomAccessIterator __first,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last, _Compare __comp)
-std::__find	stl/stl_algo.h	/^    __find(_InputIterator __first, _InputIterator __last,$/;"	f	namespace:std	signature:(_InputIterator __first, _InputIterator __last, const _Tp& __val, input_iterator_tag)
-std::__find	stl/stl_algo.h	/^    __find(_RandomAccessIterator __first, _RandomAccessIterator __last,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last, const _Tp& __val, random_access_iterator_tag)
-std::__find_end	stl/stl_algo.h	/^    __find_end(_BidirectionalIterator1 __first1,$/;"	f	namespace:std	signature:(_BidirectionalIterator1 __first1, _BidirectionalIterator1 __last1, _BidirectionalIterator2 __first2, _BidirectionalIterator2 __last2, bidirectional_iterator_tag, bidirectional_iterator_tag)
-std::__find_end	stl/stl_algo.h	/^    __find_end(_BidirectionalIterator1 __first1,$/;"	f	namespace:std	signature:(_BidirectionalIterator1 __first1, _BidirectionalIterator1 __last1, _BidirectionalIterator2 __first2, _BidirectionalIterator2 __last2, bidirectional_iterator_tag, bidirectional_iterator_tag, _BinaryPredicate __comp)
-std::__find_end	stl/stl_algo.h	/^    __find_end(_ForwardIterator1 __first1, _ForwardIterator1 __last1,$/;"	f	namespace:std	signature:(_ForwardIterator1 __first1, _ForwardIterator1 __last1, _ForwardIterator2 __first2, _ForwardIterator2 __last2, forward_iterator_tag, forward_iterator_tag)
-std::__find_end	stl/stl_algo.h	/^    __find_end(_ForwardIterator1 __first1, _ForwardIterator1 __last1,$/;"	f	namespace:std	signature:(_ForwardIterator1 __first1, _ForwardIterator1 __last1, _ForwardIterator2 __first2, _ForwardIterator2 __last2, forward_iterator_tag, forward_iterator_tag, _BinaryPredicate __comp)
-std::__find_if	stl/stl_algo.h	/^    __find_if(_InputIterator __first, _InputIterator __last,$/;"	f	namespace:std	signature:(_InputIterator __first, _InputIterator __last, _Predicate __pred, input_iterator_tag)
-std::__find_if	stl/stl_algo.h	/^    __find_if(_RandomAccessIterator __first, _RandomAccessIterator __last,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last, _Predicate __pred, random_access_iterator_tag)
-std::__gcd	stl/stl_algo.h	/^    __gcd(_EuclideanRingElement __m, _EuclideanRingElement __n)$/;"	f	namespace:std	signature:(_EuclideanRingElement __m, _EuclideanRingElement __n)
-std::__heap_select	stl/stl_algo.h	/^    __heap_select(_RandomAccessIterator __first,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __middle, _RandomAccessIterator __last)
-std::__heap_select	stl/stl_algo.h	/^    __heap_select(_RandomAccessIterator __first,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __middle, _RandomAccessIterator __last, _Compare __comp)
-std::__inplace_stable_partition	stl/stl_algo.h	/^    __inplace_stable_partition(_ForwardIterator __first,$/;"	f	namespace:std	signature:(_ForwardIterator __first, _ForwardIterator __last, _Predicate __pred, _Distance __len)
-std::__inplace_stable_sort	stl/stl_algo.h	/^    __inplace_stable_sort(_RandomAccessIterator __first,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last)
-std::__inplace_stable_sort	stl/stl_algo.h	/^    __inplace_stable_sort(_RandomAccessIterator __first,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last, _Compare __comp)
-std::__insertion_sort	stl/stl_algo.h	/^    __insertion_sort(_RandomAccessIterator __first,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last)
-std::__insertion_sort	stl/stl_algo.h	/^    __insertion_sort(_RandomAccessIterator __first,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last, _Compare __comp)
-std::__introselect	stl/stl_algo.h	/^    __introselect(_RandomAccessIterator __first, _RandomAccessIterator __nth,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __nth, _RandomAccessIterator __last, _Size __depth_limit)
-std::__introselect	stl/stl_algo.h	/^    __introselect(_RandomAccessIterator __first, _RandomAccessIterator __nth,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __nth, _RandomAccessIterator __last, _Size __depth_limit, _Compare __comp)
-std::__introsort_loop	stl/stl_algo.h	/^    __introsort_loop(_RandomAccessIterator __first,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last, _Size __depth_limit)
-std::__introsort_loop	stl/stl_algo.h	/^    __introsort_loop(_RandomAccessIterator __first,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last, _Size __depth_limit, _Compare __comp)
-std::__is_heap	stl/stl_heap.h	/^    __is_heap(_RandomAccessIterator __first, _Distance __n)$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _Distance __n)
-std::__is_heap	stl/stl_heap.h	/^    __is_heap(_RandomAccessIterator __first, _RandomAccessIterator __last)$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last)
-std::__is_heap	stl/stl_heap.h	/^    __is_heap(_RandomAccessIterator __first, _RandomAccessIterator __last,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last, _StrictWeakOrdering __comp)
-std::__is_heap	stl/stl_heap.h	/^    __is_heap(_RandomAccessIterator __first, _StrictWeakOrdering __comp,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _StrictWeakOrdering __comp, _Distance __n)
-std::__iter_swap	stl/stl_algobase.h	/^    struct __iter_swap$/;"	s	namespace:std
-std::__iter_swap	stl/stl_algobase.h	/^    struct __iter_swap<true>$/;"	s	namespace:std
-std::__iter_swap::iter_swap	stl/stl_algobase.h	/^        iter_swap(_ForwardIterator1 __a, _ForwardIterator2 __b)$/;"	f	struct:std::__iter_swap	access:public	signature:(_ForwardIterator1 __a, _ForwardIterator2 __b)
-std::__iterator_category	stl/stl_iterator_base_types.h	/^    __iterator_category(const _Iter&)$/;"	f	namespace:std	signature:(const _Iter&)
-std::__lg	stl/stl_algo.h	/^    __lg(_Size __n)$/;"	f	namespace:std	signature:(_Size __n)
-std::__median	stl/stl_algo.h	/^    __median(const _Tp& __a, const _Tp& __b, const _Tp& __c)$/;"	f	namespace:std	signature:(const _Tp& __a, const _Tp& __b, const _Tp& __c)
-std::__median	stl/stl_algo.h	/^    __median(const _Tp& __a, const _Tp& __b, const _Tp& __c, _Compare __comp)$/;"	f	namespace:std	signature:(const _Tp& __a, const _Tp& __b, const _Tp& __c, _Compare __comp)
-std::__merge_adaptive	stl/stl_algo.h	/^    __merge_adaptive(_BidirectionalIterator __first,$/;"	f	namespace:std	signature:(_BidirectionalIterator __first, _BidirectionalIterator __middle, _BidirectionalIterator __last, _Distance __len1, _Distance __len2, _Pointer __buffer, _Distance __buffer_size)
-std::__merge_adaptive	stl/stl_algo.h	/^    __merge_adaptive(_BidirectionalIterator __first,$/;"	f	namespace:std	signature:(_BidirectionalIterator __first, _BidirectionalIterator __middle, _BidirectionalIterator __last, _Distance __len1, _Distance __len2, _Pointer __buffer, _Distance __buffer_size, _Compare __comp)
-std::__merge_backward	stl/stl_algo.h	/^    __merge_backward(_BidirectionalIterator1 __first1,$/;"	f	namespace:std	signature:(_BidirectionalIterator1 __first1, _BidirectionalIterator1 __last1, _BidirectionalIterator2 __first2, _BidirectionalIterator2 __last2, _BidirectionalIterator3 __result)
-std::__merge_backward	stl/stl_algo.h	/^    __merge_backward(_BidirectionalIterator1 __first1,$/;"	f	namespace:std	signature:(_BidirectionalIterator1 __first1, _BidirectionalIterator1 __last1, _BidirectionalIterator2 __first2, _BidirectionalIterator2 __last2, _BidirectionalIterator3 __result, _Compare __comp)
-std::__merge_sort_loop	stl/stl_algo.h	/^    __merge_sort_loop(_RandomAccessIterator1 __first,$/;"	f	namespace:std	signature:(_RandomAccessIterator1 __first, _RandomAccessIterator1 __last, _RandomAccessIterator2 __result, _Distance __step_size)
-std::__merge_sort_loop	stl/stl_algo.h	/^    __merge_sort_loop(_RandomAccessIterator1 __first,$/;"	f	namespace:std	signature:(_RandomAccessIterator1 __first, _RandomAccessIterator1 __last, _RandomAccessIterator2 __result, _Distance __step_size, _Compare __comp)
-std::__merge_sort_with_buffer	stl/stl_algo.h	/^    __merge_sort_with_buffer(_RandomAccessIterator __first,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last, _Pointer __buffer)
-std::__merge_sort_with_buffer	stl/stl_algo.h	/^    __merge_sort_with_buffer(_RandomAccessIterator __first,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last, _Pointer __buffer, _Compare __comp)
-std::__merge_without_buffer	stl/stl_algo.h	/^    __merge_without_buffer(_BidirectionalIterator __first,$/;"	f	namespace:std	signature:(_BidirectionalIterator __first, _BidirectionalIterator __middle, _BidirectionalIterator __last, _Distance __len1, _Distance __len2)
-std::__merge_without_buffer	stl/stl_algo.h	/^    __merge_without_buffer(_BidirectionalIterator __first,$/;"	f	namespace:std	signature:(_BidirectionalIterator __first, _BidirectionalIterator __middle, _BidirectionalIterator __last, _Distance __len1, _Distance __len2, _Compare __comp)
-std::__partition	stl/stl_algo.h	/^    __partition(_BidirectionalIterator __first, _BidirectionalIterator __last,$/;"	f	namespace:std	signature:(_BidirectionalIterator __first, _BidirectionalIterator __last, _Predicate __pred, bidirectional_iterator_tag)
-std::__partition	stl/stl_algo.h	/^    __partition(_ForwardIterator __first, _ForwardIterator __last,$/;"	f	namespace:std	signature:(_ForwardIterator __first, _ForwardIterator __last, _Predicate __pred, forward_iterator_tag)
-std::__pop_heap	stl/stl_heap.h	/^    __pop_heap(_RandomAccessIterator __first, _RandomAccessIterator __last,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last, _RandomAccessIterator __result, _Tp __value)
-std::__pop_heap	stl/stl_heap.h	/^    __pop_heap(_RandomAccessIterator __first, _RandomAccessIterator __last,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last, _RandomAccessIterator __result, _Tp __value, _Compare __comp)
-std::__push_heap	stl/stl_heap.h	/^    __push_heap(_RandomAccessIterator __first, _Distance __holeIndex,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _Distance __holeIndex, _Distance __topIndex, _Tp __value, _Compare __comp)
-std::__push_heap	stl/stl_heap.h	/^    __push_heap(_RandomAccessIterator __first,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _Distance __holeIndex, _Distance __topIndex, _Tp __value)
-std::__reverse	stl/stl_algo.h	/^    __reverse(_BidirectionalIterator __first, _BidirectionalIterator __last,$/;"	f	namespace:std	signature:(_BidirectionalIterator __first, _BidirectionalIterator __last, bidirectional_iterator_tag)
-std::__reverse	stl/stl_algo.h	/^    __reverse(_RandomAccessIterator __first, _RandomAccessIterator __last,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last, random_access_iterator_tag)
-std::__rotate	stl/stl_algo.h	/^    __rotate(_BidirectionalIterator __first,$/;"	f	namespace:std	signature:(_BidirectionalIterator __first, _BidirectionalIterator __middle, _BidirectionalIterator __last, bidirectional_iterator_tag)
-std::__rotate	stl/stl_algo.h	/^    __rotate(_ForwardIterator __first,$/;"	f	namespace:std	signature:(_ForwardIterator __first, _ForwardIterator __middle, _ForwardIterator __last, forward_iterator_tag)
-std::__rotate	stl/stl_algo.h	/^    __rotate(_RandomAccessIterator __first,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __middle, _RandomAccessIterator __last, random_access_iterator_tag)
-std::__rotate_adaptive	stl/stl_algo.h	/^    __rotate_adaptive(_BidirectionalIterator1 __first,$/;"	f	namespace:std	signature:(_BidirectionalIterator1 __first, _BidirectionalIterator1 __middle, _BidirectionalIterator1 __last, _Distance __len1, _Distance __len2, _BidirectionalIterator2 __buffer, _Distance __buffer_size)
-std::__search_n	stl/stl_algo.h	/^    __search_n(_ForwardIterator __first, _ForwardIterator __last,$/;"	f	namespace:std	signature:(_ForwardIterator __first, _ForwardIterator __last, _Integer __count, const _Tp& __val, _BinaryPredicate __binary_pred, std::forward_iterator_tag)
-std::__search_n	stl/stl_algo.h	/^    __search_n(_ForwardIterator __first, _ForwardIterator __last,$/;"	f	namespace:std	signature:(_ForwardIterator __first, _ForwardIterator __last, _Integer __count, const _Tp& __val, std::forward_iterator_tag)
-std::__search_n	stl/stl_algo.h	/^    __search_n(_RandomAccessIter __first, _RandomAccessIter __last,$/;"	f	namespace:std	signature:(_RandomAccessIter __first, _RandomAccessIter __last, _Integer __count, const _Tp& __val, _BinaryPredicate __binary_pred, std::random_access_iterator_tag)
-std::__search_n	stl/stl_algo.h	/^    __search_n(_RandomAccessIter __first, _RandomAccessIter __last,$/;"	f	namespace:std	signature:(_RandomAccessIter __first, _RandomAccessIter __last, _Integer __count, const _Tp& __val, std::random_access_iterator_tag)
-std::__stable_partition_adaptive	stl/stl_algo.h	/^    __stable_partition_adaptive(_ForwardIterator __first,$/;"	f	namespace:std	signature:(_ForwardIterator __first, _ForwardIterator __last, _Predicate __pred, _Distance __len, _Pointer __buffer, _Distance __buffer_size)
-std::__stable_sort_adaptive	stl/stl_algo.h	/^    __stable_sort_adaptive(_RandomAccessIterator __first,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last, _Pointer __buffer, _Distance __buffer_size)
-std::__stable_sort_adaptive	stl/stl_algo.h	/^    __stable_sort_adaptive(_RandomAccessIterator __first,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last, _Pointer __buffer, _Distance __buffer_size, _Compare __comp)
-std::__unguarded_insertion_sort	stl/stl_algo.h	/^    __unguarded_insertion_sort(_RandomAccessIterator __first,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last)
-std::__unguarded_insertion_sort	stl/stl_algo.h	/^    __unguarded_insertion_sort(_RandomAccessIterator __first,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last, _Compare __comp)
-std::__unguarded_linear_insert	stl/stl_algo.h	/^    __unguarded_linear_insert(_RandomAccessIterator __last, _Tp __val)$/;"	f	namespace:std	signature:(_RandomAccessIterator __last, _Tp __val)
-std::__unguarded_linear_insert	stl/stl_algo.h	/^    __unguarded_linear_insert(_RandomAccessIterator __last, _Tp __val,$/;"	f	namespace:std	signature:(_RandomAccessIterator __last, _Tp __val, _Compare __comp)
-std::__unguarded_partition	stl/stl_algo.h	/^    __unguarded_partition(_RandomAccessIterator __first,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last, _Tp __pivot)
-std::__unguarded_partition	stl/stl_algo.h	/^    __unguarded_partition(_RandomAccessIterator __first,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last, _Tp __pivot, _Compare __comp)
-std::__uninitialized_copy_a	stl/stl_uninitialized.h	/^    __uninitialized_copy_a(_InputIterator __first, _InputIterator __last,$/;"	f	namespace:std	signature:(_InputIterator __first, _InputIterator __last, _ForwardIterator __result, _Allocator __alloc)
-std::__uninitialized_copy_a	stl/stl_uninitialized.h	/^    __uninitialized_copy_a(_InputIterator __first, _InputIterator __last,$/;"	f	namespace:std	signature:(_InputIterator __first, _InputIterator __last, _ForwardIterator __result, allocator<_Tp>)
-std::__uninitialized_copy_aux	stl/stl_uninitialized.h	/^    __uninitialized_copy_aux(_InputIterator __first, _InputIterator __last,$/;"	f	namespace:std	signature:(_InputIterator __first, _InputIterator __last, _ForwardIterator __result, __false_type)
-std::__uninitialized_copy_aux	stl/stl_uninitialized.h	/^    __uninitialized_copy_aux(_InputIterator __first, _InputIterator __last,$/;"	f	namespace:std	signature:(_InputIterator __first, _InputIterator __last, _ForwardIterator __result, __true_type)
-std::__uninitialized_copy_copy	stl/stl_uninitialized.h	/^    __uninitialized_copy_copy(_InputIterator1 __first1,$/;"	f	namespace:std	signature:(_InputIterator1 __first1, _InputIterator1 __last1, _InputIterator2 __first2, _InputIterator2 __last2, _ForwardIterator __result, _Allocator __alloc)
-std::__uninitialized_copy_fill	stl/stl_uninitialized.h	/^    __uninitialized_copy_fill(_InputIterator __first1, _InputIterator __last1,$/;"	f	namespace:std	signature:(_InputIterator __first1, _InputIterator __last1, _ForwardIterator __first2, _ForwardIterator __last2, const _Tp& __x, _Allocator __alloc)
-std::__uninitialized_fill_a	stl/stl_uninitialized.h	/^    __uninitialized_fill_a(_ForwardIterator __first, _ForwardIterator __last,$/;"	f	namespace:std	signature:(_ForwardIterator __first, _ForwardIterator __last, const _Tp& __x, _Allocator __alloc)
-std::__uninitialized_fill_a	stl/stl_uninitialized.h	/^    __uninitialized_fill_a(_ForwardIterator __first, _ForwardIterator __last,$/;"	f	namespace:std	signature:(_ForwardIterator __first, _ForwardIterator __last, const _Tp& __x, allocator<_Tp2>)
-std::__uninitialized_fill_aux	stl/stl_uninitialized.h	/^    __uninitialized_fill_aux(_ForwardIterator __first, _ForwardIterator __last,$/;"	f	namespace:std	signature:(_ForwardIterator __first, _ForwardIterator __last, const _Tp& __x, __false_type)
-std::__uninitialized_fill_aux	stl/stl_uninitialized.h	/^    __uninitialized_fill_aux(_ForwardIterator __first,$/;"	f	namespace:std	signature:(_ForwardIterator __first, _ForwardIterator __last, const _Tp& __x, __true_type)
-std::__uninitialized_fill_copy	stl/stl_uninitialized.h	/^    __uninitialized_fill_copy(_ForwardIterator __result, _ForwardIterator __mid,$/;"	f	namespace:std	signature:(_ForwardIterator __result, _ForwardIterator __mid, const _Tp& __x, _InputIterator __first, _InputIterator __last, _Allocator __alloc)
-std::__uninitialized_fill_n_a	stl/stl_uninitialized.h	/^    __uninitialized_fill_n_a(_ForwardIterator __first, _Size __n, $/;"	f	namespace:std	signature:(_ForwardIterator __first, _Size __n, const _Tp& __x, _Allocator __alloc)
-std::__uninitialized_fill_n_a	stl/stl_uninitialized.h	/^    __uninitialized_fill_n_a(_ForwardIterator __first, _Size __n, $/;"	f	namespace:std	signature:(_ForwardIterator __first, _Size __n, const _Tp& __x, allocator<_Tp2>)
-std::__uninitialized_fill_n_aux	stl/stl_uninitialized.h	/^    __uninitialized_fill_n_aux(_ForwardIterator __first, _Size __n,$/;"	f	namespace:std	signature:(_ForwardIterator __first, _Size __n, const _Tp& __x, __false_type)
-std::__uninitialized_fill_n_aux	stl/stl_uninitialized.h	/^    __uninitialized_fill_n_aux(_ForwardIterator __first, _Size __n,$/;"	f	namespace:std	signature:(_ForwardIterator __first, _Size __n, const _Tp& __x, __true_type)
-std::__unique_copy	stl/stl_algo.h	/^    __unique_copy(_ForwardIterator __first, _ForwardIterator __last,$/;"	f	namespace:std	signature:(_ForwardIterator __first, _ForwardIterator __last, _OutputIterator __result, _BinaryPredicate __binary_pred, forward_iterator_tag, output_iterator_tag)
-std::__unique_copy	stl/stl_algo.h	/^    __unique_copy(_ForwardIterator __first, _ForwardIterator __last,$/;"	f	namespace:std	signature:(_ForwardIterator __first, _ForwardIterator __last, _OutputIterator __result, forward_iterator_tag, output_iterator_tag)
-std::__unique_copy	stl/stl_algo.h	/^    __unique_copy(_InputIterator __first, _InputIterator __last,$/;"	f	namespace:std	signature:(_InputIterator __first, _InputIterator __last, _ForwardIterator __result, _BinaryPredicate __binary_pred, input_iterator_tag, forward_iterator_tag)
-std::__unique_copy	stl/stl_algo.h	/^    __unique_copy(_InputIterator __first, _InputIterator __last,$/;"	f	namespace:std	signature:(_InputIterator __first, _InputIterator __last, _ForwardIterator __result, input_iterator_tag, forward_iterator_tag)
-std::__unique_copy	stl/stl_algo.h	/^    __unique_copy(_InputIterator __first, _InputIterator __last,$/;"	f	namespace:std	signature:(_InputIterator __first, _InputIterator __last, _OutputIterator __result, _BinaryPredicate __binary_pred, input_iterator_tag, output_iterator_tag)
-std::__unique_copy	stl/stl_algo.h	/^    __unique_copy(_InputIterator __first, _InputIterator __last,$/;"	f	namespace:std	signature:(_InputIterator __first, _InputIterator __last, _OutputIterator __result, input_iterator_tag, output_iterator_tag)
 std::accumulate	stl/stl_numeric.h	/^    accumulate(_InputIterator __first, _InputIterator __last, _Tp __init)$/;"	f	namespace:std	signature:(_InputIterator __first, _InputIterator __last, _Tp __init)
 std::accumulate	stl/stl_numeric.h	/^    accumulate(_InputIterator __first, _InputIterator __last, _Tp __init,$/;"	f	namespace:std	signature:(_InputIterator __first, _InputIterator __last, _Tp __init, _BinaryOperation __binary_op)
 std::adjacent_difference	stl/stl_numeric.h	/^    adjacent_difference(_InputIterator __first, _InputIterator __last,$/;"	f	namespace:std	signature:(_InputIterator __first, _InputIterator __last, _OutputIterator __result, _BinaryOperation __binary_op)
@@ -1714,7 +1080,6 @@ std::binary_function::first_argument_type	stl/stl_function.h	/^      typedef _Ar
 std::binary_function::result_type	stl/stl_function.h	/^      typedef _Result result_type;         \/\/\/< type of the return type$/;"	t	struct:std::binary_function	access:public
 std::binary_function::second_argument_type	stl/stl_function.h	/^      typedef _Arg2 second_argument_type;  \/\/\/< the type of the second argument$/;"	t	struct:std::binary_function	access:public
 std::binary_negate	stl/stl_function.h	/^    class binary_negate$/;"	c	namespace:std	inherits:binary_function
-std::binary_negate::_M_pred	stl/stl_function.h	/^      _Predicate _M_pred;$/;"	m	class:std::binary_negate	access:protected
 std::binary_negate::binary_negate	stl/stl_function.h	/^      binary_negate(const _Predicate& __x)$/;"	f	class:std::binary_negate	access:public	signature:(const _Predicate& __x)
 std::binary_negate::operator ()	stl/stl_function.h	/^      operator()(const typename _Predicate::first_argument_type& __x,$/;"	f	class:std::binary_negate	access:public	signature:(const typename _Predicate::first_argument_type& __x, const typename _Predicate::second_argument_type& __y) const
 std::binary_search	stl/stl_algo.h	/^    binary_search(_ForwardIterator __first, _ForwardIterator __last,$/;"	f	namespace:std	signature:(_ForwardIterator __first, _ForwardIterator __last, const _Tp& __val)
@@ -1734,20 +1099,11 @@ std::binder2nd::operator ()	stl/stl_function.h	/^      operator()(const typename
 std::binder2nd::operator ()	stl/stl_function.h	/^      operator()(typename _Operation::first_argument_type& __x) const$/;"	f	class:std::binder2nd	access:public	signature:(typename _Operation::first_argument_type& __x) const
 std::binder2nd::value	stl/stl_function.h	/^      typename _Operation::second_argument_type value;$/;"	m	class:std::binder2nd	access:protected
 std::const_mem_fun1_ref_t	stl/stl_function.h	/^    class const_mem_fun1_ref_t : public binary_function<_Tp, _Arg, _Ret>$/;"	c	namespace:std	inherits:binary_function
-std::const_mem_fun1_ref_t::_M_f	stl/stl_function.h	/^      _Ret (_Tp::*_M_f)(_Arg) const;$/;"	m	class:std::const_mem_fun1_ref_t	access:private
-std::const_mem_fun1_ref_t::_Ret	stl/stl_function.h	/^      const_mem_fun1_ref_t(_Ret (_Tp::*__pf)(_Arg) const)$/;"	f	class:std::const_mem_fun1_ref_t	access:public	signature:(_Tp::*__pf) const
-std::const_mem_fun1_ref_t::operator ()	stl/stl_function.h	/^      operator()(const _Tp& __r, _Arg __x) const$/;"	f	class:std::const_mem_fun1_ref_t	access:public	signature:(const _Tp& __r, _Arg __x) const
 std::const_mem_fun1_t	stl/stl_function.h	/^    class const_mem_fun1_t : public binary_function<const _Tp*, _Arg, _Ret>$/;"	c	namespace:std	inherits:binary_function
-std::const_mem_fun1_t::_M_f	stl/stl_function.h	/^      _Ret (_Tp::*_M_f)(_Arg) const;$/;"	m	class:std::const_mem_fun1_t	access:private
-std::const_mem_fun1_t::_Ret	stl/stl_function.h	/^      const_mem_fun1_t(_Ret (_Tp::*__pf)(_Arg) const)$/;"	f	class:std::const_mem_fun1_t	access:public	signature:(_Tp::*__pf) const
 std::const_mem_fun1_t::operator ()	stl/stl_function.h	/^      operator()(const _Tp* __p, _Arg __x) const$/;"	f	class:std::const_mem_fun1_t	access:public	signature:(const _Tp* __p, _Arg __x) const
 std::const_mem_fun_ref_t	stl/stl_function.h	/^    class const_mem_fun_ref_t : public unary_function<_Tp, _Ret>$/;"	c	namespace:std	inherits:unary_function
-std::const_mem_fun_ref_t::_M_f	stl/stl_function.h	/^      _Ret (_Tp::*_M_f)() const;$/;"	m	class:std::const_mem_fun_ref_t	access:private
-std::const_mem_fun_ref_t::_Ret	stl/stl_function.h	/^      const_mem_fun_ref_t(_Ret (_Tp::*__pf)() const)$/;"	f	class:std::const_mem_fun_ref_t	access:public	signature:(_Tp::*__pf) const
 std::const_mem_fun_ref_t::operator ()	stl/stl_function.h	/^      operator()(const _Tp& __r) const$/;"	f	class:std::const_mem_fun_ref_t	access:public	signature:(const _Tp& __r) const
 std::const_mem_fun_t	stl/stl_function.h	/^    class const_mem_fun_t : public unary_function<const _Tp*, _Ret>$/;"	c	namespace:std	inherits:unary_function
-std::const_mem_fun_t::_M_f	stl/stl_function.h	/^      _Ret (_Tp::*_M_f)() const;$/;"	m	class:std::const_mem_fun_t	access:private
-std::const_mem_fun_t::_Ret	stl/stl_function.h	/^      const_mem_fun_t(_Ret (_Tp::*__pf)() const)$/;"	f	class:std::const_mem_fun_t	access:public	signature:(_Tp::*__pf) const
 std::const_mem_fun_t::operator ()	stl/stl_function.h	/^      operator()(const _Tp* __p) const$/;"	f	class:std::const_mem_fun_t	access:public	signature:(const _Tp* __p) const
 std::copy	stl/stl_algobase.h	/^    copy(_InputIterator __first, _InputIterator __last,$/;"	f	namespace:std	signature:(_InputIterator __first, _InputIterator __last, _OutputIterator __result)
 std::copy	stl/stl_algobase.h	/^    copy(istreambuf_iterator<_CharT>, istreambuf_iterator<_CharT>,$/;"	p	namespace:std	signature:(istreambuf_iterator<_CharT>, istreambuf_iterator<_CharT>, ostreambuf_iterator<_CharT>)
@@ -1755,48 +1111,6 @@ std::copy_backward	stl/stl_algobase.h	/^    copy_backward(_BI1 __first, _BI1 __l
 std::count	stl/stl_algo.h	/^    count(_InputIterator __first, _InputIterator __last, const _Tp& __value)$/;"	f	namespace:std	signature:(_InputIterator __first, _InputIterator __last, const _Tp& __value)
 std::count_if	stl/stl_algo.h	/^    count_if(_InputIterator __first, _InputIterator __last, _Predicate __pred)$/;"	f	namespace:std	signature:(_InputIterator __first, _InputIterator __last, _Predicate __pred)
 std::deque	stl/stl_deque.h	/^    class deque : protected _Deque_base<_Tp, _Alloc>$/;"	c	namespace:std	inherits:_Deque_base
-std::deque::_Alloc_value_type	stl/stl_deque.h	/^      typedef typename _Alloc::value_type        _Alloc_value_type;$/;"	t	class:std::deque	access:private
-std::deque::_Base	stl/stl_deque.h	/^      typedef _Deque_base<_Tp, _Alloc>           _Base;$/;"	t	class:std::deque	access:private
-std::deque::_M_assign_aux	stl/stl_deque.h	/^        _M_assign_aux(_ForwardIterator __first, _ForwardIterator __last,$/;"	f	class:std::deque	access:protected	signature:(_ForwardIterator __first, _ForwardIterator __last, std::forward_iterator_tag)
-std::deque::_M_assign_aux	stl/stl_deque.h	/^        _M_assign_aux(_InputIterator __first, _InputIterator __last,$/;"	p	class:std::deque	access:protected	signature:(_InputIterator __first, _InputIterator __last, std::input_iterator_tag)
-std::deque::_M_assign_dispatch	stl/stl_deque.h	/^        _M_assign_dispatch(_InputIterator __first, _InputIterator __last,$/;"	f	class:std::deque	access:protected	signature:(_InputIterator __first, _InputIterator __last, __false_type)
-std::deque::_M_assign_dispatch	stl/stl_deque.h	/^        _M_assign_dispatch(_Integer __n, _Integer __val, __true_type)$/;"	f	class:std::deque	access:protected	signature:(_Integer __n, _Integer __val, __true_type)
-std::deque::_M_destroy_data	stl/stl_deque.h	/^        _M_destroy_data(iterator __first, iterator __last, const _Alloc1&)$/;"	f	class:std::deque	access:protected	signature:(iterator __first, iterator __last, const _Alloc1&)
-std::deque::_M_destroy_data	stl/stl_deque.h	/^      _M_destroy_data(iterator __first, iterator __last,$/;"	f	class:std::deque	access:protected	signature:(iterator __first, iterator __last, const std::allocator<_Tp>&)
-std::deque::_M_destroy_data_aux	stl/stl_deque.h	/^      _M_destroy_data_aux(iterator __first, iterator __last);$/;"	p	class:std::deque	access:protected	signature:(iterator __first, iterator __last)
-std::deque::_M_destroy_data_dispatch	stl/stl_deque.h	/^      _M_destroy_data_dispatch(iterator __first, iterator __last, __false_type)$/;"	f	class:std::deque	access:protected	signature:(iterator __first, iterator __last, __false_type)
-std::deque::_M_destroy_data_dispatch	stl/stl_deque.h	/^      _M_destroy_data_dispatch(iterator, iterator, __true_type) { }$/;"	f	class:std::deque	access:protected	signature:(iterator, iterator, __true_type)
-std::deque::_M_erase_at_begin	stl/stl_deque.h	/^      _M_erase_at_begin(iterator __pos)$/;"	f	class:std::deque	access:protected	signature:(iterator __pos)
-std::deque::_M_erase_at_end	stl/stl_deque.h	/^      _M_erase_at_end(iterator __pos)$/;"	f	class:std::deque	access:protected	signature:(iterator __pos)
-std::deque::_M_fill_assign	stl/stl_deque.h	/^      _M_fill_assign(size_type __n, const value_type& __val)$/;"	f	class:std::deque	access:protected	signature:(size_type __n, const value_type& __val)
-std::deque::_M_fill_initialize	stl/stl_deque.h	/^      _M_fill_initialize(const value_type& __value);$/;"	p	class:std::deque	access:protected	signature:(const value_type& __value)
-std::deque::_M_fill_insert	stl/stl_deque.h	/^      _M_fill_insert(iterator __pos, size_type __n, const value_type& __x);$/;"	p	class:std::deque	access:protected	signature:(iterator __pos, size_type __n, const value_type& __x)
-std::deque::_M_initialize_dispatch	stl/stl_deque.h	/^        _M_initialize_dispatch(_InputIterator __first, _InputIterator __last,$/;"	f	class:std::deque	access:protected	signature:(_InputIterator __first, _InputIterator __last, __false_type)
-std::deque::_M_initialize_dispatch	stl/stl_deque.h	/^        _M_initialize_dispatch(_Integer __n, _Integer __x, __true_type)$/;"	f	class:std::deque	access:protected	signature:(_Integer __n, _Integer __x, __true_type)
-std::deque::_M_insert_aux	stl/stl_deque.h	/^        _M_insert_aux(iterator __pos,$/;"	p	class:std::deque	access:protected	signature:(iterator __pos, _ForwardIterator __first, _ForwardIterator __last, size_type __n)
-std::deque::_M_insert_aux	stl/stl_deque.h	/^      _M_insert_aux(iterator __pos, const value_type& __x);$/;"	p	class:std::deque	access:protected	signature:(iterator __pos, const value_type& __x)
-std::deque::_M_insert_aux	stl/stl_deque.h	/^      _M_insert_aux(iterator __pos, size_type __n, const value_type& __x);$/;"	p	class:std::deque	access:protected	signature:(iterator __pos, size_type __n, const value_type& __x)
-std::deque::_M_insert_dispatch	stl/stl_deque.h	/^        _M_insert_dispatch(iterator __pos,$/;"	f	class:std::deque	access:protected	signature:(iterator __pos, _InputIterator __first, _InputIterator __last, __false_type)
-std::deque::_M_insert_dispatch	stl/stl_deque.h	/^        _M_insert_dispatch(iterator __pos,$/;"	f	class:std::deque	access:protected	signature:(iterator __pos, _Integer __n, _Integer __x, __true_type)
-std::deque::_M_new_elements_at_back	stl/stl_deque.h	/^      _M_new_elements_at_back(size_type __new_elements);$/;"	p	class:std::deque	access:protected	signature:(size_type __new_elements)
-std::deque::_M_new_elements_at_front	stl/stl_deque.h	/^      _M_new_elements_at_front(size_type __new_elements);$/;"	p	class:std::deque	access:protected	signature:(size_type __new_elements)
-std::deque::_M_pop_back_aux	stl/stl_deque.h	/^      void _M_pop_back_aux();$/;"	p	class:std::deque	access:protected	signature:()
-std::deque::_M_pop_front_aux	stl/stl_deque.h	/^      void _M_pop_front_aux();$/;"	p	class:std::deque	access:protected	signature:()
-std::deque::_M_push_back_aux	stl/stl_deque.h	/^      void _M_push_back_aux(const value_type&);$/;"	p	class:std::deque	access:protected	signature:(const value_type&)
-std::deque::_M_push_front_aux	stl/stl_deque.h	/^      void _M_push_front_aux(const value_type&);$/;"	p	class:std::deque	access:protected	signature:(const value_type&)
-std::deque::_M_range_check	stl/stl_deque.h	/^      _M_range_check(size_type __n) const$/;"	f	class:std::deque	access:protected	signature:(size_type __n) const
-std::deque::_M_range_initialize	stl/stl_deque.h	/^        _M_range_initialize(_ForwardIterator __first, _ForwardIterator __last,$/;"	p	class:std::deque	access:protected	signature:(_ForwardIterator __first, _ForwardIterator __last, std::forward_iterator_tag)
-std::deque::_M_range_initialize	stl/stl_deque.h	/^        _M_range_initialize(_InputIterator __first, _InputIterator __last,$/;"	p	class:std::deque	access:protected	signature:(_InputIterator __first, _InputIterator __last, std::input_iterator_tag)
-std::deque::_M_range_insert_aux	stl/stl_deque.h	/^        _M_range_insert_aux(iterator __pos, _ForwardIterator __first,$/;"	p	class:std::deque	access:protected	signature:(iterator __pos, _ForwardIterator __first, _ForwardIterator __last, std::forward_iterator_tag)
-std::deque::_M_range_insert_aux	stl/stl_deque.h	/^        _M_range_insert_aux(iterator __pos, _InputIterator __first,$/;"	p	class:std::deque	access:protected	signature:(iterator __pos, _InputIterator __first, _InputIterator __last, std::input_iterator_tag)
-std::deque::_M_reallocate_map	stl/stl_deque.h	/^      _M_reallocate_map(size_type __nodes_to_add, bool __add_at_front);$/;"	p	class:std::deque	access:protected	signature:(size_type __nodes_to_add, bool __add_at_front)
-std::deque::_M_reserve_elements_at_back	stl/stl_deque.h	/^      _M_reserve_elements_at_back(size_type __n)$/;"	f	class:std::deque	access:protected	signature:(size_type __n)
-std::deque::_M_reserve_elements_at_front	stl/stl_deque.h	/^      _M_reserve_elements_at_front(size_type __n)$/;"	f	class:std::deque	access:protected	signature:(size_type __n)
-std::deque::_M_reserve_map_at_back	stl/stl_deque.h	/^      _M_reserve_map_at_back(size_type __nodes_to_add = 1)$/;"	f	class:std::deque	access:protected	signature:(size_type __nodes_to_add = 1)
-std::deque::_M_reserve_map_at_front	stl/stl_deque.h	/^      _M_reserve_map_at_front(size_type __nodes_to_add = 1)$/;"	f	class:std::deque	access:protected	signature:(size_type __nodes_to_add = 1)
-std::deque::_Map_pointer	stl/stl_deque.h	/^      typedef pointer*                           _Map_pointer;$/;"	t	class:std::deque	access:protected
-std::deque::_S_buffer_size	stl/stl_deque.h	/^      static size_t _S_buffer_size()$/;"	f	class:std::deque	access:protected	signature:()
-std::deque::_Tp_alloc_type	stl/stl_deque.h	/^      typedef typename _Base::_Tp_alloc_type	 _Tp_alloc_type;$/;"	t	class:std::deque	access:private
 std::deque::allocator_type	stl/stl_deque.h	/^      typedef _Alloc                             allocator_type;$/;"	t	class:std::deque	access:public
 std::deque::assign	stl/stl_deque.h	/^        assign(_InputIterator __first, _InputIterator __last)$/;"	f	class:std::deque	access:public	signature:(_InputIterator __first, _InputIterator __last)
 std::deque::assign	stl/stl_deque.h	/^      assign(size_type __n, const value_type& __val)$/;"	f	class:std::deque	access:public	signature:(size_type __n, const value_type& __val)
@@ -1940,21 +1254,6 @@ std::lexicographical_compare	stl/stl_algobase.h	/^    lexicographical_compare(_I
 std::lexicographical_compare	stl/stl_algobase.h	/^  lexicographical_compare(const char* __first1, const char* __last1,$/;"	f	namespace:std	signature:(const char* __first1, const char* __last1, const char* __first2, const char* __last2)
 std::lexicographical_compare	stl/stl_algobase.h	/^  lexicographical_compare(const unsigned char* __first1,$/;"	f	namespace:std	signature:(const unsigned char* __first1, const unsigned char* __last1, const unsigned char* __first2, const unsigned char* __last2)
 std::list	stl/stl_list.h	/^    class list : protected _List_base<_Tp, _Alloc>$/;"	c	namespace:std	inherits:_List_base
-std::list::_Alloc_value_type	stl/stl_list.h	/^      typedef typename _Alloc::value_type                _Alloc_value_type;$/;"	t	class:std::list	access:private
-std::list::_Base	stl/stl_list.h	/^      typedef _List_base<_Tp, _Alloc>                    _Base;$/;"	t	class:std::list	access:private
-std::list::_M_assign_dispatch	stl/stl_list.h	/^        _M_assign_dispatch(_InputIterator __first, _InputIterator __last,$/;"	p	class:std::list	access:protected	signature:(_InputIterator __first, _InputIterator __last, __false_type)
-std::list::_M_assign_dispatch	stl/stl_list.h	/^        _M_assign_dispatch(_Integer __n, _Integer __val, __true_type)$/;"	f	class:std::list	access:protected	signature:(_Integer __n, _Integer __val, __true_type)
-std::list::_M_check_equal_allocators	stl/stl_list.h	/^      _M_check_equal_allocators(list& __x)$/;"	f	class:std::list	access:protected	signature:(list& __x)
-std::list::_M_create_node	stl/stl_list.h	/^      _M_create_node(const value_type& __x)$/;"	f	class:std::list	access:protected	signature:(const value_type& __x)
-std::list::_M_erase	stl/stl_list.h	/^      _M_erase(iterator __position)$/;"	f	class:std::list	access:protected	signature:(iterator __position)
-std::list::_M_fill_assign	stl/stl_list.h	/^      _M_fill_assign(size_type __n, const value_type& __val);$/;"	p	class:std::list	access:protected	signature:(size_type __n, const value_type& __val)
-std::list::_M_fill_initialize	stl/stl_list.h	/^      _M_fill_initialize(size_type __n, const value_type& __x)$/;"	f	class:std::list	access:protected	signature:(size_type __n, const value_type& __x)
-std::list::_M_initialize_dispatch	stl/stl_list.h	/^        _M_initialize_dispatch(_InputIterator __first, _InputIterator __last,$/;"	f	class:std::list	access:protected	signature:(_InputIterator __first, _InputIterator __last, __false_type)
-std::list::_M_initialize_dispatch	stl/stl_list.h	/^        _M_initialize_dispatch(_Integer __n, _Integer __x, __true_type)$/;"	f	class:std::list	access:protected	signature:(_Integer __n, _Integer __x, __true_type)
-std::list::_M_insert	stl/stl_list.h	/^      _M_insert(iterator __position, const value_type& __x)$/;"	f	class:std::list	access:protected	signature:(iterator __position, const value_type& __x)
-std::list::_M_transfer	stl/stl_list.h	/^      _M_transfer(iterator __position, iterator __first, iterator __last)$/;"	f	class:std::list	access:protected	signature:(iterator __position, iterator __first, iterator __last)
-std::list::_Node	stl/stl_list.h	/^      typedef _List_node<_Tp>				 _Node;$/;"	t	class:std::list	access:protected
-std::list::_Tp_alloc_type	stl/stl_list.h	/^      typedef typename _Base::_Tp_alloc_type		 _Tp_alloc_type;$/;"	t	class:std::list	access:private
 std::list::allocator_type	stl/stl_list.h	/^      typedef _Alloc                                     allocator_type;$/;"	t	class:std::list	access:public
 std::list::assign	stl/stl_list.h	/^        assign(_InputIterator __first, _InputIterator __last)$/;"	f	class:std::list	access:public	signature:(_InputIterator __first, _InputIterator __last)
 std::list::assign	stl/stl_list.h	/^      assign(size_type __n, const value_type& __val)$/;"	f	class:std::list	access:public	signature:(size_type __n, const value_type& __val)
@@ -2026,10 +1325,6 @@ std::make_heap	stl/stl_heap.h	/^    make_heap(_RandomAccessIterator __first, _Ra
 std::make_heap	stl/stl_heap.h	/^    make_heap(_RandomAccessIterator __first, _RandomAccessIterator __last,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last, _Compare __comp)
 std::make_pair	stl/stl_pair.h	/^    make_pair(_T1 __x, _T2 __y)$/;"	f	namespace:std	signature:(_T1 __x, _T2 __y)
 std::map	stl/stl_map.h	/^    class map$/;"	c	namespace:std
-std::map::_Alloc_value_type	stl/stl_map.h	/^      typedef typename _Alloc::value_type                   _Alloc_value_type;$/;"	t	class:std::map	access:private
-std::map::_M_t	stl/stl_map.h	/^      _Rep_type _M_t;$/;"	m	class:std::map	access:private
-std::map::_Pair_alloc_type	stl/stl_map.h	/^        _Pair_alloc_type;$/;"	t	class:std::map	access:private
-std::map::_Rep_type	stl/stl_map.h	/^		       key_compare, _Pair_alloc_type> _Rep_type;$/;"	t	class:std::map	access:private
 std::map::allocator_type	stl/stl_map.h	/^      typedef _Alloc                                        allocator_type;$/;"	t	class:std::map	access:public
 std::map::at	stl/stl_map.h	/^      at(const key_type& __k) const$/;"	f	class:std::map	access:public	signature:(const key_type& __k) const
 std::map::at	stl/stl_map.h	/^      at(const key_type& __k)$/;"	f	class:std::map	access:public	signature:(const key_type& __k)
@@ -2096,20 +1391,12 @@ std::max	stl/stl_algobase.h	/^    max(const _Tp& __a, const _Tp& __b, _Compare _
 std::max_element	stl/stl_algo.h	/^    max_element(_ForwardIterator __first, _ForwardIterator __last)$/;"	f	namespace:std	signature:(_ForwardIterator __first, _ForwardIterator __last)
 std::max_element	stl/stl_algo.h	/^    max_element(_ForwardIterator __first, _ForwardIterator __last,$/;"	f	namespace:std	signature:(_ForwardIterator __first, _ForwardIterator __last, _Compare __comp)
 std::mem_fun1_ref_t	stl/stl_function.h	/^    class mem_fun1_ref_t : public binary_function<_Tp, _Arg, _Ret>$/;"	c	namespace:std	inherits:binary_function
-std::mem_fun1_ref_t::_M_f	stl/stl_function.h	/^      _Ret (_Tp::*_M_f)(_Arg);$/;"	m	class:std::mem_fun1_ref_t	access:private
-std::mem_fun1_ref_t::_Ret	stl/stl_function.h	/^      mem_fun1_ref_t(_Ret (_Tp::*__pf)(_Arg))$/;"	f	class:std::mem_fun1_ref_t	access:public	signature:(_Tp::*__pf)
 std::mem_fun1_ref_t::operator ()	stl/stl_function.h	/^      operator()(_Tp& __r, _Arg __x) const$/;"	f	class:std::mem_fun1_ref_t	access:public	signature:(_Tp& __r, _Arg __x) const
 std::mem_fun1_t	stl/stl_function.h	/^    class mem_fun1_t : public binary_function<_Tp*, _Arg, _Ret>$/;"	c	namespace:std	inherits:binary_function
-std::mem_fun1_t::_M_f	stl/stl_function.h	/^      _Ret (_Tp::*_M_f)(_Arg);$/;"	m	class:std::mem_fun1_t	access:private
-std::mem_fun1_t::_Ret	stl/stl_function.h	/^      mem_fun1_t(_Ret (_Tp::*__pf)(_Arg))$/;"	f	class:std::mem_fun1_t	access:public	signature:(_Tp::*__pf)
 std::mem_fun1_t::operator ()	stl/stl_function.h	/^      operator()(_Tp* __p, _Arg __x) const$/;"	f	class:std::mem_fun1_t	access:public	signature:(_Tp* __p, _Arg __x) const
 std::mem_fun_ref_t	stl/stl_function.h	/^    class mem_fun_ref_t : public unary_function<_Tp, _Ret>$/;"	c	namespace:std	inherits:unary_function
-std::mem_fun_ref_t::_M_f	stl/stl_function.h	/^      _Ret (_Tp::*_M_f)();$/;"	m	class:std::mem_fun_ref_t	access:private
-std::mem_fun_ref_t::_Ret	stl/stl_function.h	/^      mem_fun_ref_t(_Ret (_Tp::*__pf)())$/;"	f	class:std::mem_fun_ref_t	access:public	signature:(_Tp::*__pf)
 std::mem_fun_ref_t::operator ()	stl/stl_function.h	/^      operator()(_Tp& __r) const$/;"	f	class:std::mem_fun_ref_t	access:public	signature:(_Tp& __r) const
 std::mem_fun_t	stl/stl_function.h	/^    class mem_fun_t : public unary_function<_Tp*, _Ret>$/;"	c	namespace:std	inherits:unary_function
-std::mem_fun_t::_M_f	stl/stl_function.h	/^      _Ret (_Tp::*_M_f)();$/;"	m	class:std::mem_fun_t	access:private
-std::mem_fun_t::_Ret	stl/stl_function.h	/^      mem_fun_t(_Ret (_Tp::*__pf)())$/;"	f	class:std::mem_fun_t	access:public	signature:(_Tp::*__pf)
 std::mem_fun_t::operator ()	stl/stl_function.h	/^      operator()(_Tp* __p) const$/;"	f	class:std::mem_fun_t	access:public	signature:(_Tp* __p) const
 std::merge	stl/stl_algo.h	/^    merge(_InputIterator1 __first1, _InputIterator1 __last1,$/;"	f	namespace:std	signature:(_InputIterator1 __first1, _InputIterator1 __last1, _InputIterator2 __first2, _InputIterator2 __last2, _OutputIterator __result)
 std::merge	stl/stl_algo.h	/^    merge(_InputIterator1 __first1, _InputIterator1 __last1,$/;"	f	namespace:std	signature:(_InputIterator1 __first1, _InputIterator1 __last1, _InputIterator2 __first2, _InputIterator2 __last2, _OutputIterator __result, _Compare __comp)
@@ -2124,10 +1411,6 @@ std::mismatch	stl/stl_algobase.h	/^    mismatch(_InputIterator1 __first1, _Input
 std::modulus	stl/stl_function.h	/^    struct modulus : public binary_function<_Tp, _Tp, _Tp>$/;"	s	namespace:std	inherits:binary_function
 std::modulus::operator ()	stl/stl_function.h	/^      operator()(const _Tp& __x, const _Tp& __y) const$/;"	f	struct:std::modulus	access:public	signature:(const _Tp& __x, const _Tp& __y) const
 std::multimap	stl/stl_multimap.h	/^    class multimap$/;"	c	namespace:std
-std::multimap::_Alloc_value_type	stl/stl_multimap.h	/^      typedef typename _Alloc::value_type                   _Alloc_value_type;$/;"	t	class:std::multimap	access:private
-std::multimap::_M_t	stl/stl_multimap.h	/^      _Rep_type _M_t;$/;"	m	class:std::multimap	access:private
-std::multimap::_Pair_alloc_type	stl/stl_multimap.h	/^        _Pair_alloc_type;$/;"	t	class:std::multimap	access:private
-std::multimap::_Rep_type	stl/stl_multimap.h	/^		       key_compare, _Pair_alloc_type> _Rep_type;$/;"	t	class:std::multimap	access:private
 std::multimap::allocator_type	stl/stl_multimap.h	/^      typedef _Alloc                                        allocator_type;$/;"	t	class:std::multimap	access:public
 std::multimap::begin	stl/stl_multimap.h	/^      begin() const$/;"	f	class:std::multimap	access:public	signature:() const
 std::multimap::begin	stl/stl_multimap.h	/^      begin()$/;"	f	class:std::multimap	access:public	signature:()
@@ -2189,10 +1472,6 @@ std::multimap::value_type	stl/stl_multimap.h	/^      typedef std::pair<const _Ke
 std::multiplies	stl/stl_function.h	/^    struct multiplies : public binary_function<_Tp, _Tp, _Tp>$/;"	s	namespace:std	inherits:binary_function
 std::multiplies::operator ()	stl/stl_function.h	/^      operator()(const _Tp& __x, const _Tp& __y) const$/;"	f	struct:std::multiplies	access:public	signature:(const _Tp& __x, const _Tp& __y) const
 std::multiset	stl/stl_multiset.h	/^    class multiset$/;"	c	namespace:std
-std::multiset::_Alloc_value_type	stl/stl_multiset.h	/^      typedef typename _Alloc::value_type                   _Alloc_value_type;$/;"	t	class:std::multiset	access:private
-std::multiset::_Key_alloc_type	stl/stl_multiset.h	/^      typedef typename _Alloc::template rebind<_Key>::other _Key_alloc_type;$/;"	t	class:std::multiset	access:private
-std::multiset::_M_t	stl/stl_multiset.h	/^      _Rep_type _M_t;$/;"	m	class:std::multiset	access:private
-std::multiset::_Rep_type	stl/stl_multiset.h	/^		       key_compare, _Key_alloc_type> _Rep_type;$/;"	t	class:std::multiset	access:private
 std::multiset::allocator_type	stl/stl_multiset.h	/^      typedef _Alloc   allocator_type;$/;"	t	class:std::multiset	access:public
 std::multiset::begin	stl/stl_multiset.h	/^      begin() const$/;"	f	class:std::multiset	access:public	signature:() const
 std::multiset::clear	stl/stl_multiset.h	/^      clear()$/;"	f	class:std::multiset	access:public	signature:()
@@ -2375,12 +1654,10 @@ std::partition	stl/stl_algo.h	/^    partition(_ForwardIterator __first, _Forward
 std::plus	stl/stl_function.h	/^    struct plus : public binary_function<_Tp, _Tp, _Tp>$/;"	s	namespace:std	inherits:binary_function
 std::plus::operator ()	stl/stl_function.h	/^      operator()(const _Tp& __x, const _Tp& __y) const$/;"	f	struct:std::plus	access:public	signature:(const _Tp& __x, const _Tp& __y) const
 std::pointer_to_binary_function	stl/stl_function.h	/^    class pointer_to_binary_function$/;"	c	namespace:std	inherits:binary_function
-std::pointer_to_binary_function::_M_ptr	stl/stl_function.h	/^      _Result (*_M_ptr)(_Arg1, _Arg2);$/;"	m	class:std::pointer_to_binary_function	access:protected
 std::pointer_to_binary_function::operator ()	stl/stl_function.h	/^      operator()(_Arg1 __x, _Arg2 __y) const$/;"	f	class:std::pointer_to_binary_function	access:public	signature:(_Arg1 __x, _Arg2 __y) const
 std::pointer_to_binary_function::pointer_to_binary_function	stl/stl_function.h	/^      pointer_to_binary_function() {}$/;"	f	class:std::pointer_to_binary_function	access:public	signature:()
 std::pointer_to_binary_function::pointer_to_binary_function	stl/stl_function.h	/^      pointer_to_binary_function(_Result (*__x)(_Arg1, _Arg2))$/;"	f	class:std::pointer_to_binary_function	access:public	signature:(_Result (__x)_Arg1, _Arg2))
 std::pointer_to_unary_function	stl/stl_function.h	/^    class pointer_to_unary_function : public unary_function<_Arg, _Result>$/;"	c	namespace:std	inherits:unary_function
-std::pointer_to_unary_function::_M_ptr	stl/stl_function.h	/^      _Result (*_M_ptr)(_Arg);$/;"	m	class:std::pointer_to_unary_function	access:protected
 std::pointer_to_unary_function::operator ()	stl/stl_function.h	/^      operator()(_Arg __x) const$/;"	f	class:std::pointer_to_unary_function	access:public	signature:(_Arg __x) const
 std::pointer_to_unary_function::pointer_to_unary_function	stl/stl_function.h	/^      pointer_to_unary_function() {}$/;"	f	class:std::pointer_to_unary_function	access:public	signature:()
 std::pointer_to_unary_function::pointer_to_unary_function	stl/stl_function.h	/^      pointer_to_unary_function(_Result (*__x)(_Arg))$/;"	f	class:std::pointer_to_unary_function	access:public	signature:(_Result (__x)_Arg))
@@ -2389,7 +1666,6 @@ std::pop_heap	stl/stl_heap.h	/^    pop_heap(_RandomAccessIterator __first,$/;"	f
 std::prev_permutation	stl/stl_algo.h	/^    prev_permutation(_BidirectionalIterator __first,$/;"	f	namespace:std	signature:(_BidirectionalIterator __first, _BidirectionalIterator __last)
 std::prev_permutation	stl/stl_algo.h	/^    prev_permutation(_BidirectionalIterator __first,$/;"	f	namespace:std	signature:(_BidirectionalIterator __first, _BidirectionalIterator __last, _Compare __comp)
 std::priority_queue	stl/stl_queue.h	/^    class priority_queue$/;"	c	namespace:std
-std::priority_queue::_Sequence_value_type	stl/stl_queue.h	/^      typedef typename _Sequence::value_type _Sequence_value_type;$/;"	t	class:std::priority_queue	access:private
 std::priority_queue::c	stl/stl_queue.h	/^      _Sequence  c;$/;"	m	class:std::priority_queue	access:protected
 std::priority_queue::comp	stl/stl_queue.h	/^      _Compare   comp;$/;"	m	class:std::priority_queue	access:protected
 std::priority_queue::const_reference	stl/stl_queue.h	/^      typedef typename _Sequence::const_reference           const_reference;$/;"	t	class:std::priority_queue	access:public
@@ -2409,7 +1685,6 @@ std::ptr_fun	stl/stl_function.h	/^    ptr_fun(_Result (*__x)(_Arg1, _Arg2))$/;"	
 std::push_heap	stl/stl_heap.h	/^    push_heap(_RandomAccessIterator __first, _RandomAccessIterator __last)$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last)
 std::push_heap	stl/stl_heap.h	/^    push_heap(_RandomAccessIterator __first, _RandomAccessIterator __last,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last, _Compare __comp)
 std::queue	stl/stl_queue.h	/^    class queue$/;"	c	namespace:std
-std::queue::_Sequence_value_type	stl/stl_queue.h	/^      typedef typename _Sequence::value_type _Sequence_value_type;$/;"	t	class:std::queue	access:private
 std::queue::back	stl/stl_queue.h	/^      back() const$/;"	f	class:std::queue	access:public	signature:() const
 std::queue::back	stl/stl_queue.h	/^      back()$/;"	f	class:std::queue	access:public	signature:()
 std::queue::c	stl/stl_queue.h	/^      _Sequence c;$/;"	m	class:std::queue	access:protected
@@ -2431,7 +1706,6 @@ std::random_access_iterator_tag	stl/stl_iterator_base_types.h	/^  struct random_
 std::random_shuffle	stl/stl_algo.h	/^    random_shuffle(_RandomAccessIterator __first, _RandomAccessIterator __last)$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last)
 std::random_shuffle	stl/stl_algo.h	/^    random_shuffle(_RandomAccessIterator __first, _RandomAccessIterator __last,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last, _RandomNumberGenerator& __rand)
 std::raw_storage_iterator	stl/stl_raw_storage_iter.h	/^    class raw_storage_iterator$/;"	c	namespace:std	inherits:iterator
-std::raw_storage_iterator::_M_iter	stl/stl_raw_storage_iter.h	/^      _ForwardIterator _M_iter;$/;"	m	class:std::raw_storage_iterator	access:protected
 std::raw_storage_iterator::operator *	stl/stl_raw_storage_iter.h	/^      operator*() { return *this; }$/;"	f	class:std::raw_storage_iterator	access:public	signature:()
 std::raw_storage_iterator::operator ++	stl/stl_raw_storage_iter.h	/^      operator++()$/;"	f	class:std::raw_storage_iterator	access:public	signature:()
 std::raw_storage_iterator::operator ++	stl/stl_raw_storage_iter.h	/^      operator++(int)$/;"	f	class:std::raw_storage_iterator	access:public	signature:(int)
@@ -2481,10 +1755,6 @@ std::search	stl/stl_algo.h	/^    search(_ForwardIterator1 __first1, _ForwardIter
 std::search_n	stl/stl_algo.h	/^    search_n(_ForwardIterator __first, _ForwardIterator __last,$/;"	f	namespace:std	signature:(_ForwardIterator __first, _ForwardIterator __last, _Integer __count, const _Tp& __val)
 std::search_n	stl/stl_algo.h	/^    search_n(_ForwardIterator __first, _ForwardIterator __last,$/;"	f	namespace:std	signature:(_ForwardIterator __first, _ForwardIterator __last, _Integer __count, const _Tp& __val, _BinaryPredicate __binary_pred)
 std::set	stl/stl_set.h	/^    class set$/;"	c	namespace:std
-std::set::_Alloc_value_type	stl/stl_set.h	/^      typedef typename _Alloc::value_type                   _Alloc_value_type;$/;"	t	class:std::set	access:private
-std::set::_Key_alloc_type	stl/stl_set.h	/^      typedef typename _Alloc::template rebind<_Key>::other _Key_alloc_type;$/;"	t	class:std::set	access:private
-std::set::_M_t	stl/stl_set.h	/^      _Rep_type _M_t;  \/\/ red-black tree representing set$/;"	m	class:std::set	access:private
-std::set::_Rep_type	stl/stl_set.h	/^		       key_compare, _Key_alloc_type> _Rep_type;$/;"	t	class:std::set	access:private
 std::set::allocator_type	stl/stl_set.h	/^      typedef _Alloc   allocator_type;$/;"	t	class:std::set	access:public
 std::set::begin	stl/stl_set.h	/^      begin() const$/;"	f	class:std::set	access:public	signature:() const
 std::set::clear	stl/stl_set.h	/^      clear()$/;"	f	class:std::set	access:public	signature:()
@@ -2551,7 +1821,6 @@ std::stable_partition	stl/stl_algo.h	/^    stable_partition(_ForwardIterator __f
 std::stable_sort	stl/stl_algo.h	/^    stable_sort(_RandomAccessIterator __first, _RandomAccessIterator __last)$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last)
 std::stable_sort	stl/stl_algo.h	/^    stable_sort(_RandomAccessIterator __first, _RandomAccessIterator __last,$/;"	f	namespace:std	signature:(_RandomAccessIterator __first, _RandomAccessIterator __last, _Compare __comp)
 std::stack	stl/stl_stack.h	/^    class stack$/;"	c	namespace:std
-std::stack::_Sequence_value_type	stl/stl_stack.h	/^      typedef typename _Sequence::value_type _Sequence_value_type;$/;"	t	class:std::stack	access:private
 std::stack::c	stl/stl_stack.h	/^      _Sequence c;$/;"	m	class:std::stack	access:protected
 std::stack::const_reference	stl/stl_stack.h	/^      typedef typename _Sequence::const_reference           const_reference;$/;"	t	class:std::stack	access:public
 std::stack::container_type	stl/stl_stack.h	/^      typedef          _Sequence                            container_type;$/;"	t	class:std::stack	access:public
@@ -2583,7 +1852,6 @@ std::unary_function	stl/stl_function.h	/^    struct unary_function$/;"	s	namespa
 std::unary_function::argument_type	stl/stl_function.h	/^      typedef _Arg argument_type;   \/\/\/< @c argument_type is the type of the$/;"	t	struct:std::unary_function	access:public
 std::unary_function::result_type	stl/stl_function.h	/^      typedef _Result result_type;  \/\/\/< @c result_type is the return type$/;"	t	struct:std::unary_function	access:public
 std::unary_negate	stl/stl_function.h	/^    class unary_negate$/;"	c	namespace:std	inherits:unary_function
-std::unary_negate::_M_pred	stl/stl_function.h	/^      _Predicate _M_pred;$/;"	m	class:std::unary_negate	access:protected
 std::unary_negate::operator ()	stl/stl_function.h	/^      operator()(const typename _Predicate::argument_type& __x) const$/;"	f	class:std::unary_negate	access:public	signature:(const typename _Predicate::argument_type& __x) const
 std::unary_negate::unary_negate	stl/stl_function.h	/^      unary_negate(const _Predicate& __x) : _M_pred(__x) {}$/;"	f	class:std::unary_negate	access:public	signature:(const _Predicate& __x)
 std::uninitialized_copy	stl/stl_uninitialized.h	/^    uninitialized_copy(_InputIterator __first, _InputIterator __last,$/;"	f	namespace:std	signature:(_InputIterator __first, _InputIterator __last, _ForwardIterator __result)
@@ -2599,47 +1867,6 @@ std::upper_bound	stl/stl_algo.h	/^    upper_bound(_ForwardIterator __first, _For
 std::upper_bound	stl/stl_algo.h	/^    upper_bound(_ForwardIterator __first, _ForwardIterator __last,$/;"	f	namespace:std	signature:(_ForwardIterator __first, _ForwardIterator __last, const _Tp& __val, _Compare __comp)
 std::vector	stl/stl_bvector.h	/^  class vector<bool, _Alloc> : protected _Bvector_base<_Alloc>$/;"	c	namespace:std	inherits:_Bvector_base
 std::vector	stl/stl_vector.h	/^    class vector : protected _Vector_base<_Tp, _Alloc>$/;"	c	namespace:std	inherits:_Vector_base
-std::vector::_Alloc_value_type	stl/stl_vector.h	/^      typedef typename _Alloc::value_type                _Alloc_value_type;$/;"	t	class:std::vector	access:private
-std::vector::_Base	stl/stl_bvector.h	/^    typedef _Bvector_base<_Alloc>			 _Base;$/;"	t	class:std::vector	access:private
-std::vector::_Base	stl/stl_vector.h	/^      typedef _Vector_base<_Tp, _Alloc>			 _Base;$/;"	t	class:std::vector	access:private
-std::vector::_M_allocate_and_copy	stl/stl_vector.h	/^        _M_allocate_and_copy(size_type __n,$/;"	f	class:std::vector	access:protected	signature:(size_type __n, _ForwardIterator __first, _ForwardIterator __last)
-std::vector::_M_assign_aux	stl/stl_bvector.h	/^      _M_assign_aux(_ForwardIterator __first, _ForwardIterator __last,$/;"	f	class:std::vector	access:protected	signature:(_ForwardIterator __first, _ForwardIterator __last, std::forward_iterator_tag)
-std::vector::_M_assign_aux	stl/stl_bvector.h	/^      _M_assign_aux(_InputIterator __first, _InputIterator __last,$/;"	f	class:std::vector	access:protected	signature:(_InputIterator __first, _InputIterator __last, std::input_iterator_tag)
-std::vector::_M_assign_aux	stl/stl_vector.h	/^        _M_assign_aux(_ForwardIterator __first, _ForwardIterator __last,$/;"	p	class:std::vector	access:protected	signature:(_ForwardIterator __first, _ForwardIterator __last, std::forward_iterator_tag)
-std::vector::_M_assign_aux	stl/stl_vector.h	/^        _M_assign_aux(_InputIterator __first, _InputIterator __last,$/;"	p	class:std::vector	access:protected	signature:(_InputIterator __first, _InputIterator __last, std::input_iterator_tag)
-std::vector::_M_assign_dispatch	stl/stl_bvector.h	/^      _M_assign_dispatch(_InputIterator __first, _InputIterator __last,$/;"	f	class:std::vector	access:protected	signature:(_InputIterator __first, _InputIterator __last, __false_type)
-std::vector::_M_assign_dispatch	stl/stl_bvector.h	/^      _M_assign_dispatch(_Integer __n, _Integer __val, __true_type)$/;"	f	class:std::vector	access:protected	signature:(_Integer __n, _Integer __val, __true_type)
-std::vector::_M_assign_dispatch	stl/stl_vector.h	/^        _M_assign_dispatch(_InputIterator __first, _InputIterator __last,$/;"	f	class:std::vector	access:protected	signature:(_InputIterator __first, _InputIterator __last, __false_type)
-std::vector::_M_assign_dispatch	stl/stl_vector.h	/^        _M_assign_dispatch(_Integer __n, _Integer __val, __true_type)$/;"	f	class:std::vector	access:protected	signature:(_Integer __n, _Integer __val, __true_type)
-std::vector::_M_copy_aligned	stl/stl_bvector.h	/^    _M_copy_aligned(const_iterator __first, const_iterator __last,$/;"	f	class:std::vector	access:protected	signature:(const_iterator __first, const_iterator __last, iterator __result)
-std::vector::_M_erase_at_end	stl/stl_bvector.h	/^    _M_erase_at_end(iterator __pos)$/;"	f	class:std::vector	access:protected	signature:(iterator __pos)
-std::vector::_M_erase_at_end	stl/stl_vector.h	/^      _M_erase_at_end(pointer __pos)$/;"	f	class:std::vector	access:protected	signature:(pointer __pos)
-std::vector::_M_fill_assign	stl/stl_bvector.h	/^    _M_fill_assign(size_t __n, bool __x)$/;"	f	class:std::vector	access:protected	signature:(size_t __n, bool __x)
-std::vector::_M_fill_assign	stl/stl_vector.h	/^      _M_fill_assign(size_type __n, const value_type& __val);$/;"	p	class:std::vector	access:protected	signature:(size_type __n, const value_type& __val)
-std::vector::_M_fill_insert	stl/stl_bvector.h	/^    _M_fill_insert(iterator __position, size_type __n, bool __x)$/;"	f	class:std::vector	access:protected	signature:(iterator __position, size_type __n, bool __x)
-std::vector::_M_fill_insert	stl/stl_vector.h	/^      _M_fill_insert(iterator __pos, size_type __n, const value_type& __x);$/;"	p	class:std::vector	access:protected	signature:(iterator __pos, size_type __n, const value_type& __x)
-std::vector::_M_initialize	stl/stl_bvector.h	/^    _M_initialize(size_type __n)$/;"	f	class:std::vector	access:protected	signature:(size_type __n)
-std::vector::_M_initialize_dispatch	stl/stl_bvector.h	/^      _M_initialize_dispatch(_InputIterator __first, _InputIterator __last,$/;"	f	class:std::vector	access:protected	signature:(_InputIterator __first, _InputIterator __last, __false_type)
-std::vector::_M_initialize_dispatch	stl/stl_bvector.h	/^      _M_initialize_dispatch(_Integer __n, _Integer __x, __true_type)$/;"	f	class:std::vector	access:protected	signature:(_Integer __n, _Integer __x, __true_type)
-std::vector::_M_initialize_dispatch	stl/stl_vector.h	/^        _M_initialize_dispatch(_InputIterator __first, _InputIterator __last,$/;"	f	class:std::vector	access:protected	signature:(_InputIterator __first, _InputIterator __last, __false_type)
-std::vector::_M_initialize_dispatch	stl/stl_vector.h	/^        _M_initialize_dispatch(_Integer __n, _Integer __value, __true_type)$/;"	f	class:std::vector	access:protected	signature:(_Integer __n, _Integer __value, __true_type)
-std::vector::_M_initialize_range	stl/stl_bvector.h	/^      _M_initialize_range(_ForwardIterator __first, _ForwardIterator __last,$/;"	f	class:std::vector	access:protected	signature:(_ForwardIterator __first, _ForwardIterator __last, std::forward_iterator_tag)
-std::vector::_M_initialize_range	stl/stl_bvector.h	/^      _M_initialize_range(_InputIterator __first, _InputIterator __last,$/;"	f	class:std::vector	access:protected	signature:(_InputIterator __first, _InputIterator __last, std::input_iterator_tag)
-std::vector::_M_insert_aux	stl/stl_bvector.h	/^    _M_insert_aux(iterator __position, bool __x)$/;"	f	class:std::vector	access:protected	signature:(iterator __position, bool __x)
-std::vector::_M_insert_aux	stl/stl_vector.h	/^      _M_insert_aux(iterator __position, const value_type& __x);$/;"	p	class:std::vector	access:protected	signature:(iterator __position, const value_type& __x)
-std::vector::_M_insert_dispatch	stl/stl_bvector.h	/^      _M_insert_dispatch(iterator __pos, _Integer __n, _Integer __x,$/;"	f	class:std::vector	access:protected	signature:(iterator __pos, _Integer __n, _Integer __x, __true_type)
-std::vector::_M_insert_dispatch	stl/stl_bvector.h	/^      _M_insert_dispatch(iterator __pos,$/;"	f	class:std::vector	access:protected	signature:(iterator __pos, _InputIterator __first, _InputIterator __last, __false_type)
-std::vector::_M_insert_dispatch	stl/stl_vector.h	/^        _M_insert_dispatch(iterator __pos, _InputIterator __first,$/;"	f	class:std::vector	access:protected	signature:(iterator __pos, _InputIterator __first, _InputIterator __last, __false_type)
-std::vector::_M_insert_dispatch	stl/stl_vector.h	/^        _M_insert_dispatch(iterator __pos, _Integer __n, _Integer __val,$/;"	f	class:std::vector	access:protected	signature:(iterator __pos, _Integer __n, _Integer __val, __true_type)
-std::vector::_M_insert_range	stl/stl_bvector.h	/^      _M_insert_range(iterator __pos, _InputIterator __first, $/;"	f	class:std::vector	access:protected	signature:(iterator __pos, _InputIterator __first, _InputIterator __last, std::input_iterator_tag)
-std::vector::_M_insert_range	stl/stl_bvector.h	/^      _M_insert_range(iterator __position, _ForwardIterator __first, $/;"	f	class:std::vector	access:protected	signature:(iterator __position, _ForwardIterator __first, _ForwardIterator __last, std::forward_iterator_tag)
-std::vector::_M_range_check	stl/stl_bvector.h	/^    _M_range_check(size_type __n) const$/;"	f	class:std::vector	access:protected	signature:(size_type __n) const
-std::vector::_M_range_check	stl/stl_vector.h	/^      _M_range_check(size_type __n) const$/;"	f	class:std::vector	access:protected	signature:(size_type __n) const
-std::vector::_M_range_initialize	stl/stl_vector.h	/^        _M_range_initialize(_ForwardIterator __first,$/;"	f	class:std::vector	access:protected	signature:(_ForwardIterator __first, _ForwardIterator __last, std::forward_iterator_tag)
-std::vector::_M_range_initialize	stl/stl_vector.h	/^        _M_range_initialize(_InputIterator __first,$/;"	f	class:std::vector	access:protected	signature:(_InputIterator __first, _InputIterator __last, std::input_iterator_tag)
-std::vector::_M_range_insert	stl/stl_vector.h	/^        _M_range_insert(iterator __pos, _ForwardIterator __first,$/;"	p	class:std::vector	access:protected	signature:(iterator __pos, _ForwardIterator __first, _ForwardIterator __last, std::forward_iterator_tag)
-std::vector::_M_range_insert	stl/stl_vector.h	/^        _M_range_insert(iterator __pos, _InputIterator __first,$/;"	p	class:std::vector	access:protected	signature:(iterator __pos, _InputIterator __first, _InputIterator __last, std::input_iterator_tag)
-std::vector::_Tp_alloc_type	stl/stl_vector.h	/^      typedef typename _Base::_Tp_alloc_type		 _Tp_alloc_type;$/;"	t	class:std::vector	access:private
 std::vector::allocator_type	stl/stl_bvector.h	/^    typedef _Alloc                        		 allocator_type;$/;"	t	class:std::vector	access:public
 std::vector::allocator_type	stl/stl_vector.h	/^      typedef _Alloc                        		 allocator_type;$/;"	t	class:std::vector	access:public
 std::vector::assign	stl/stl_bvector.h	/^      assign(_InputIterator __first, _InputIterator __last)$/;"	f	class:std::vector	access:public	signature:(_InputIterator __first, _InputIterator __last)
@@ -2851,13 +2078,3 @@ vector	stl/stl_vector.h	/^      vector(const vector& __x)$/;"	f	class:std::vecto
 vector	stl/stl_vector.h	/^      vector(size_type __n, const value_type& __value = value_type(),$/;"	f	class:std::vector	access:public	signature:(size_type __n, const value_type& __value = value_type(), const allocator_type& __a = allocator_type())
 vector	stl/stl_vector.h	/^    class vector : protected _Vector_base<_Tp, _Alloc>$/;"	c	namespace:std	inherits:_Vector_base
 vector_type	stl/stl_vector.h	/^      typedef vector<_Tp, _Alloc>			 vector_type;$/;"	t	class:std::vector	access:private
-~_Bvector_base	stl/stl_bvector.h	/^      ~_Bvector_base()$/;"	f	struct:std::_Bvector_base	access:public	signature:()
-~_Deque_base	stl/stl_deque.h	/^      ~_Deque_base();$/;"	p	class:std::_Deque_base	access:public	signature:()
-~_Deque_base	stl/stl_deque.h	/^    ~_Deque_base()$/;"	f	class:std::_Deque_base	signature:()
-~_List_base	stl/stl_list.h	/^      ~_List_base()$/;"	f	class:std::_List_base	access:public	signature:()
-~_Rb_tree	stl/stl_tree.h	/^      ~_Rb_tree()$/;"	f	class:std::_Rb_tree	access:public	signature:()
-~_Temporary_buffer	stl/stl_tempbuf.h	/^      ~_Temporary_buffer()$/;"	f	class:std::_Temporary_buffer	access:public	signature:()
-~_Vector_base	stl/stl_vector.h	/^      ~_Vector_base()$/;"	f	struct:std::_Vector_base	access:public	signature:()
-~deque	stl/stl_deque.h	/^      ~deque()$/;"	f	class:std::deque	access:public	signature:()
-~vector	stl/stl_bvector.h	/^    ~vector() { }$/;"	f	class:std::vector	access:public	signature:()
-~vector	stl/stl_vector.h	/^      ~vector()$/;"	f	class:std::vector	access:public	signature:()
