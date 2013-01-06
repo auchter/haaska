@@ -1,5 +1,8 @@
-xbindkeys
+xrdb ~/.Xresources
 xmodmap ~/.xmodmaprc
+xbindkeys f ~/.xbindkeysrc
 xset -b # STOP THE BLOODY BEEPING
-xrdb .Xresources
-exec i3
+xset +fp /usr/share/fonts/terminus
+urxvtd -q -o -f
+exec dwm
+
