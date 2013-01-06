@@ -1,4 +1,4 @@
-URxvt*font:       xft:Inconsolata:size=8:antialias=true:autohint=true
+URxvt*font: -*-terminus-*-*-*-*-12-120-*-72-*-*-*-*
 URxvt*scrollBar:  false
 xpdf*antialias:   yes
 xpdf*foreground:  black
