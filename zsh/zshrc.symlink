@@ -1,4 +1,4 @@
-export ZSH=$HOME/.dotfiles
+export ZSH=$HOME/git/dotfiles
 
 for config_file ($ZSH/**/*.zsh) source $config_file
 
