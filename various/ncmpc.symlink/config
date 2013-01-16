@@ -5,7 +5,7 @@ visible-bell = yes
 enable-mouse = no
 seek-time = 10
 scroll-offset = 3
-screen-list = playlst artist
+screen-list = playlist artist
 
 set-xterm-title = yes
 xterm-title-format = "[%name%|[%artist% - ]%title%|%file%]"
