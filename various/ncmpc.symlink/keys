@@ -1,0 +1,11 @@
+key consume = 0
+key single = 0
+key scroll-up-line = 0
+key save = 0
+
+key stop = 'S'
+key quit = 'Q'
+key clear = 'C'
+key pgup = 339, 2
+key pgdn = 338, 6
+
