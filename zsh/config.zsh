@@ -17,5 +17,6 @@ bindkey '^P' reverse-menu-complete
 bindkey '^N' expand-or-complete
 
 export EDITOR="vim"
-export BROWSER="firefox"
+[[ -e `which firefox-bin` ]] && export BROWSER="firefox-bin"
+[[ -e `which firefox` ]] && export BROWSER="firefox"
 export PATH=$PATH:$ZSH/bin
