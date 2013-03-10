@@ -3,7 +3,7 @@ type is text
 data matches '[a-zA-Z¡-￿0-9_\-./ ]+'
 data matches '([a-zA-Z¡-￿0-9_\-./ ]+)\.(pdf|PDF)'
 arg isfile	$0
-plumb start xpdf $file
+plumb start mupdf $file
 
 type is text
 data matches '[a-zA-Z¡-￿0-9_\-./ ]+'
