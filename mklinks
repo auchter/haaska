@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+for i in */*.symlink; do
+	dest=${i%.*}
+	dest=$HOME/.${dest##*/}
+
+	if [ -h "$dest" ]; then
+		rm "$dest"
+	elif [ -e "$dest" ]; then
+		mv "$dest" "${dest}.backup"
+	fi
+
+	ln -s "$PWD/$i" "$dest";
+done
