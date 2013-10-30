@@ -125,6 +125,7 @@ sunmap w
 sunmap b
 sunmap e
 
+vmap <silent> <leader>\ :Tabularize /\\<CR>
 nmap <leader>a: :Tabularize /:\zs<CR>
 vmap <leader>a: :Tabularize /:\zs<CR>
 nmap <leader>a= :Tabularize /=<CR>
