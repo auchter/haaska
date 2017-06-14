@@ -511,6 +511,21 @@ class MediaPlayerEntity(ToggleEntity):
         vol = val / 100.0
         self._call_service('media_player/volume_set', {'volume_level': vol})
 
+    def play(self):
+        self._call_service('media_player/media_play')
+
+    def pause(self):
+        self._call_service('media_player/media_pause')
+
+    def stop(self):
+        self._call_service('media_player/media_stop')
+
+    def previous(self):
+        self._call_service('media_player/media_previous_track')
+
+    def next(self):
+        self._call_service('media_player/media_next_track')
+
 
 class ClimateEntity(Entity):
     def turn_on(self):
