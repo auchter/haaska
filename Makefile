@@ -59,6 +59,26 @@ discover:
 		--payload ${DISCOVERY_PAYLOAD} \
 		/dev/fd/3 3>&1 >/dev/null | jq '.'
 
+DISCOVERY_VIDEO_PAYLOAD:='                        \
+{                                                 \
+  "header": {                                     \
+    "payloadVersion": "3",                        \
+    "namespace": "Alexa.Discovery", \
+    "name": "Discover"           \
+  },                                              \
+  "payload": {                                    \
+    "accessToken": "..."                          \
+  }                                               \
+}'
+
+.PHONY: discover_video
+discover_video:
+	@aws lambda invoke \
+		--function-name $(FUNCTION_NAME) \
+		--payload ${DISCOVERY_VIDEO_PAYLOAD} \
+		/dev/fd/3 3>&1 >/dev/null | jq '.'
+
+
 
 .PHONY: clean
 clean:

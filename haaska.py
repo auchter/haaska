@@ -71,15 +71,15 @@ class HomeAssistant(object):
 
 
 class ConnectedHomeCall(object):
-    def __init__(self, namespace, name, ha, payload):
+    def __init__(self, namespace, name, ha, event):
         self.namespace = namespace
         self.name = name
         self.response_name = self.name.replace('Request', 'Response')
         self.ha = ha
-        self.payload = payload
+        self.payload = event['payload']
         self.entity = None
         if 'appliance' in self.payload:
-            details = payload['appliance']['additionalApplianceDetails']
+            details = self.payload['appliance']['additionalApplianceDetails']
             self.entity = mk_entity(ha, details['entity_id'])
 
     class ConnectedHomeException(Exception):
@@ -118,6 +118,44 @@ class ConnectedHomeCall(object):
         return r
 
 
+class VideoSkillCall(object):
+    def __init__(self, namespace, name, ha, event):
+        self.namespace = namespace
+        self.name = name
+        self.ha = ha
+        logger.debug('what: ' + str(event))
+        self.endpoint = event['endpoint']
+        if 'correlation_token' in event['header']:
+            self.correlation_token = event['header']['correlationToken']
+        else:
+            self.correlation_token = None
+        self.entity = mk_entity(ha, event['endpoint']['cookie']['entity_id'])
+
+    def invoke(self, name):
+        logger.debug('invoking %s %s', self.namespace, name)
+        event = {}
+        event['header'] = {'messageId': str(uuid4()),
+                           'namespace': 'Alexa',
+                           'name': 'Response',
+                           'payloadVersion': '3'}
+        if self.correlation_token is not None:
+            event['header']['correlationToken'] = self.correlation_token
+        event['endpoint'] = self.endpoint
+        event['payload'] = {}
+
+        try:
+            operator.attrgetter(name)(self)()
+        except Exception:
+            logger.exception('handler failed')
+            # TODO: Return an error instead
+            return {}
+
+        r = {}
+        r['context'] = {'properties': []}
+        r['event'] = event
+        return r
+
+
 class Alexa(object):
     class ConnectedHome(object):
         class System(ConnectedHomeCall):
@@ -142,9 +180,9 @@ class Alexa(object):
                     return {'discoveredAppliances': {}}
 
         class Control(ConnectedHomeCall):
-            def __init__(self, namespace, name, ha, payload):
+            def __init__(self, namespace, name, ha, event):
                 super(Alexa.ConnectedHome.Control, self).__init__(
-                        namespace, name, ha, payload)
+                        namespace, name, ha, event)
                 self.response_name = name.replace('Request', 'Confirmation')
 
             def TurnOnRequest(self):
@@ -259,9 +297,9 @@ class Alexa(object):
                 return {'achievedState': {'color': self.payload['color']}}
 
         class Query(ConnectedHomeCall):
-            def __init__(self, namespace, name, ha, payload):
+            def __init__(self, namespace, name, ha, event):
                 super(Alexa.ConnectedHome.Query, self).__init__(
-                        namespace, name, ha, payload)
+                        namespace, name, ha, event)
 
             def GetTemperatureReadingRequest(self):
                 temperature = self.entity.get_current_temperature()
@@ -281,12 +319,78 @@ class Alexa(object):
                 lock_state = self.entity.get_lock_state().upper()
                 return {'lockState': lock_state}
 
+    class Discovery(object):
+        def __init__(self, namespace, name, ha, event):
+            self.namespace = namespace
+            self.name = name
+            self.ha = ha
+            self.event = event
 
-def invoke(namespace, name, ha, context):
+        def invoke(self, name):
+            logger.debug('invoking %s %s', self.namespace, name)
+            event = {}
+            event['header'] = {'messageId': str(uuid4()),
+                               'name': 'Discover.Response',
+                               'namespace': self.namespace,
+                               'payloadVersion': '3'}
+            try:
+                event['payload'] = operator.attrgetter(name)(self)()
+            except Exception:
+                logger.exception('Video discover failed')
+                event['payload'] = {'endpoints': []}
+            return {'event': event}
+
+        def Discover(self):
+            def alexa_interface(name, version='1.0'):
+                return {'interface': name, 'version': version,
+                        'type': 'AlexaInterface'}
+
+            def is_media_player(x):
+                return x['entity_id'].split('.', 1)[0] == 'media_player'
+
+            def mk_endpoint(x):
+                endpoint = {}
+                endpoint['capabilities'] = [
+                        alexa_interface('Alexa.RemoteVideoPlayer'),
+                        alexa_interface('Alexa.ChannelController'),
+                        alexa_interface('Alexa.PlaybackController')]
+                endpoint['endpointId'] = sha1(x['entity_id'].encode('utf-8')).hexdigest()
+                endpoint['description'] = 'Home Assistant Media Player'
+                endpoint['displayCategories'] = []
+                endpoint['friendlyName'] = x['attributes']['friendly_name']
+                endpoint['manufacturerName'] = 'Home Assistant'
+                endpoint['cookie'] = {'entity_id': x['entity_id']}
+                return endpoint
+
+            states = self.ha.get('states')
+            endpoints = [mk_endpoint(x) for x in states if is_media_player(x)]
+            return {'endpoints': endpoints}
+
+    class PlaybackController(VideoSkillCall):
+        def Play(self):
+            self.entity.play()
+
+        def Pause(self):
+            self.entity.pause()
+
+        def Stop(self):
+            self.entity.stop()
+
+        def Previous(self):
+            self.entity.previous()
+
+        def Next(self):
+            self.entity.next()
+
+    class ChannelController(VideoSkillCall):
+        def ChangeChannel(self):
+            logger.debug('change channel!')
+
+def invoke(namespace, name, ha, event):
     class allowed(object):
         Alexa = Alexa
     make_class = operator.attrgetter(namespace)
-    obj = make_class(allowed)(namespace, name, ha, context)
+    obj = make_class(allowed)(namespace, name, ha, event)
     return obj.invoke(name)
 
 
@@ -664,6 +768,9 @@ def event_handler(event, context):
         logger.setLevel(logging.DEBUG)
     ha = HomeAssistant(config)
 
+    if 'directive' in event:
+        event = event['directive']
+
     name = event['header']['name']
     payload = event['payload']
 
@@ -672,4 +779,4 @@ def event_handler(event, context):
                      if k != u'accessToken'}))
 
     return invoke(event['header']['namespace'], event['header']['name'],
-                  ha, payload)
+                  ha, event)
