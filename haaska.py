@@ -382,6 +382,9 @@ class Alexa(object):
         def Next(self):
             self.entity.next()
 
+        def StartOver(self):
+            self.entity.seek(0.0)
+
     class ChannelController(VideoSkillCall):
         def ChangeChannel(self):
             logger.debug('change channel!')
@@ -637,6 +640,9 @@ class MediaPlayerEntity(ToggleEntity):
 
     def next(self):
         self._call_service('media_player/media_next_track')
+
+    def seek(self, pos):
+        self._call_service('media_player/media_seek', {'seek_position': pos})
 
 
 class ClimateEntity(Entity):
