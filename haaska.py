@@ -386,6 +386,14 @@ class Alexa(object):
         def ChangeChannel(self):
             logger.debug('change channel!')
 
+    class RemoteVideoPlayer(VideoSkillCall):
+        def SearchAndPlay(self):
+            pass
+
+        def SearchAndDisplayResults(VideoSkillCall):
+            pass
+
+
 def invoke(namespace, name, ha, event):
     class allowed(object):
         Alexa = Alexa
