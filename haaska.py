@@ -396,6 +396,13 @@ class Alexa(object):
         def SearchAndDisplayResults(VideoSkillCall):
             pass
 
+    class PowerController(VideoSkillCall):
+        def TurnOn(self):
+            self.entity.turn_on()
+
+        def TurnOff(self):
+            self.entity.turn_off()
+
 
 def invoke(namespace, name, ha, event):
     class allowed(object):
