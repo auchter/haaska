@@ -123,6 +123,7 @@ class VideoSkillCall(object):
         self.namespace = namespace
         self.name = name
         self.ha = ha
+        self.payload = event['payload']
         logger.debug('what: ' + str(event))
         self.endpoint = event['endpoint']
         if 'correlation_token' in event['header']:
@@ -141,7 +142,7 @@ class VideoSkillCall(object):
         if self.correlation_token is not None:
             event['header']['correlationToken'] = self.correlation_token
         event['endpoint'] = self.endpoint
-        event['payload'] = {}
+        event['payload'] = self.payload
 
         try:
             operator.attrgetter(name)(self)()
@@ -353,7 +354,9 @@ class Alexa(object):
                 endpoint['capabilities'] = [
                         alexa_interface('Alexa.RemoteVideoPlayer'),
                         alexa_interface('Alexa.ChannelController'),
-                        alexa_interface('Alexa.PlaybackController')]
+                        alexa_interface('Alexa.PlaybackController'),
+                        alexa_interface('Alexa.PowerController'),
+                        alexa_interface('Alexa.PercentageController')]
                 endpoint['endpointId'] = sha1(x['entity_id'].encode('utf-8')).hexdigest()
                 endpoint['description'] = 'Home Assistant Media Player'
                 endpoint['displayCategories'] = []
@@ -393,7 +396,7 @@ class Alexa(object):
         def SearchAndPlay(self):
             pass
 
-        def SearchAndDisplayResults(VideoSkillCall):
+        def SearchAndDisplayResults(self):
             pass
 
     class PowerController(VideoSkillCall):
@@ -402,6 +405,11 @@ class Alexa(object):
 
         def TurnOff(self):
             self.entity.turn_off()
+
+    class PercentageController(VideoSkillCall):
+        def SetPercentage(self):
+            percentage = self.payload['percentage']
+            self.entity.set_percentage(percentage)
 
 
 def invoke(namespace, name, ha, event):
