@@ -358,7 +358,7 @@ class Alexa(object):
                         alexa_interface('Alexa.PowerController'),
                         alexa_interface('Alexa.PercentageController')]
                 endpoint['endpointId'] = sha1(x['entity_id'].encode('utf-8')).hexdigest()
-                endpoint['description'] = 'Home Assistant Media Player'
+                endpoint['description'] = 'Home Assistant Media Player (Video Skill)'
                 endpoint['displayCategories'] = []
                 endpoint['friendlyName'] = x['attributes']['friendly_name']
                 endpoint['manufacturerName'] = 'Home Assistant'
