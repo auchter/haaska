@@ -411,6 +411,16 @@ class Alexa(object):
             percentage = self.payload['percentage']
             self.entity.set_percentage(percentage)
 
+        def AdjustPercentage(self):
+            delta = self.payload['percentageDelta']
+            val = self.entity_id.get_percentage()
+            val += delta
+            if val < 0.0:
+                val = 0
+            elif val >= 100.0:
+                val = 100.0
+            self.entity.set_percentage(val)
+
 
 def invoke(namespace, name, ha, event):
     class allowed(object):
