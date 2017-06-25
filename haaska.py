@@ -130,7 +130,13 @@ class VideoSkillCall(object):
             self.correlation_token = event['header']['correlationToken']
         else:
             self.correlation_token = None
-        self.entity = mk_entity(ha, event['endpoint']['cookie']['entity_id'])
+
+        if 'entity_id' in self.endpoint['cookie']:
+            self.entity = mk_entity(ha, self.endpoint['cookie']['entity_id'])
+        else:
+            # TODO: ... should be obvious what needs to be done:
+            logger.debug('missing entity_id, hardcoding for now...')
+            self.entity = mk_entity(ha, 'media_player.kodi')
 
     def invoke(self, name):
         logger.debug('invoking %s %s', self.namespace, name)
