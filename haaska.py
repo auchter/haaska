@@ -400,7 +400,11 @@ class Alexa(object):
 
     class RemoteVideoPlayer(VideoSkillCall):
         def SearchAndPlay(self):
-            pass
+            # Proof of concept, just try the first result:
+            title = self.payload['entities'][0]['value']
+            logger.debug('title: %s', title)
+            self.entity._call_service('media_player/video_search_and_play',
+                                      {'video_title': title})
 
         def SearchAndDisplayResults(self):
             pass
